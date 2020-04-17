@@ -4,7 +4,7 @@ import SectionStyled from '../components/sections/Section-bckg-img'
 import Header from '../components/header/Header'
 
 const XebiaLabs = () => (
-  <div>
+  <div id="Home">
     <Header />
     <div className="CE">
     <div className="CEHeaderHolder">

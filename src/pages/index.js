@@ -8,7 +8,7 @@ import Header from '../components/header/Header'
 //import FooterComp from '../components/footer/FooterComp update'
 
 const IndexPage = () => (
-  <div>
+  <div id="Home">
     <Header />
     <div className="Hero">
      <div className="HeroGroup">

@@ -4,7 +4,7 @@ import SectionStyled from '../components/sections/Section-bckg-img'
 import Header from '../components/header/Header'
 
 const Conda = () => (
-  <div>
+  <div id="Home">
     <Header />
     <div className="CE">
     <div className="CEHeaderHolder">

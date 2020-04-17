@@ -4,7 +4,7 @@ import SectionStyled from '../components/sections/Section-bckg-img'
 import Header from '../components/header/Header'
 
 const AboutMe = () => (
-  <div>
+  <div id="Home">
     <Header />
     <div className="About">
     <div className="AboutHeaderHolder">
