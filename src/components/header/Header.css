@@ -1,0 +1,95 @@
+.Header {
+    position: fixed;
+    padding: 30px 0;
+    width: 100%;
+    z-index: 100;
+    transition: 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.HeaderScrolled {
+    background: rgba(0,0,0, 0.7);
+    padding: 10px 0;
+    backdrop-filter: blur(10px);
+}
+
+.HeaderGroup {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-items: right;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 50px;
+    }
+
+.HeaderGroup a:nth-child(5){
+    justify-items: right;
+    text-decoration: none;
+}
+
+.Header a{
+    color: white;
+    font-weight: 500;
+}
+
+.Header a:hover {
+    text-decoration: underline;
+    animation-timing-function: 0.7s cubic-bezier(0.2, 0.82, 0.2, 1);
+    transition: 0.7s;
+}
+
+
+.Header button{
+    border: none;
+    border-radius: 4px;
+    background: #FF5B60;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 16px;
+    outline: none;
+    transition: 0.6s;
+}
+
+.Header button:hover{
+    animation-timing-function: cubic-bezier(0.2, 0.82, 0.2, 1);
+    background: #CC494E;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
+    color: white;
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 640px){
+    .Header {
+        padding: 5px 0;
+    }
+    .HeaderGroup{
+        grid-template-columns: repeat(4, auto);
+        max-width: 650px;
+        padding: 0 10px;
+    }
+
+    .Header a{
+        padding: 0 10px;
+        max-width: 700px;
+        font-size: smaller;
+    }
+
+    .Header a:nth-child(2){
+        padding: 0 30px;
+        max-width: 500px;
+    }
+
+    .Header button{
+        border: none;
+        border-radius: 4px;
+        background: #FF5B60;
+        color: white;
+        cursor: pointer;
+        font-size: small;
+        padding: 8px 16px;
+        outline: none;
+        transition: 0.6s;
+    }
+}

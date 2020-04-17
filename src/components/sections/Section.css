@@ -1,0 +1,52 @@
+.SectionGroup {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 80px 0 0;
+    background-size: cover;
+    height: auto;
+    display: grid;
+    grid-template-rows: 50px auto;
+    position: relative;
+}
+
+.SectionGroup img{
+    align-self: center;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+
+
+.SectionGroup h3{
+    color: white;
+    font-size: 40px;
+    margin: 0 auto;
+    line-height: 1.2;
+    text-shadow: 3px 3px 2px #0f0c29;
+    margin: 20px 100px 0px 100px;
+}
+
+
+.SectionGroup p {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 18px;
+    margin: 0 100px;
+    margin: 30px 100px 50px 100px;
+}
+
+@media (max-width: 720px) {
+    .SectionGroup {
+        grid-template-columns: 1fr;
+    }
+    .SectionTitleGroup h3 {
+        text-align: center;
+        font-size: 48px;
+        justify-items: center;
+    }
+
+    .SectionTitleGroup p {
+        margin: 30px 50px 30px 50px;
+    }
+}

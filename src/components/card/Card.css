@@ -1,0 +1,171 @@
+.Card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+    min-width: 320px;
+    overflow: hidden;
+    position: relative;
+    width: 900px;
+}
+
+.Card img {
+  display: block;
+  align-self: left;
+  max-width: 320px;
+  position: relative;
+  transition: 0.8s cubic-bezier(0.2, 0.82, 0.2, 1);
+  margin: 0 auto;
+  height: auto;
+}
+
+.Card img:hover {
+  transform: scale(1.1);
+}
+
+.CardHolder {
+    height: auto; 
+}
+
+
+
+.Card h4 {
+    display: flex;
+    margin-left: -40px;
+    justify-content: left;
+    color: #FF5B60;
+    font-size: 24px;
+    z-index: 99;
+    margin-top: 0px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    font-family: 'Merriweather', serif;
+
+}
+
+.Card p {
+    color: #67757E;
+    display: flex;
+    margin-left: -40px;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 16px;
+    z-index: 99;
+    line-height: 1.6;
+}
+
+
+.Card button{
+  margin-left: -40px;
+  margin-right: auto;
+  display:block;
+  border: none;
+  border-radius: 4px;
+  background: #FF5B60;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 16px;
+  outline: none;
+  transition: 0.6s;
+}
+
+
+.Card button:hover{
+  display: block;
+  justify-content: center;
+  animation-timing-function: cubic-bezier(0.2, 0.82, 0.2, 1);
+  background: #CC494E;
+  color: white;
+  cursor: pointer;
+  transform: translateY(-3px);
+}
+
+
+/*----------------- Card Group ---------------------*/
+
+.CardGroup {
+    display: grid;
+    grid-gap: 40px;
+    justify-items: center;
+    margin: 40px 40px 40px;
+  }
+
+  
+  @media (max-width: 950px){
+    .Card {
+      display: block;
+      height: auto;
+      min-width: 320px;
+      overflow: hidden;
+      position: relative;
+      width: 320px;
+    }
+
+    .Card:nth-child(1){
+      margin-top: -10px;
+    }
+
+    .Card img{
+      display: block;
+      align-self: center;
+      max-width: 320px;
+      position: relative;
+      transition: 0.8s cubic-bezier(0.2, 0.82, 0.2, 1);
+      margin: 0 auto;
+    }
+
+    .Card h4 {
+      display: flex;
+      justify-content: left;
+      color: #FF5B60;
+      font-size: 24px;
+      z-index: 99;
+      margin-top: 16px;
+      margin-left: 0;
+    }
+    .Card p{
+      margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 820px){
+    .Card{
+      margin-top: -70px;
+      height: auto;
+      margin-bottom: 80px;
+    }
+    .CardGroup{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .Card h3{
+      display: flex;
+      justify-content: left;
+      font-size: 20px;
+      margin-left: 0;
+    }
+
+    .Card p{
+      margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 720px){
+    .Card{
+      margin-top: -50px;
+      height: 100%;
+    }
+    .CardGroup{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .Card h4{
+      display: flex;
+      justify-content: left;
+      font-size: 20px;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+
+    .Card p{
+      margin-left: 0;
+    }
+  }
