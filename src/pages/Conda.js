@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import SectionStyled from '../components/sections/Section-bckg-img'
+import Header from '../components/header/Header'
 
 const Conda = () => (
   <div>
+    <Header />
     <div className="CE">
     <div className="CEHeaderHolder">
       <div className="CONDALeftImage"></div>

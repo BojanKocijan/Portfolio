@@ -4,10 +4,12 @@ import Card from '../components/card/Card'
 //import Section from '../components/sections/Section'
 import SectionStyled from '../components/sections/Section-bckg-img'
 import Project from '../components/Projects/Project'
+import Header from '../components/header/Header'
 //import FooterComp from '../components/footer/FooterComp update'
 
 const IndexPage = () => (
   <div>
+    <Header />
     <div className="Hero">
      <div className="HeroGroup">
         <div id="jelena"></div>
@@ -60,7 +62,7 @@ const IndexPage = () => (
           title="CityExpert, Belgrade"
           subtitle="For some time I was working with CityExpert, online real-estate agency from Belgrade. I was their UX lead and advisor. It was a great experience to use a data-driven approach in user testing!"
           button="Find out more"
-          link="/cityExpert"
+          link="/CityExpert"
           target="_self"/>
 
         <Project

@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import SectionStyled from '../components/sections/Section-bckg-img'
+import Header from '../components/header/Header'
 
 const AboutMe = () => (
   <div>
+    <Header />
     <div className="About">
     <div className="AboutHeaderHolder">
       <div className="AboutLeftImage"></div>

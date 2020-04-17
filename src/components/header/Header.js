@@ -32,7 +32,7 @@ class Header extends React.Component{
     return (
       <div className={this.state.hasSrcoll ? 'Header HeaderScrolled' : 'Header'}>
         <div className="HeaderGroup">
-          <Link to="/"><img src={require('../../images/bkLogo.svg')} width="33" title="Bojan Kocijan"/></Link>
+          <AnchorLink to="/"><img src={require('../../images/bkLogo.svg')} width="33" title="Bojan Kocijan"/></AnchorLink>
           <AnchorLink to="/#Projects">Projects</AnchorLink>
           <Link to="/AboutMe">About me</Link>
           <a href="mailto:kocijan@gmail.com?subject=We love your work, we would like to talk with you"><button>Get in Touch</button></a>
