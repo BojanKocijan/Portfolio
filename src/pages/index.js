@@ -5,6 +5,8 @@ import Card from '../components/card/Card'
 import SectionStyled from '../components/sections/Section-bckg-img'
 import Project from '../components/Projects/Project'
 import Header from '../components/header/Header'
+import { Tooltip, useTooltip, TooltipPopup } from "@reach/tooltip";
+import "@reach/tooltip/styles.css";
 //import FooterComp from '../components/footer/FooterComp update'
 
 const IndexPage = () => (
@@ -17,7 +19,7 @@ const IndexPage = () => (
           <p>based in Hilversum, Netherlands.<br />My name is Bojan Kocijan, I'm passionate about user interface, user research, and coding. I do it with &#10084; and passion!</p>
           <a href="https://drive.google.com/file/d/1OS1oqg8mV8-XL9ccnZFKTXri-2jCOVtY/view?usp=sharing" target="_blank"><button>Download CV</button></a>
           <div className="Logos">
-            <a href="https://www.linkedin.com/in/bojankocijan/" title="LinkedIn"  target="_blank"><img src={require('../images/ln.svg')} width="36px" /></a>
+            <Tooltip className="BlackTooltip" label="LinkedIn profile"><a href="https://www.linkedin.com/in/bojankocijan/" title="LinkedIn"  target="_blank"><img src={require('../images/ln.svg')} width="36px" /></a></Tooltip>
             <a href="https://github.com/BojanKocijan" title="GitHub" target="_blank"><img src={require('../images/gitHub.svg')} width="36px" /></a> 
             <a href="https://www.behance.net/KOCIJAN" title="Behance" target="_blank"><img src={require('../images/behance.svg')} width="36px" /></a>
             <a href="https://dribbble.com/bojankocijan82" title="Dribbble" target="_blank"><img src={require('../images/dribbble-ball-mark.svg')} width="36px" /></a>

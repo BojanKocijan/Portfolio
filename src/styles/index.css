@@ -5,6 +5,15 @@
 
 /* Colors 
  @primary: #FF5B60; */
+.BlackTooltip {
+    background: "hsla(0, 0%, 0%, 0.75)";
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: "0.5em 1em";
+    position: absolute;
+    left: 25%;
+}
 
 body{
   font-family: 'OpenSans', sans-serif;
