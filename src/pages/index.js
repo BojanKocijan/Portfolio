@@ -20,11 +20,11 @@ const IndexPage = () => (
           <a href="https://drive.google.com/file/d/1OS1oqg8mV8-XL9ccnZFKTXri-2jCOVtY/view?usp=sharing" target="_blank"><button>Download CV</button></a>
           <div className="Logos">
             <Tooltip className="BlackTooltip" label="LinkedIn profile"><a href="https://www.linkedin.com/in/bojankocijan/" title="LinkedIn"  target="_blank"><img src={require('../images/ln.svg')} width="36px" /></a></Tooltip>
-            <a href="https://github.com/BojanKocijan" title="GitHub" target="_blank"><img src={require('../images/gitHub.svg')} width="36px" /></a> 
-            <a href="https://www.behance.net/KOCIJAN" title="Behance" target="_blank"><img src={require('../images/behance.svg')} width="36px" /></a>
-            <a href="https://dribbble.com/bojankocijan82" title="Dribbble" target="_blank"><img src={require('../images/dribbble-ball-mark.svg')} width="36px" /></a>
-            <a href="https://twitter.com/bojankocijan" title="Twitter" target="_blank"><img src={require('../images/twitter.svg')} width="36px" /></a>
-            <a href="https://www.instagram.com/bojan_kocijan/?hl=nl" title="Connect with me on Instagram" target="_blank"><img src={require('../images/instagram.svg')} width="36px" /></a>
+            <Tooltip className="BlackTooltip" label="GitHub profile"><a href="https://github.com/BojanKocijan" title="GitHub" target="_blank"><img src={require('../images/gitHub.svg')} width="36px" /></a></Tooltip> 
+            <Tooltip className="BlackTooltip" label="Behance profile"><a href="https://www.behance.net/KOCIJAN" title="Behance" target="_blank"><img src={require('../images/behance.svg')} width="36px" /></a></Tooltip>
+            <Tooltip className="BlackTooltip" label="Dribbble profile"><a href="https://dribbble.com/bojankocijan82" title="Dribbble" target="_blank"><img src={require('../images/dribbble-ball-mark.svg')} width="36px" /></a></Tooltip>
+            <Tooltip className="BlackTooltip" label="Twitter profile"><a href="https://twitter.com/bojankocijan" title="Twitter" target="_blank"><img src={require('../images/twitter.svg')} width="36px" /></a></Tooltip>
+            <Tooltip className="BlackTooltip" label="Instagram profile"><a href="https://www.instagram.com/bojan_kocijan/?hl=nl" title="Connect with me on Instagram" target="_blank"><img src={require('../images/instagram.svg')} width="36px" /></a></Tooltip>
           </div>
     <div className="bckgImage"></div>
             <svg width="100%" height="172" viewBox="0 0 100% 172" fill="none">
