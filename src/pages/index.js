@@ -4,7 +4,7 @@ import Card from '../components/card/Card'
 //import Section from '../components/sections/Section'
 import SectionStyled from '../components/sections/Section-bckg-img'
 import Project from '../components/Projects/Project'
-//import FooterComp from '../components/footer/FooterComp'
+//import FooterComp from '../components/footer/FooterComp update'
 
 const IndexPage = () => (
   <div>
