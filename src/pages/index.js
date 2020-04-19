@@ -15,7 +15,7 @@ const IndexPage = () => (
     <div className="Hero">
      <div className="HeroGroup">
         <div id="jelena"></div>
-          <h1>Hi, I am UI/UX Designer</h1>
+          <h1>Hi, I am a UI/UX Designer</h1>
           <p>based in Hilversum, Netherlands.<br />My name is Bojan Kocijan, I'm passionate about user interface, user research, and coding. I do it with &#10084; and passion!</p>
           <a href="https://drive.google.com/file/d/1OS1oqg8mV8-XL9ccnZFKTXri-2jCOVtY/view?usp=sharing" target="_blank"><button>Download CV</button></a>
           <div className="Logos">
