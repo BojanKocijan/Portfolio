@@ -103,13 +103,13 @@ a:hover {
   text-align: center;
 }
 
-.HeroGroup #jelena{
+.HeroGroup #profile{
   background: url('../images/profileImg.png');
   background-size: cover;
   background-position: center;
   border-radius: 999px;
   height: 150px;
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
   width: 150px;
 }
 
