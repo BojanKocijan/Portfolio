@@ -27,7 +27,7 @@ const IndexPage = () => (
             <Tooltip className="BlackTooltip" label="Instagram profile" style={{ background: "hsla(0, 0%, 0%, 0.75)", color: "white", border: "none", borderRadius: "4px", padding: "0.5em 1em", possition: "relative", marginLeft: "-40px",}}><a href="https://www.instagram.com/bojan_kocijan/?hl=nl" target="_blank"><img src={require('../images/instagram.svg')} width="36px" /></a></Tooltip>
           </div>
     <div className="bckgImage"></div>
-            <svg width="100%" height="172" viewBox="0 0 100% 172" fill="none">
+            <svg width="100%" height="172" viewBox="0 auto 100% auto" fill="none">
             <path fill="white">
               <animate repeatCount="indefinite" fill="freeze" attributeName="d" dur="19s"
               values="M0 25.9086C277 84.5821 433 65.736 720 25.9086C934.818 -3.9019 1214.06 -5.23669 1442 8.06597C2079 45.2421 2208 63.5007 2560 25.9088V171.91L0 171.91V25.9086Z;
