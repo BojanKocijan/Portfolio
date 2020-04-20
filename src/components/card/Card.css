@@ -2,24 +2,26 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 300px;
-    min-width: 320px;
+    min-width: 450px;
     overflow: hidden;
     position: relative;
     width: 900px;
+    margin-top: 40px;
 }
 
 .Card img {
   display: block;
   align-self: left;
-  max-width: 320px;
+  max-width: 450px;
   position: relative;
   transition: 0.8s cubic-bezier(0.2, 0.82, 0.2, 1);
   margin: 0 auto;
   height: auto;
+  border-radius: 8px;
 }
 
 .Card img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .CardHolder {
@@ -30,7 +32,7 @@
 
 .Card h4 {
     display: flex;
-    margin-left: -40px;
+    margin-left: 30px;
     justify-content: left;
     color: #FF5B60;
     font-size: 24px;
@@ -45,7 +47,7 @@
 .Card p {
     color: #67757E;
     display: flex;
-    margin-left: -40px;
+    margin-left: 30px;
     justify-content: center;
     font-weight: 300;
     font-size: 16px;
@@ -53,7 +55,7 @@
     line-height: 1.6;
 }
 
-
+/*
 .Card button{
   margin-left: -40px;
   margin-right: auto;
@@ -78,7 +80,7 @@
   color: white;
   cursor: pointer;
   transform: translateY(-3px);
-}
+}*/
 
 
 /*----------------- Card Group ---------------------*/
@@ -87,7 +89,7 @@
     display: grid;
     grid-gap: 40px;
     justify-items: center;
-    margin: 40px 40px 40px;
+    margin: 0 40px 40px;
   }
 
   
@@ -98,17 +100,17 @@
       min-width: 320px;
       overflow: hidden;
       position: relative;
-      width: 320px;
+      width: 100%;
     }
 
     .Card:nth-child(1){
-      margin-top: -10px;
+      margin-top: 20px;
     }
 
     .Card img{
       display: block;
       align-self: center;
-      max-width: 320px;
+      max-width: 100%;
       position: relative;
       transition: 0.8s cubic-bezier(0.2, 0.82, 0.2, 1);
       margin: 0 auto;
@@ -128,32 +130,16 @@
     }
   }
   
-  @media (max-width: 820px){
-    .Card{
-      margin-top: -70px;
-      height: auto;
-      margin-bottom: 80px;
-    }
-    .CardGroup{
-      grid-template-columns: repeat(1, 1fr);
-    }
-    .Card h3{
-      display: flex;
-      justify-content: left;
-      font-size: 20px;
-      margin-left: 0;
-    }
-
-    .Card p{
-      margin-left: 0;
-    }
-  }
-  
   @media (max-width: 720px){
-    .Card{
-      margin-top: -50px;
-      height: 100%;
+    .Card {
+      display: block;
+      height: auto;
+      min-width: 320px;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
     }
+    
     .CardGroup{
       grid-template-columns: repeat(1, 1fr);
     }
