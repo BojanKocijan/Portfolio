@@ -55,7 +55,7 @@ const IndexPage = () => (
           image={require('../images/DSM.png')}
           title="Design System Manager, XebiaLabs"
           subtitle="At XebiaLabs, I used DSM as a place from where designers and developers are working from the same source of truth. InVision DSM helped me manage all our components and comunicate design language."
-          button="View Design Library"
+          button="View Library"
           link="https://projects.invisionapp.com/dsm/xebia-labs/xl-base"
           target="_blank"/>
 
