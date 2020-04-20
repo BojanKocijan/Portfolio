@@ -2,7 +2,7 @@
 /*@import url("../components/Card.css");*/
 
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap');
 /* Colors 
  @primary: #FF5B60; */
 .BlackTooltip {
@@ -16,12 +16,16 @@
 }
 
 body{
-  font-family: 'OpenSans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.3;
   margin: 0;
-  font-weight: 300;
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
+}
+
+p {
+  font-weight: 500;
 }
 
 /*----------------- main link defenition ---------------------*/
@@ -133,6 +137,7 @@ a:hover {
   line-height: 1.5;
   margin-bottom: 40px;
   opacity: 0;
+  font-weight: 500;
 }
 
 

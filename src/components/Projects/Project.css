@@ -48,7 +48,7 @@
     color: #67757E;
     display: flex;
     justify-content: center;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
     z-index: 99;
     line-height: 1.6;
@@ -109,7 +109,7 @@
     }
     .Project {
       display: block;
-      height: 600px;
+      height: 650px;
       min-width: 320px;
       overflow: hidden;
       position: relative;
