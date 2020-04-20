@@ -145,6 +145,10 @@
       height: auto;
     }
 
+    .Project:nth-last-child(1){
+      margin-bottom: 40px;
+    }
+
     .ProjectGroup{
       grid-template-columns: repeat(1, 1fr);
       margin-bottom: 0;
