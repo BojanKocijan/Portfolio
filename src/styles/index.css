@@ -915,7 +915,7 @@ a {
 
 /* Microinteractions */
 .MicroLeftImage {
-  background: url('../images/XebiaLabs.jpg');
+  background: url('../images/Microinteractions.png');
   background-size: cover;
   background-position: left;
   float: left;
@@ -926,7 +926,7 @@ a {
 .MicroRightText {
   vertical-align:top;
   margin: 0 auto;
-  background-color: #009E46;
+  background-color: #343B52;
   width: 100%;
   height: 600px;
 }
@@ -965,11 +965,12 @@ a {
     width: 100%;
     height: auto;
     padding-top: 700px;
+    margin-left: 0;
   }
 
   .MicroText h1{
     margin: 0 auto;
-    align-content: center;
+    align-content: left;
     margin-left: 40px;
     padding-top: 30px;
     max-width: 600px;
@@ -986,7 +987,6 @@ a {
     max-width: 900px;
     line-height: 1.6;
   }
-
 }
 
 
@@ -1001,7 +1001,8 @@ a {
 
   .MicroRightText h1{
     align-content: left;
-    margin-left: 40px;
+    margin-left: 60px;
+    margin-right: 40px;
     margin-top: 0;
     max-width: 500px;
   }
@@ -1009,10 +1010,6 @@ a {
   .MicroRightText {
     padding-top: 500px;
   }
-  .MicroRightText h1{
-    margin-right: 20px;
-  }
-
 }
 
 
