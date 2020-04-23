@@ -27,7 +27,12 @@ const CityExper = () => (
     <h4>3. New verification KYC flow</h4>
     <p>We took into consideration the responses we received from users and split verification into 2 simple steps. Choosing the country and based on the country provided by users, uploader with specific documents would be rendered by country. Every step is guiding a user with a short explanation of what is necessary actions to complete the step.</p>
     <div id="Images"><img src={require('../images/CEnewVerification.png')}/></div>
-    <a href="https://invis.io/DAWQC47PJNT#/412316624_Verifikacija" target="_blank"><button>View flow in InVIision</button></a>
+    <h4>4. User is choosing document based on country</h4>
+    <div id="Images"><img src={require('../images/CEChooseDocument.png')}/></div>
+    <h4>5. Verification of the document</h4>
+    <div id="Images"><img src={require('../images/CEUploadID.png')}/></div>
+    <h4>5. Waiting for status of your Verification</h4>
+    <div id="Images"><img src={require('../images/CEDone.png')}/></div>
 
     <h2>Set up the "Design system"</h2>
     <h4>1. Redesign and update Design system</h4>
