@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import './Header.css'
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { Tooltip, useTooltip, TooltipPopup } from "@reach/tooltip";
+import { Tooltip } from "@reach/tooltip";
 import "@reach/tooltip/styles.css";
 
 class Header extends React.Component{
