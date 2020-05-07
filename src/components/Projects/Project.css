@@ -1,7 +1,7 @@
 .Project {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  height: 650px;
+  height: 740px;
   margin-bottom: 80px;
   min-width: 320px;
   overflow: hidden;

@@ -47,7 +47,7 @@ const IndexPage = () => (
       <Project
           image={require('../images/DSinFigma.png')}
           title="Design System is moved to Figma"
-          subtitle="Our team becomes international, spending on 3 continents and 3 more products. We decided in time of merger that the best tool for collaboration and remote work would be Figma. I've ported the design system to Figma with the organization of the projects and features in the tool."
+          subtitle="Our team becomes international, spending on 3 continents and including 3 more products. We decided in time of merger that the best tool for collaboration and remote work would be Figma. I've ported the design system to Figma with the organization of the projects and features in the tool."
           button="Coming soon"
           link="/"
           target="_self"/>
