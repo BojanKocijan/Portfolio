@@ -43,6 +43,15 @@ const IndexPage = () => (
      </div>
       <h2 id="Projects">Projects and contributions</h2>
       <div className="ProjectGroup">
+
+      <Project
+          image={require('../images/DSinFigma.png')}
+          title="Design System ported to Figma"
+          subtitle="Our team becomes international, with 3 locations and 3 more products. We decided in time of merger that the best tool for collaboration and remote work would be Figma. I've ported the design system in Figma with the organization of the projects and features in the tool."
+          button="Coming soon"
+          link="/"
+          target="_self"/>
+
         <Project
           image={require('../images/xebialabs.png')}
           title="XebiaLabs, Hilversum"
@@ -58,7 +67,7 @@ const IndexPage = () => (
           button="View Library"
           link="https://projects.invisionapp.com/dsm/xebia-labs/xl-base"
           target="_blank"/>
-
+      
         <Project
           image={require('../images/CityExpert.png')}
           title="CityExpert, Belgrade"
