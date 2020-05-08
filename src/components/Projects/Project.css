@@ -2,12 +2,11 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
   height: 740px;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
   min-width: 320px;
   overflow: hidden;
   position: relative;
   width: 320px;
-  border-radius: 12px;
 }
 
 .Project img {
@@ -18,18 +17,15 @@
   transition: 0.8s cubic-bezier(0.2, 0.82, 0.2, 1);
   margin: 0 auto;
   height: auto;
-  border-radius: 12px;
 }
 
 .Project img:hover {
-  transform: scale(1.05);
-  border-radius: 12px;
+  transform: scale(1.1);
 }
 
 .Project a{
   text-decoration: none;
   color: white;
-    border-radius: 12px;
 }
 
 .Project h4 {
@@ -38,7 +34,7 @@
     color: #FF5B60;
     font-size: 24px;
     z-index: 99;
-    margin-top: 20px;
+    margin-top: -16px;
     font-weight: 400;
     margin-bottom: 20px;
     font-family: 'Merriweather', serif;
