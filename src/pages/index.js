@@ -47,7 +47,7 @@ const IndexPage = () => (
       <Project
           image={require('../images/DSinFigma.png')}
           title="Design System is moved to Figma"
-          subtitle="Our team becomes international, spreanding on 3 continents and including 3 more products. We decided in time of merger that the best tool for collaboration and remote work would be Figma. I've ported the design system to Figma with the organization of the projects and features in the tool."
+          subtitle="Our team becomes international, spreanding on 3 continents and including 3 more products. We decided that in time of merger the best tool for collaboration and remote work would be Figma. I've ported the design system to Figma with the organization of the projects and features in the tool."
           button="Coming soon"
           link="/"
           target="_self"/>
@@ -85,7 +85,7 @@ const IndexPage = () => (
           target="_self"/>
 
         <Project
-          image={require('../images/progressBar.png')}
+          image={require('../images/progressBar.gif')}
           title="Contributing to Framer X store"
           subtitle="I am always keen to learn new things, new tools, and to improve myself. I made this small component to contribute to Framer X store. I am really excited to be a part of this big community. Search for Bojan Kocijan as a contributor."
           button="Go to Framer store"
@@ -125,7 +125,7 @@ const IndexPage = () => (
           title="Design thinking"
           subtitle="Design thinking is a non-linear, iterative process that seeks to understand users, challenge assumptions, redefine problems, and create innovative solutions to prototype and test. Together, with the team, after understanding or thinking that we understand the problem, we would come together with sketches of assumptions that would help the user to solve the problem. The first iteration is, in 90% of cases, nothing more than a test to get the initial user's first feedbacks."/>
         <Card
-          image={require('../images/greasio.png')}
+          image={require('../images/greasio.gif')}
           title="Creating prototypes and validating with user"
           subtitle="To test flows and prototypes with users we would come with tasks that users need to complete in a prototype. Also, we would let the user tell us how he feels and what is his thoughts. In some other cases with the data-driven approach, we would analyze data gathered from Hot-Jar or analytics."
           />
