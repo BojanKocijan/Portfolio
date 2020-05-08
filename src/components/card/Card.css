@@ -6,7 +6,7 @@
     overflow: hidden;
     position: relative;
     width: 900px;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 .Card:nth-child(1){
@@ -21,7 +21,6 @@
   transition: 0.8s cubic-bezier(0.2, 0.82, 0.2, 1);
   margin: 0 auto;
   height: auto;
-  border-radius: 8px;
 }
 
 .Card img:hover {
@@ -123,8 +122,8 @@
     .Card h4 {
       display: flex;
       justify-content: left;
-      color: #FF5B60;
       font-size: 24px;
+      color: #333943;
       z-index: 99;
       margin-top: 16px;
       margin-left: 0;
@@ -150,6 +149,7 @@
     .Card h4{
       display: flex;
       justify-content: center;
+      text-align: center;
       font-size: 24px;
       margin-top: 32px;
     }
