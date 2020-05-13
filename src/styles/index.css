@@ -91,7 +91,7 @@ a:hover {
 .Hero {
   /*background: url('../images/bckgAms.jpg');*/
   background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 61%, rgba(13,14,31,1) 100%);  
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,82,124,1) 61%, rgba(13,14,31,1) 100%); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -134,7 +134,7 @@ a:hover {
 
 .Hero p{
   animation: HeroAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.82, 0.2, 1);
-  color: beige;
+  color: #EBF0F8;
   font-size: 24px;
   line-height: 1.5;
   margin-bottom: 40px;

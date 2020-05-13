@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 const SectionGroup = styled.div`
-    background-color: #333943;
-    
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,82,124,1) 61%, rgba(13,14,31,1) 100%);
     margin-bottom: 0;
     background-size: cover;
     min-height: auto;
@@ -25,6 +25,7 @@ const SectionGroup = styled.div`
 
 const SectionTitleGroup = styled.div`
     height: auto;
+    margin-bottom: 40px;
 `
 
 
@@ -36,7 +37,7 @@ const SectionTitle = styled.h3`
     display: flex;
     font-weight: 300;
     justify-content: center;
-    margin: 40px auto 10px auto;
+    margin: 60px auto 10px auto;
     @media (max-width: 720px){
         margin-top: 20px;
     }
@@ -62,7 +63,7 @@ const ToolsHolder= styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
-    padding-bottom: 90px;
+    padding-bottom: 120px;
     justify-items: center;
     @media (max-width: 720px){
         margin-top: 20px;
