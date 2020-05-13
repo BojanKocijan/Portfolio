@@ -25,7 +25,6 @@ const SectionGroup = styled.div`
 
 const SectionTitleGroup = styled.div`
     height: auto;
-    margin-bottom: 40px;
 `
 
 

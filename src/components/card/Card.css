@@ -1,11 +1,11 @@
 .Card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 0.8fr;
     height: 300px;
-    min-width: 450px;
+    min-width: 800px;
     overflow: hidden;
     position: relative;
-    width: 900px;
+    width: 1050px;
     margin-top: 80px;
 }
 
@@ -16,7 +16,7 @@
 .Card img {
   display: block;
   align-self: left;
-  max-width: 450px;
+  max-width: 600px;
   position: relative;
   transition: 0.8s cubic-bezier(0.2, 0.82, 0.2, 1);
   margin: 0 auto;
