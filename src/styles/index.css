@@ -71,7 +71,7 @@ h2 {
   color: #00211E;
   text-align: center;
   font-weight: 400;
-  margin-top: 80px;
+  margin-top: 50px;
   margin-bottom: 30px;
   font-size: 32px;
   font-family: 'Merriweather', serif;
@@ -89,7 +89,9 @@ a:hover {
 /*----------------- header ---------------------*/
 
 .Hero {
-  background: url('../images/bckgAms.jpg');
+  /*background: url('../images/bckgAms.jpg');*/
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 61%, rgba(13,14,31,1) 100%);  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

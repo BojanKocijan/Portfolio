@@ -15,8 +15,9 @@ const IndexPage = () => (
     <div className="Hero">
      <div className="HeroGroup">
         <div id="profile"></div>
-          <h1>Hi, I am a UI/UX Designer</h1>
-          <p>based in Hilversum, Netherlands.<br />My name is Bojan Kocijan, I'm passionate about user interface, user research, and coding. I do it with &#10084; and passion!</p>
+          <h1>Hi, I am Bojan Kocijan</h1>
+          <p>Helping brands launch new products on a focus on user experience.<br></br><small>I am UI/UX and interaction designer passioned about codding</small></p>
+          
           <a href="https://drive.google.com/file/d/1OS1oqg8mV8-XL9ccnZFKTXri-2jCOVtY/view?usp=sharing" target="_blank"><button>Download CV</button></a>
           <div className="Logos">
             <Tooltip className="BlackTooltip" label="LinkedIn profile" style={{ background: "hsla(0, 0%, 0%, 0.75)", color: "white", border: "none", borderRadius: "4px", padding: "0.5em 1em", possition: "relative", marginLeft:"-50px", }}><a href="https://www.linkedin.com/in/bojankocijan/"  target="_blank"><img src={require('../images/ln.svg')} width="36px" /></a></Tooltip>
