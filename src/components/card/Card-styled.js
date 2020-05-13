@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-const Card = props => {
+const CardLeft = props => {
     <CardGroup>
         <CardImage image={props.image} />
         <CardTextHolder>
@@ -33,4 +33,4 @@ const CardTitle = styled.h3`
 const CardDesc = styled.p`
 `
 
-export default Card
+export default CardLeft

@@ -21,7 +21,8 @@ const Conda = () => (
     <h2>Setting up the "Design system"</h2>
     <h4>1. Using Figma</h4>
     <p>It all started with long meetings and knowledge-sharing sessions. I was working on setting up the base design system in Figma, based on Material design library, since the developers were using Angular 4 for development. For the front-end, the platform itself was WordPress, with specially written plugins by our development team.</p>
-    <div id="Images"><img src={require('../images/CONDA_Library.png')}/></div>
+    <div id="Images"><img src={require('../images/CONDA-Colors.png')}/></div>
+    <div id="Images"><img src={require('../images/Conda-ButtonsAndFOnts.png')}/></div>
 
     <h2>Put the "Design system" in action</h2>
     <h4>1. Redesigning the front-end</h4>
