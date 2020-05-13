@@ -19,12 +19,13 @@ const Conda = () => (
     <h2>Work process</h2>
     <h3>CONDA is an Austrian FinTech startup. Their product was a white-label platform for Crowd-Investing. User testing, as such, was done more by validating the designs with B2B users, together with all stakeholders and platform owners.</h3>
     <h2>Setting up the "Design system"</h2>
-    <h4>1. Using Figma</h4>
-    <p>It all started with long meetings and knowledge-sharing sessions. I was working on setting up the base design system in Figma, based on Material design library, since the developers were using Angular 4 for development. For the front-end, the platform itself was WordPress, with specially written plugins by our development team.</p>
+    <h4>The problem</h4>
+    <p>Conda had an issue with consistency across the tools and developers had a problem with consistant look. It all started with long meetings and knowledge-sharing sessions. I was working on setting up the base design system in Figma, based on Material design library, since the developers were using Angular 4 for development. For the front-end, the platform itself was WordPress, with specially written plugins by our development team.</p>
+    <h4>The solution</h4>
+    <p>Design system is born by using Figma.</p>
     <div id="Images"><img src={require('../images/CONDA-Colors.png')}/></div>
     <div id="Images"><img src={require('../images/Conda-ButtonsAndFOnts.png')}/></div>
 
-    <h2>Put the "Design system" in action</h2>
     <h4>1. Redesigning the front-end</h4>
     <p>The biggest challenge was to design the investment user flow that needs to be scalable and modular. It had to be the same, but also different, depending on the country and its laws.</p>
     <div id="Images"><img src={require('../images/CONDA_investment.png')}/></div>

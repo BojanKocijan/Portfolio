@@ -14,13 +14,9 @@ const CardLeft = props => {
 
 const CardGroup = styled.div`
     display: grid;
-    grid-template-rows: auto 1fr;
-    height: 500px;
-    min-width: 320px;
-    overflow: hidden;
-    position: relative;
-    transition: 0.8s cubic-bezier(0.2, 0.82, 0.2, 1);
-    width: 100%;
+    grid-gap: 10px;
+    justify-items: center;
+    margin: 0 40px 0 40px;
 `
 
 const CardImage = styled.img`

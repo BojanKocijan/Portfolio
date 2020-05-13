@@ -527,8 +527,10 @@ a {
 }
 
 .CE h2{
-  margin-bottom: 20px;
-  margin-top: 80px;
+  text-align: left;
+  padding-top: 120px;
+  max-width: 900px;
+  margin: auto;
 }
 
 .CE button:hover{
@@ -539,6 +541,10 @@ a {
   background: #CC494E;
   color: white;
   cursor: pointer;
+}
+
+.CE h3{
+  text-align: left;
 }
 
 .CE h4{
@@ -552,7 +558,7 @@ a {
   padding-right: 20px;
   padding-left: 20px;
   max-width: 900px;
-  margin: 80px auto 0 auto;
+  margin: 100px auto 0 auto;
 }
 
 .CE p{
@@ -567,7 +573,7 @@ a {
 }
 
 .CEHeader {
-  height: 600px;
+  height: 400px;
   overflow: auto;
   width: 100%;
   margin-bottom: 40px;
@@ -718,7 +724,7 @@ a {
 /* CONDA IMAGE*/
 
 .CONDALeftImage {
-  background: url('../images/CONDAHead.jpg');
+  /*background: url('../images/CONDAHead.jpg');*/
   background-size: cover;
   background-position: left;
   float: left;
@@ -828,7 +834,7 @@ a {
 
 /* XebiaLabs */
 .XebiaLabsLeftImage {
-  background: url('../images/XebiaLabs.jpg');
+  /*background: url('../images/XebiaLabs.jpg');*/
   background-size: cover;
   background-position: left;
   float: left;
