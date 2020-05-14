@@ -32,22 +32,17 @@ const CityExper = () => (
     <h2>Consistancy accross the portals</h2>
     <h4>Challenge</h4>
     <p>We needed to work fast, so I have set up the design system (correct name is Pattern library inside of Sketch).</p>
-    <div id="Images"><img src={require('../images/CE_Design_System.png')}/></div>
     <div id="Images"><img src={require('../images/CEcolors.png')}/></div>
+    <div id="Images"><img src={require('../images/CE_Design_System.png')}/></div>
+    <div id="Images"><img src={require('../images/CEusers.png')}/></div>
     
-    <h2>Redesigning pages by using new "Design system"</h2>
-    <h4>1. Redesign real-estate page</h4>
-    <p>Once with the new "Design system" in place, I redesigned other pages, keeping old and new features in mind and while also trying to understand the problem that users were facing.</p>
+    <h2>Redesigning frontend</h2>
+    <h4>The challange</h4>
+    <p>Once with the new "Design system" in place, I redesigned other pages, in order to remove clutter adn make them more cleaner, while keeping old and new features in mind and also trying to understand the problem that users were facing.</p>
+    <h4>The solution</h4>
+    <p>We noticed that users looks at the bottom part less often for example exact location of real-estate, we added fast navigation links on the left.</p>
     <div id="Images"><img src={require('../images/CE_nekretnina.png')}/></div>
-    <h4>2. Adding a listing to Favorites</h4>
-    <div id="Images"><img src={require('../images/CE_Favoriti.png')}/></div>
-    <h4>3. Scrolling down the listing</h4>
-    <div id="Images"><img src={require('../images/CESerpSrcoll.png')}/></div>
 
-    <h2>Working fast and agile</h2>
-    <h4>1. Using Bootstrap grid and Angular</h4>
-    <p>We decided that we will implement Bootstrap and Angular (already used in aplication) in order to be able to deliver faster.</p>
-    <div id="Images"><img src={require('../images/CE_Grid.png')}/></div>
 
   </div>
   <SectionStyled
