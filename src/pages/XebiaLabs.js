@@ -44,6 +44,7 @@ const XebiaLabs = () => (
     <p>New task modal, driven by design-thinking got great feedback from many of our customers. We gave them more space to operate with tasks, which were, at the same time, easier to understand, and see most important things in order to finish their job faster and easier.
 By having in mind that the company is an enterprise, I am not eligible to share screens.
 </p>
+    <div id="Images"><img src={require('../images/taskModalSolution.png')}/></div>   
 
   </div>
   <SectionStyled
