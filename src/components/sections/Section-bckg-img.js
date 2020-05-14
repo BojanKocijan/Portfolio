@@ -53,7 +53,7 @@ const SectionText = styled.p`
     text-align: center;
     @media (max-width: 720px){
         margin: 10px 16px 5px 16px;
-        text-align: left;
+        text-align: center;
     }
 `
 
