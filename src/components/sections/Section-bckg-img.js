@@ -51,6 +51,8 @@ const SectionText = styled.p`
     display: flex;
     justify-content: center;
     text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
     @media (max-width: 720px){
         margin: 10px 16px 5px 16px;
         text-align: center;
