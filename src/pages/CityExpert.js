@@ -21,20 +21,12 @@ const CityExper = () => (
     <h3>Working for a start-up in Serbia is a great opportunity to be very proactive and shape the business. As most of the companies that are in the early stage of building their product, there is not a lot of space for User Testing as we know it. Fast-growing start-up such as CityExpert has decided to use a data-driven approach in building their web app.<br /> <br /> Build fast -> Send survey -> Analyze survey -> Rebuild -> Deploy</h3>
     
     <h2>User verification process</h2>
-    <h4>1. User verification - KYC - flow</h4> 
+    <h4>The challange</h4> 
     <p>To comply and work by law and to be able to identify frauds or misuse of City Expert booking system. City expert implemented a feature called "User verification process". The current implementation of the user verification process was an MVI of the feature. After sending the survey and asking some questions about the understanding of the feature, we redesigned this process and analyzed the responses and screen recordings. We planned a redesign with the next major version of the application.</p>
 
-    <h4>2. Redesigned user verification - KYC - flow</h4>
-    <div id="Images"><img src={require('../images/CE-Verifikacion.png')}/></div>
-    <h4>3. New verification KYC flow</h4>
+    <h4>The solution</h4>
     <p>We took into consideration the responses we received from users and split verification into 2 simple steps. Choosing the country and based on the country provided by users, uploader with specific documents would be rendered by country. Every step is guiding a user with a short explanation of what is necessary actions to complete the step.</p>
-    <div id="Images"><img src={require('../images/CEnewVerification.png')}/></div>
-    <h4>4. User is choosing document based on country</h4>
-    <div id="Images"><img src={require('../images/CEChooseDocument.png')}/></div>
-    <h4>5. Verification of the document</h4>
-    <div id="Images"><img src={require('../images/CEUploadID.png')}/></div>
-    <h4>5. Waiting for status of your Verification</h4>
-    <div id="Images"><img src={require('../images/CEDone.png')}/></div>
+    <div id="Images"><img src={require('../images/CE-Verifikacion.png')}/></div>
 
     <h2>Set up the "Design system"</h2>
     <h4>1. Redesign and update Design system</h4>
