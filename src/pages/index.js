@@ -41,9 +41,10 @@ const IndexPage = () => (
               </path>
            </svg>
         </div>
-     </div>
-      <h2 id="Projects">Projects and contributions</h2>
-      <div className="ProjectGroup">
+    </div>
+    <div id="Projects"></div>
+    <h2>Projects and contributions</h2>
+    <div className="ProjectGroup">
 
       <Project
           image={require('../images/DSinFigma.png')}
