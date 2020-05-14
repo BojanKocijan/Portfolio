@@ -32,7 +32,7 @@ const Conda = () => (
     <div id="ImagesFull"><img src={require('../images/CONDAFrontEnd.png')}/></div>
 
     <h2>Wordpress for front-end</h2>
-    <h4>1. Redesign project details pages</h4>
+    <h4>Redesign project details pages</h4>
     <p>The project details page is slightly customizable, but in general, from platform to platform, it needs to have the same components.</p>
     <div id="Images"><img src={require('../images/FontEndCONDA.png')}/></div>
 
