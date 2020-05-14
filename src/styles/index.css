@@ -91,8 +91,8 @@ a:hover {
 
 .Hero {
   /*background: url('../images/bckgAms.jpg');*/
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,82,124,1) 61%, rgba(13,14,31,1) 100%); 
+  background: rgb(33,80,122);
+  background: radial-gradient(circle, rgba(33,80,122,1) 0%, rgba(14,17,36,1) 100%);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -775,6 +775,14 @@ a {
 
   .CE #Images{
     margin: 30px 40px;
+  }
+
+  .CE #ImagesFull{
+    max-width: 100%;
+    height: auto;
+    max-height: 900px;
+    margin: 20px auto;
+    overflow: hidden;
   }
 
 }
