@@ -19,6 +19,14 @@ const XebiaLabs = () => (
     <h2>Work process</h2>
     <h3>XebiaLabs helped me grow by focusing on the problem. Even that I was already practicing analyze the problem first approach, with XebiaLabs that approach just had more value.</h3>
     
+    <h2>Calendar redesigned</h2>
+    <h4>The challenge</h4>
+    <p>Users are not able clearly to see duration of the elemnts inside the curent calendar.</p>
+    
+    <h4>The solution</h4>
+    <p>New was created is created to align list and communication between all release Managers. The new Calendar allows you to easily overview your planned work and how others work infecting yours. </p>
+    <div id="Images"><img src={require('../images/calendar.png')}/></div>
+
     <h2>Task modal redesign</h2>
 
     <h4>The challenge</h4>
@@ -37,13 +45,6 @@ const XebiaLabs = () => (
 By having in mind that the company is an enterprise, I am not eligible to share screens.
 </p>
 <div id="Images"><img src={require('../images/taskModalSolution.png')}/></div>
-    <h2>Calendar redesigned</h2>
-    <h4>The challenge</h4>
-    <p>Users are not able clearly to see duration of the elemnts inside the curent calendar.</p>
-    
-    <h4>The solution</h4>
-    <p>New was created is created to align list and communication between all release Managers. The new Calendar allows you to easily overview your planned work and how others work infecting yours. </p>
-    <div id="Images"><img src={require('../images/calendar.png')}/></div>
 
   </div>
   <SectionStyled

@@ -25,33 +25,21 @@ const Conda = () => (
     <p>Conda had an issue with consistency across the tools and developers had a problem with consistant look. It all started with long meetings and knowledge-sharing sessions. I was working on setting up the base design system in Figma, based on Material design library, since the developers were using Angular 4 for development. For the front-end, the platform itself was WordPress, with specially written plugins by our development team.</p>
     <h4>The solution</h4>
     <p>Design system is born in Figma</p>
-    <div id="Images"><img src={require('../images/CONDA-Colors.png')}/></div>
-    <div id="Images"><img src={require('../images/Conda-ButtonsAndFOnts.png')}/></div>
+    <div id="Images"><img src={require('../images/CONDADesignSystem.png')}/></div>
 
     <h4>1. Redesigning the front-end</h4>
     <p>The biggest challenge was to design the investment user flow that needs to be scalable and modular. It had to be the same, but also different, depending on the country and its laws.</p>
-    <div id="Images"><img src={require('../images/CONDA_investment.png')}/></div>
-    <h4>2. Investment step 2</h4>
-    <div id="Images"><img src={require('../images/CONDA_Investment2.png')}/></div>
+    <div id="ImagesFull"><img src={require('../images/CONDAFrontEnd.png')}/></div>
 
     <h2>Wordpress for front-end</h2>
     <h4>1. Redesign project details pages</h4>
     <p>The project details page is slightly customizable, but in general, from platform to platform, it needs to have the same components.</p>
-    <div id="Images"><img src={require('../images/CONDA_campaign.png')}/></div>
-    <h4>2. Campaign details page</h4>
-    <div id="Images"><img src={require('../images/CONDA_Details.png')}/></div>
-    <h4>3. Q&A page</h4>
-    <div id="Images"><img src={require('../images/CONDA_QA.png')}/></div>
+    <div id="Images"><img src={require('../images/FontEndCONDA.png')}/></div>
 
     <h2>CMS system for platform owners</h2>
     <h4>1. Designing the Platform CMS</h4>
     <p>Platform CMS was developed in Angular 4. Options like KYC (Know Your Customer) and AML (Anti Money Laundry) were one of the musts on the B2B part of the platform. We used a light theme for WordPress and Dark theme for B2B from our library.</p>
-    <div id="Images"><img src={require('../images/CONDA_private.png')}/></div>
-    <h4>2. Personal account</h4>
-    <div id="Images"><img src={require('../images/Conda_personal.png')}/></div>
-    <h4>3. Legal or company account</h4>
-    <div id="Images"><img src={require('../images/CONDA_Company_Verify.png')}/></div>
-
+    <div id="ImagesFull"><img src={require('../images/CondaDashboard.png')}/></div>
   </div>
   <SectionStyled
     image= {require ('../images/Footer.jpg')}
