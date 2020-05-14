@@ -574,8 +574,8 @@ a {
 }
 
 .HeroProjHeaderCE{
-  background: rgb(127,132,153);
-  background: linear-gradient(90deg, rgba(127,132,153,1) 0%, rgba(96,100,102,1) 94%);
+  background: rgb(121,126,143);
+  background: linear-gradient(50deg, rgba(121,126,143,1) 0%, rgba(175,180,198,1) 94%);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -648,7 +648,7 @@ a {
 
 
 .ProjectHeroBody h1{
-  color: azure;
+  color: #fff;
   text-align: left;
   font-family: 'Merriweather', serif;
 }
@@ -767,7 +767,7 @@ a {
 
 @media (max-width: 576px){
   .ProjectHeroBody{
-    margin: 80px 20px 50px 20px;
+    margin: 80px 20px 20px 20px;
   }
 
 
@@ -927,6 +927,16 @@ a {
 }
 
 @media (max-width: 768px){
+  .HeroProjHeaderCE{
+    height: auto;
+  }
+  .HeroProjHeaderXL{
+    height: auto;
+  }
+  .HeroProjHeaderCO{
+    height: auto;
+  }
+
   .XebiaLabsLeftImage {
     background-size: cover;
     background-position: center;
@@ -935,58 +945,18 @@ a {
     margin-bottom: 30px;
   }
   
-  .XebiaLabsRightText {
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-    padding-top: 700px;
-  }
-
-
-  .XebiaLabsRightText h1{
-    margin: 0 auto;
-    align-content: center;
-    margin-left: 40px;
-    padding-top: 30px;
-    max-width: 600px;
-    font-family: 'Merriweather', serif;
-  }
-  
-  .XebiaLabsRightText p {
-    color: azure;
-    text-align: left;
-    margin-left: 0;
-    padding-right: 40px;
-    padding-top: 10px;
-    padding-bottom: 30px;;
-    max-width: 900px;
-    line-height: 1.6;
-  }
-
 }
 
 
 @media (max-width: 576px){
-  .XebiaLabsLeftImage {
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    width: 100%;
-    margin-bottom: 20px;
+  .HeroProjHeaderCE{
+    height: auto;
   }
-
-  .XebiaLabsRightText h1{
-    align-content: left;
-    margin-left: 40px;
-    margin-top: 0;
-    max-width: 500px;
+  .HeroProjHeaderXL{
+    height: auto;
   }
-
-  .XebiaLabsRightText {
-    padding-top: 500px;
-  }
-  .XebiaLabsRightText h1{
-    margin-right: 20px;
+  .HeroProjHeaderCO{
+    height: auto;
   }
 
 }
