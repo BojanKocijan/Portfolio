@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 const SectionGroup = styled.div`
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,82,124,1) 61%, rgba(13,14,31,1) 100%);
+    background: rgb(27,40,83);
+    background: linear-gradient(50deg, rgba(27,40,83,1) 0%, rgba(10,15,32,1) 94%);
     margin-bottom: 0;
     background-size: cover;
     min-height: auto;
