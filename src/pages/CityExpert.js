@@ -40,7 +40,7 @@ const CityExper = () => (
     <h4>The challange</h4>
     <p>Once with the new "Design system" in place, I redesigned other pages, in order to remove clutter adn make them more cleaner, while keeping old and new features in mind and also trying to understand the problem that users were facing.</p>
     <h4>The solution</h4>
-    <p>We noticed that users looks at the bottom part less often for example exact location of real-estate, we added fast navigation links on the left.</p>
+    <p>We noticed that users looks at the bottom part less often for example exact location of real-estate even if they said in survey that location is very important to them, we added fast navigation links on the left.</p>
     <div id="Images"><img src={require('../images/CE_nekretnina.png')}/></div>
 
 
