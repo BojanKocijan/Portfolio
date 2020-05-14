@@ -31,7 +31,7 @@ const CityExper = () => (
 
     <h2>Consistancy accross the portals</h2>
     <h4>Challenge</h4>
-    <p>We needed to work fast, so I have set up the design system (correct name is Pattern library inside of Sketch).</p>
+    <p>We needed to work fast, so I have set up the design system inside of Sketch.</p>
     <div id="Images"><img src={require('../images/CEcolors.png')}/></div>
     <div id="Images"><img src={require('../images/CE_Design_System.png')}/></div>
     <div id="Images"><img src={require('../images/CEusers.png')}/></div>
