@@ -11,8 +11,7 @@ const Conda = () => (
         <div className="TextAndImage">
           <h1>CONDA Crowd-Investing</h1>
           <p>I worked with CONDA for almost two years. Working with CONDA made me feel excited about cryptocurrencies, and helped me learn a lot about FinTech. Implementing UX in strict multi-country laws environment was exciting and challenging at the same time.</p>
-          <p>If you asked me to criticize designs that I have made for CONDA, for sure it would be the choice of the color palette. If I had the chance now, I would provide feedback to update colors to meet WCAG AA, at least.</p>
-          <p>While working for CONDA, I used Figma. It turned out to be a great tool.</p>
+          <p>If you asked me to criticize designs, I would provide feedback to update colors to meet WCAG AA, at least.</p>
         </div>
         <img className="HeroImages" src={require('../images/CondaHero.png')}/>
       </div>
