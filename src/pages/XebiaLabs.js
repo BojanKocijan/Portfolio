@@ -6,14 +6,16 @@ import Header from '../components/header/Header'
 const XebiaLabs = () => (
   <div id="Home">
     <Header />
-    <div className="CE">
-    <div className="CEHeaderHolder">
-      <div className="XebiaLabsLeftImage"></div>
-      <div className="XebiaLabsRightText">
-        <h1>XebiaLabs, DevOps at scale</h1>
-        <p>For the last two years, I have been working with some of the brightest minds that I have ever met. The amount of knowledge that I received and shared on everyday bases is enormous. I became better UX researcher and designer. I've started working with more developers than ever before, and it has reignited my passion for coding.</p> 
-       </div>
-    </div>
+    <div className="HeroProjHeaderXL"> 
+      <div className="ProjectHeroBody">
+        <div className="TextAndImage">
+          <h1>XebiaLabs, DevOps at scale</h1>
+          <p>For the last two years, I have been working with some of the brightest minds that I have ever met. The amount of knowledge that I received and shared on everyday bases is enormous. I became better UX researcher and designer. I've started working with more developers than ever before, and it has reignited my passion for coding.</p> 
+        </div>
+        <img className="HeroImages" src={require('../images/XLHero.png')}/>
+      </div>
+    </div>     
+    <div className="CE"> 
     <h2>Work process</h2>
     <h3>XebiaLabs helped me grow by focusing on the problem. Even that I was already practicing analyze the problem first approach, with XebiaLabs that approach just had more value.</h3>
     
@@ -24,9 +26,8 @@ const XebiaLabs = () => (
     
 
     <h4>Analize the problem</h4>
-    <p>First thing that we did = we organised card sorting exercise to come up with the same base and common ground and understanding about the problem..</p>
-    <div id="Images"><img src={require('../images/understanding.png')}/></div>
-    <div id="Images"><img src={require('../images/XebiaLabsOldTask.jpg')}/></div>
+    <p>First thing that we did, we organised card sorting exercise and analyzed the problem in order to reduce noise on a task modal and come up with the same base and common ground and understanding.</p>
+    <div id="Images"><img src={require('../images/understandingProblem.png')}/></div>
 
     <h4>The solution</h4>
     <p>Together with the team, we together come up with assumptions and some quick sketches for task modal redesign.</p>
@@ -35,30 +36,15 @@ const XebiaLabs = () => (
     <p>New task modal, driven by design-thinking got great feedback from many of our customers. We gave them more space to operate with tasks, which were, at the same time, easier to understand, and see most important things in order to finish their job faster and easier.
 By having in mind that the company is an enterprise, I am not eligible to share screens.
 </p>
-<div id="Images"><img src={require('../images/taskModal.jpg')}/></div>
-    <h2>Folder navigation redesign</h2>
+<div id="Images"><img src={require('../images/taskModalSolution.png')}/></div>
+    <h2>Calendar redesigned</h2>
     <h4>The challenge</h4>
-    <p>Our current folder navigation is not scalable, so simply it can not grow anymore. Analyzing this problem even further,it was obvious that there was a need to redesign whole tool navigation to get a good and scalable foundation.</p>
+    <p>Users are not able clearly to see duration of the elemnts inside the curent calendar.</p>
     
     <h4>The solution</h4>
-    <p>By talking with Stake holders and latter with users more changes to navigation were made in order to help  to have more understandable and easier to use tool. I am not eligible to share final screens and prototype.</p>
-    <div id="Images"><img src={require('../images/XebiaLabsFolderNavigation.png')}/></div>
-    <div id="Images"><img src={require('../images/NewNav.jpg')}/></div>
+    <p>New was created is created to align list and communication between all release Managers. The new Calendar allows you to easily overview your planned work and how others work infecting yours. </p>
+    <div id="Images"><img src={require('../images/calendar.png')}/></div>
 
-
-    <h2>Documentation website</h2>
-    <h4>The challenge</h4>
-    <p>XebiaLabs documentation website was not scalable and not user friendly. We needed a good and scalable foundation for new documentation website which can support growth. <a href="https://legacydocs.xebialabs.com/" target="_blank">Take a look at old documentation website.</a></p>
-    
-    <p>Based on our user research, we determined the main pain points of the documentation site. This helped us make important decisions around organizing the content and making scalable, easy-to-use layouts for the new site.</p>
-    <p>We discovered that most users were using the search bar instead of the navigation system to find content, so we put a lot of effort into making the site easier to navigate. We added an easier way to find and interact with the most popular topics and broke down each main content area into categories and tiles.</p>
-    <div id="Images"><img src={require('../images/XebiaLabsDocumentationOld.png')}/></div>
-   
-    <h4>The solution</h4>
-    <p>We completely redesigned the site navigation and display categories and related topics on tiles. This helps remove the user’s cognitive load by grouping information logically, allowing them to drill down to the content they need. <a href="https://docs.xebialabs.com/#get-started" target="_blank">Visit new documentation web-site.</a></p>
-    <div id="Images"><img src={require('../images/DocSite.jpg')}/></div>
-    <div id="Images"><img src={require('../images/XebiaLabs_Documentation.png')}/></div>
-    <a href="https://blog.xebialabs.com/2019/08/22/meet-the-new-xebialabs-documentation-site/" target="_blank"><button>Read blog post</button></a>
   </div>
   <SectionStyled
     image= {require ('../images/Footer.jpg')}
