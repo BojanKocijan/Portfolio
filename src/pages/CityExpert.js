@@ -27,13 +27,13 @@ const CityExper = () => (
     <h4>The solution</h4>
     <p>We took into consideration the responses we received from users and split verification into 2 simple steps. Choosing the country and based on the country provided by users, uploader with specific documents would be rendered by country. Every step is guiding a user with a short explanation of what is necessary actions to complete the step.</p>
     <div id="Images"><img src={require('../images/CE-Verifikacion.png')}/></div>
+    <div id="ImagesFull"><img src={require('../images/VerificationProcessEndResult.png')}/></div>
 
-    <h2>Set up the "Design system"</h2>
-    <h4>1. Redesign and update Design system</h4>
+    <h2>Consistancy accross the portals</h2>
+    <h4>Challenge</h4>
     <p>We needed to work fast, so I have set up the design system (correct name is Pattern library inside of Sketch).</p>
     <div id="Images"><img src={require('../images/CE_Design_System.png')}/></div>
-    <h4>Font pairings</h4>
-    <div id="Images"><img src={require('../images/CEFontPairings.png')}/></div>
+    <div id="Images"><img src={require('../images/CEcolors.png')}/></div>
     
     <h2>Redesigning pages by using new "Design system"</h2>
     <h4>1. Redesign real-estate page</h4>

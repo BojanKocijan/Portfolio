@@ -47,8 +47,8 @@ const IndexPage = () => (
 
       <Project
           image={require('../images/DSinFigma.png')}
-          title="Design System is moved to Figma"
-          subtitle="Our team becomes international, spreanding on 3 continents and including 3 more products. We decided that in time of merger the best tool for collaboration and remote work would be Figma. I've ported the design system to Figma with the organization of the projects and features in the tools."
+          title="Design System is transalted to Figma"
+          subtitle="Our team becomes international, spreanding on 3 continents and including 3 more products. Currently working on a brand new stuff that will be a northStar for rest of the products. I've ported the design system to Figma with the organization of the projects and features in the tools."
           button="Coming soon"
           link="/"
           target="_self"/>
@@ -56,7 +56,7 @@ const IndexPage = () => (
         <Project
           image={require('../images/xebialabs.png')}
           title="XebiaLabs, Hilversum"
-          subtitle="For the past 2 years, I was working with XebiaLabs on XL Release and XL Deploy DevOps products. That employment helped me grow and become better UX researcher, designer and more valuable team member."
+          subtitle="For the past 2 years, I was working with XebiaLabs on XL Release and XL Deploy DevOps at scale products. Take a peek at couple of improvments that took place inside of XebiLabs and my approach in solving challanges."
           button="Find out more"
           link="/XebiaLabs"
           target="_self"/>
@@ -72,7 +72,7 @@ const IndexPage = () => (
         <Project
           image={require('../images/CityExpert.png')}
           title="CityExpert, Belgrade"
-          subtitle="I was working with CityExpert Serbian startup as UI/UX designer and consultant. City Expert is online real-estate agency from Belgrade. It was a great experience to use a data-driven approach in user testing!"
+          subtitle="I was working with CityExpert Serbian startup as UI/UX designer and consultant. City Expert is online real-estate agency from Belgrade. It was a great experience to use a data-driven approach in user testing ans set in stone their design language!"
           button="Find out more"
           link="/CityExpert"
           target="_self"/>
@@ -80,7 +80,7 @@ const IndexPage = () => (
         <Project
           image={require('../images/CONDA.png')}
           title="CONDA, Vienna"
-          subtitle="CONDA is more than a crowd investing platform. CONDA is the connecting link between entrepreneurs and investors based on blockchain technology, and while working with CONDA, I've learned a lot about FinTech."
+          subtitle="CONDA is one more company that I used to work with. Help them standardise components and make 2 great products. Platform and B2B CMS. CONDA is the connecting link between entrepreneurs and investors based on blockchain technology, thanks to CONDA, I've learned a lot about FinTech."
           button="Find out more"
           link="/Conda"
           target="_self"/>
