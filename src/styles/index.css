@@ -573,7 +573,24 @@ a {
   margin: 10px auto 0 auto;
 }
 
-.HeroProjHeader{
+.HeroProjHeaderCE{
+  background: rgb(127,132,153);
+  background: linear-gradient(90deg, rgba(127,132,153,1) 0%, rgba(96,100,102,1) 94%);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.HeroProjHeaderCO{
   background: rgb(48,56,86);
   background: linear-gradient(90deg, rgba(48,56,86,1) 0%, rgba(69,120,159,1) 94%);
   -webkit-background-size: cover;
@@ -627,8 +644,21 @@ a {
   max-width: 550px;
 }
 
+@media (max-width: 1080px){
+  .ProjectHeroBody{
+    margin: 150px 20px 50px 20px;
+  }
+}
 
 @media (max-width: 768px){
+  .ProjectHeroBody{
+    margin: 120px 20px 50px 20px;
+  }
+
+  .HeroImages{
+    display: none;
+  }
+
   .CEtHeader {
     height: 900px;
     overflow: auto;
@@ -711,20 +741,10 @@ a {
 
 
 @media (max-width: 576px){
-  .CELeftImage {
-    background-size: cover;
-    background-position: center;
-    height: 450px;
-    width: 100%;
+  .ProjectHeroBody{
+    margin: 80px 20px 50px 20px;
   }
 
-
-  .CERightText {
-    padding-top: 450px;
-  }
-  .CERightText h1{
-    margin-right: 20px;
-  }
 
   .CE #Images{
     margin: 30px 40px;

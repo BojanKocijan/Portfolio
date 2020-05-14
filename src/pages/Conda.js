@@ -6,7 +6,7 @@ import Header from '../components/header/Header'
 const Conda = () => (
   <div id="Home">
     <Header />
-    <div className="HeroProjHeader"> 
+    <div className="HeroProjHeaderCO"> 
       <div className="ProjectHeroBody">
         <div className="TextAndImage">
           <h1>CONDA Crowd-Investing</h1>
