@@ -27,7 +27,7 @@ const AboutMe = () => (
     <p><strong>UI/UX designer, @CONDA. CrowdInvesting platform, FinTech</strong> <br />October 2016 - January 2018 | Belgrade, Serbia</p>
 
     <h4>Mercator Serbia</h4>
-    <p className="About"><strong>Senior graphic and web designer, @Mercator Serbia. Retail FMCG</strong> <br />June 2008 - October 2016 | Belgrade, Serbia</p>
+    <p className="About"><strong>Team lead and Senior graphic and web designer, @Mercator Serbia. Retail FMCG</strong> <br />June 2008 - October 2016 | Belgrade, Serbia</p>
 
     <h4 className="About">OT Visual</h4>
     <p className="About"><strong>Web designer, @OT Visual. Web Agency</strong> <br />June 2007 - June 2008 | Belgrade, Serbia</p>
