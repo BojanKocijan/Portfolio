@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import SectionStyled from '../components/sections/Section-bckg-img'
 import Header from '../components/header/Header'
+import Project from '../components/Projects/Project'
 
 const XebiaLabs = () => (
   <div id="Home">

@@ -27,7 +27,7 @@ const Conda = () => (
     <p>Design system is born in Figma</p>
     <div id="Images"><img src={require('../images/CONDADesignSystem.png')}/></div>
 
-    <h4>1. Redesigning the front-end</h4>
+    <h4>Redesigning the front-end</h4>
     <p>The biggest challenge was to design the investment user flow that needs to be scalable and modular. It had to be the same, but also different, depending on the country and its laws.</p>
     <div id="ImagesFull"><img src={require('../images/CONDAFrontEnd.png')}/></div>
 
