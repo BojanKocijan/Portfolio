@@ -485,7 +485,6 @@ a {
   max-width: 1200px;
   height: auto;
   max-height: 1100px;
-  min-height: 300px;
   margin: 120px auto;
   overflow: hidden;
 }
@@ -694,6 +693,7 @@ a {
 
   .CE #Images{
     margin: 30px 40px;
+    height: auto;
   }
 
   .CELeftImage {
@@ -775,12 +775,13 @@ a {
 
   .CE #Images{
     margin: 30px 40px;
+    height: auto;
+    max-height: 200px;
   }
 
   .CE #ImagesFull{
     max-width: 100%;
     height: auto;
-    max-height: 900px;
     margin: 20px auto;
     overflow: hidden;
   }
@@ -894,6 +895,11 @@ a {
   }
   .CONDARightText h1{
     margin-right: 20px;
+  }
+
+  .CE #Images{
+    margin: 30px 40px;
+    height: auto;
   }
 
 }
