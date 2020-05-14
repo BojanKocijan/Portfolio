@@ -7,14 +7,9 @@ const CityExper = () => (
   <div id="Home">
     <Header />
     <div className="CE">
-    <div className="CEHeaderHolder">
-      <div className="CELeftImage"></div>
-      <div className="CERightText">
-        <h1>City Expert</h1>
-        <p>For about seven months, I was working with CityExpert, the online real-estate agency from Belgrade. It was a great experience to use a data-driven approach in user testing and feature designing.</p>
-        <p>We would feature flag features, and we would test it with the pool of users. After collecting the feedback, we would iterate it, then redesign, develop again, and push to production.</p> 
-       </div>
-    </div>
+    <h1>City Expert</h1>
+    <p>For about seven months, I was working with CityExpert, the online real-estate agency from Belgrade. It was a great experience to use a data-driven approach in user testing and feature designing.</p>
+    <p>We would feature flag features, and we would test it with the pool of users. After collecting the feedback, we would iterate it, then redesign, develop again, and push to production.</p> 
     <h2>Work process</h2>
     <h3>Working for a start-up in Serbia is a great opportunity to be very proactive and shape the business. As most of the companies that are in the early stage of building their product, there is not a lot of space for User Testing as we know it. Fast-growing start-up such as CityExpert has decided to use a data-driven approach in building their web app.<br /> <br /> Build fast -> Send survey -> Analyze survey -> Rebuild -> Deploy</h3>
     
