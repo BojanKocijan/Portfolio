@@ -18,7 +18,7 @@ const CityExper = () => (
     </div>     
     <div className="CE">   
     <h2>Work process</h2>
-    <h3>Working for a start-up in Serbia is a great opportunity to be very proactive and shape the business. As most of the companies that are in the early stage of building their product, there is not a lot of space for User Testing as we know it. Fast-growing start-up such as CityExpert has decided to use a data-driven approach in building their web app.<br /> <br /> Build fast -> Send survey -> Analyze survey -> Rebuild -> Deploy</h3>
+    <h3>Working for a start-up in Serbia is a great opportunity to help them and be the part of the team that will shape the business. As most of the companies that are in the early stage of building their product, there is not a lot of space for User Testing as we know it. Fast-growing start-up such as CityExpert has decided to use a data-driven approach in building their web app.<br /> <br /> Build fast -> Send survey -> Analyze survey -> Rebuild -> Deploy</h3>
     
     <h2>User verification process</h2>
     <h4>The challenge</h4> 

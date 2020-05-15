@@ -18,7 +18,7 @@ const XebiaLabs = () => (
     </div>     
     <div className="CE"> 
     <h2>Work process</h2>
-    <h3>XebiaLabs helped me grow by focusing on the problem. Even that I was already practicing analyze the problem first approach, with XebiaLabs that approach just had more value.</h3>
+    <h3>Approach is analyze the problem first, and analyze users pain points in order to help users, with XebiaLabs that approach just had more value.</h3>
     
     <h2>Calendar redesig</h2>
     <h4>The challenge</h4>

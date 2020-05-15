@@ -10,7 +10,7 @@ const AboutMe = () => (
     <div className="AboutHeaderHolder">
       <div className="AboutLeftImage"></div>
       <div className="AboutRightText">
-        <h1>Husband, father, UX/UI, and Interaction Designer</h1>
+        <h1>UX/UI, and Interaction Designer</h1>
         <p>As you can guess from the first page, I am not the one in the middle. I am the one on the bottom: funny and optimistic Serbian guy. I lived in Belgrade, Serbia, which I highly recommend to visit, because the food is amazing, people are friendly, and nature is beautiful.</p> 
         <p>I have been living in Hilversum, the Netherlands, for the past two years.</p>
        </div>

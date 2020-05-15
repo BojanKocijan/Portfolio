@@ -36,7 +36,7 @@ const SectionTitle = styled.h3`
     display: flex;
     font-weight: 300;
     justify-content: center;
-    margin: 60px auto 10px auto;
+    margin: 30px auto 20px auto;
     @media (max-width: 720px){
         margin-top: 20px;
     }
