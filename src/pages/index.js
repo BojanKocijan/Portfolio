@@ -48,7 +48,7 @@ const IndexPage = () => (
 
       <Project
           image={require('../images/DSinFigma.png')}
-          title="Design System is translated to Figma"
+          title="Design System now in Figma"
           subtitle="Our team becomes international, spreanding on 3 continents and including 3 more products. Currently working on a brand new stuff that will be a northStar for rest of the products. I've ported the design system to Figma with the organization of the projects and features in the tools."
           button="Coming soon"
           link="/"
