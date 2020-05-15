@@ -98,7 +98,7 @@ const IndexPage = () => (
           image={require('../images/microInteractions.gif')}
           title="Micro Interactions"
           subtitle="Micro interactions have only one purpose: To enable communication between the user and the application. It will delight the user by providing them with human interaction response from your product. You can take a look for more interactions on my dribbble profile. Mico-interactions page is coming soon."
-          button="Go to Dribbble"
+          button="View Dribbble"
           link="https://dribbble.com/bojankocijan82"
           target="_blank"/>
       </div>
