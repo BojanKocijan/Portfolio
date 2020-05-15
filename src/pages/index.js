@@ -56,7 +56,7 @@ const IndexPage = () => (
 
         <Project
           image={require('../images/xebialabs.png')}
-          title="XebiaLabs, Hilversum"
+          title="XebiaLabs, DevOps"
           subtitle="For the past 2 years, I was working with XebiaLabs on XL Release and XL Deploy DevOps at scale products. Take a peek at couple of improvments that took place inside of XebiLabs and my approach in solving challanges."
           button="Find out more"
           link="/XebiaLabs"
@@ -64,7 +64,7 @@ const IndexPage = () => (
         
         <Project
           image={require('../images/DSM.png')}
-          title="Design System Manager, XebiaLabs"
+          title="Design System @XebiaLabs, XL BASE"
           subtitle="At XebiaLabs, I used DSM as a place from where designers and developers are working from the same source of truth. InVision DSM helped me manage all our components and comunicate design language."
           button="View Library"
           link="https://projects.invisionapp.com/dsm/xebia-labs/xl-base"
@@ -72,7 +72,7 @@ const IndexPage = () => (
       
         <Project
           image={require('../images/CityExpert.png')}
-          title="CityExpert, Belgrade"
+          title="CityExpert, Real Estates"
           subtitle="I was working with CityExpert Serbian startup as UI/UX designer and consultant. City Expert is online real-estate agency from Belgrade. It was a great experience to use a data-driven approach in user testing ans set in stone their design language!"
           button="Find out more"
           link="/CityExpert"
@@ -80,7 +80,7 @@ const IndexPage = () => (
 
         <Project
           image={require('../images/CONDA.png')}
-          title="CONDA, Vienna"
+          title="CONDA, FinTech"
           subtitle="CONDA is one more company that I used to work with. Help them standardise components and make 2 great products. Platform and B2B CMS. CONDA is the connecting link between entrepreneurs and investors based on blockchain technology, thanks to CONDA, I've learned a lot about FinTech."
           button="Find out more"
           link="/Conda"
@@ -88,7 +88,7 @@ const IndexPage = () => (
 
         <Project
           image={require('../images/progressBar.gif')}
-          title="Contributing to Framer X store"
+          title="Contributing to FramerX store"
           subtitle="I am always keen to learn new things, new tools, and to improve myself. I made this small component to contribute to Framer X store. I am really excited to be a part of this big community. Search for Bojan Kocijan as a contributor."
           button="Go to Framer store"
           link="https://packages.framer.com/?q=Bojan%20Kocijan"
