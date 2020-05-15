@@ -35,7 +35,12 @@ const CityExper = () => (
     <div id="Images"><img src={require('../images/CEcolors.png')}/></div>
     <div id="Images"><img src={require('../images/CE_Design_System.png')}/></div>
     <div id="Images"><img src={require('../images/CEusers.png')}/></div>
-    
+
+    <h4>The solution</h4>
+    <p>Think about posible scenarios and design component to respond and adopt.</p>
+    <div id="Images"><img src={require('../images/CEMaps1.png')}/></div>
+    <div id="Images"><img src={require('../images/CEMaps2.png')}/></div>
+
     <h2>Redesigning frontend</h2>
     <h4>The challenge</h4>
     <p>Once with the new "Design system" in place, I redesigned other pages, in order to remove clutter adn make them more cleaner, while keeping old and new features in mind and also trying to understand the problem that users were facing.</p>
