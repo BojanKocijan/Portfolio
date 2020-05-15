@@ -22,10 +22,10 @@ const XebiaLabs = () => (
     
     <h2>Calendar redesign</h2>
     <h4>The challenge</h4>
-    <p>Users are not able clearly to see duration of the elemnts inside the curent calendar.</p>
+    <p>Users are not able clearly to see duration of the releases inside the curent calendar.</p>
     
     <h4>The solution</h4>
-    <p>New was created is created to align list and communication between all release Managers. The new Calendar allows you to easily overview your planned work and how others work infecting yours. </p>
+    <p>New was created is created to align list and communication between all release Managers. The new Calendar allows you to easily overview your planned and ongoing releases and how others releases infecting yours. </p>
     <div id="Images"><img src={require('../images/calendar.png')}/></div>
 
     <h2>Task modal redesign</h2>
