@@ -21,7 +21,7 @@ const CityExper = () => (
     <h3>Working for a start-up in Serbia is a great opportunity to be very proactive and shape the business. As most of the companies that are in the early stage of building their product, there is not a lot of space for User Testing as we know it. Fast-growing start-up such as CityExpert has decided to use a data-driven approach in building their web app.<br /> <br /> Build fast -> Send survey -> Analyze survey -> Rebuild -> Deploy</h3>
     
     <h2>User verification process</h2>
-    <h4>The challange</h4> 
+    <h4>The challenge</h4> 
     <p>To comply and work by law and to be able to identify frauds or misuse of City Expert booking system. City expert implemented a feature called "User verification process". The current implementation of the user verification process was an MVI of the feature. After sending the survey and asking some questions about the understanding of the feature, we redesigned this process and analyzed the responses and screen recordings. We planned a redesign with the next major version of the application.</p>
 
     <h4>The solution</h4>
@@ -30,14 +30,14 @@ const CityExper = () => (
     <div id="ImagesFull"><img src={require('../images/VerificationProcessEndResult.png')}/></div>
 
     <h2>Consistancy accross the portals</h2>
-    <h4>Challenge</h4>
+    <h4>The challenge</h4>
     <p>We needed to work fast, so I have set up the design system inside of Sketch.</p>
     <div id="Images"><img src={require('../images/CEcolors.png')}/></div>
     <div id="Images"><img src={require('../images/CE_Design_System.png')}/></div>
     <div id="Images"><img src={require('../images/CEusers.png')}/></div>
     
     <h2>Redesigning frontend</h2>
-    <h4>The challange</h4>
+    <h4>The challenge</h4>
     <p>Once with the new "Design system" in place, I redesigned other pages, in order to remove clutter adn make them more cleaner, while keeping old and new features in mind and also trying to understand the problem that users were facing.</p>
     <h4>The solution</h4>
     <p>We noticed that users looks at the bottom part less often for example exact location of real-estate even if they said in survey that location is very important to them, we added fast navigation links on the left.</p>

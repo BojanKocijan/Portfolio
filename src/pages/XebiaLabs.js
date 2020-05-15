@@ -20,7 +20,7 @@ const XebiaLabs = () => (
     <h2>Work process</h2>
     <h3>XebiaLabs helped me grow by focusing on the problem. Even that I was already practicing analyze the problem first approach, with XebiaLabs that approach just had more value.</h3>
     
-    <h2>Calendar redesigned</h2>
+    <h2>Calendar redesig</h2>
     <h4>The challenge</h4>
     <p>Users are not able clearly to see duration of the elemnts inside the curent calendar.</p>
     
