@@ -34,7 +34,7 @@ const XebiaLabs = () => (
     <p>With the help of ticketing system, based on users requests and the preliminary investigation of the current design of a task modal, we were aware that current design of task modal creates lot of confusion with users, we documented all the pain points that the users has, analysed them, and take them into account wheh we were designing new task modal.</p>
     
 
-    <h4>Analize the problem</h4>
+    <h4>Analyze the problem</h4>
     <p>First thing that we did, we organised card sorting exercise and analyzed the problem in order to reduce noise on a task modal and come up with the same base and common ground and understanding.</p>
     <div id="Images"><img src={require('../images/understandingProblem.png')}/></div>
 
