@@ -21,7 +21,7 @@ const AboutMe = () => (
     <p><strong>Senior interaction designer, DevOps at scale @XebiaLabs.</strong> <br />March 2018 - now | Hilversum, The Netherlands</p>
 
     <h4>CityExpert</h4>
-    <p><strong>UX/UI desig lead and consultant, @CityExpert online Real-state agency.</strong> <br />October 2017 - March 2018 | Belgrade, Serbia</p>
+    <p><strong>UX/UI design lead and consultant, @CityExpert online Real-state agency.</strong> <br />October 2017 - March 2018 | Belgrade, Serbia</p>
 
     <h4>CONDA</h4>
     <p><strong>UI/UX designer, @CONDA. CrowdInvesting platform, FinTech</strong> <br />October 2016 - January 2018 | Belgrade, Serbia</p>
