@@ -211,7 +211,7 @@
 
     .Project h4{
       display: flex;
-      justify-content: center;
+      justify-content: left;
       font-size: 24px;
       margin-top: 32px;
     }

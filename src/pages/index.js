@@ -16,7 +16,7 @@ const IndexPage = () => (
      <div className="HeroGroup">
         <div id="profile"></div>
           <h1>Hi, I am Bojan Kocijan</h1>
-          <p><small>UI/UX and interaction designer passioned about coding</small><br></br>I am helping brands to launch new products with a focus on user experience.</p>
+          <p><small>UI/UX and interaction designer passioned about coding</small><br></br>I am helping brands to launch new products with a focus on user experience</p>
           
           <a href="https://drive.google.com/file/d/1OS1oqg8mV8-XL9ccnZFKTXri-2jCOVtY/view?usp=sharing" target="_blank"><button>Download CV</button></a>
           <div className="Logos">
@@ -97,7 +97,7 @@ const IndexPage = () => (
         <Project
           image={require('../images/microInteractions.gif')}
           title="Micro Interactions"
-          subtitle="Micro interactions have only one purpose: To enable communication between the user and the application. It will delight the user by providing them with human interaction response from your product. You can take a look for more interactions on my dribbble profile. Mico-interactions page coming soon."
+          subtitle="Micro interactions have only one purpose: To enable communication between the user and the application. It will delight the user by providing them with human interaction response from your product. You can take a look for more interactions on my dribbble profile. Mico-interactions page is coming soon."
           button="Go to Dribbble"
           link="https://dribbble.com/bojankocijan82"
           target="_blank"/>
