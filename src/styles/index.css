@@ -208,8 +208,14 @@ a:hover {
   justify-items: center;
 }
 
+.LogosTools a{
+  transition: 0.3s;
+}
 
-
+.LogosTools a:hover{
+  cursor: pointer;
+  transform: translateY(-8px);
+}
 
 .ToolsHolder{
   width: 100%;
@@ -260,6 +266,7 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
 
   .Contacts{
     max-width: 630px;

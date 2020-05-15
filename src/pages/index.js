@@ -108,12 +108,12 @@ const IndexPage = () => (
         title="Tools in my toolbelt"
         text="I have more than 15 years of experience as a designer. For me, everything started with playing around with Photoshop, which is probably the same start for most of the designers.">
           <div className="LogosTools">
-              <img src={require('../images/framer.svg')} height="36px" title="Experienced in Framer X" />
-              <img src={require('../images/sketch.svg')} height="36px" title="Experienced with Sketch"/>
-              <img src={require('../images/figma.svg')} height="36px" title="Experienced with Figma"/>
-              <img src={require('../images/invision.svg')} height="29px" title="Experienced with InVision"/>
-              <img src={require('../images/principle.svg')} height="36px" title="Experienced with Principle"/>
-              <img src={require('../images/Creative_Cloud.svg')} height="30px" title="More then 15 years of experiance with Adobe"/>
+          <Tooltip className="BlackTooltip" label="Experienced with FramerX" style={{ background: "hsla(0, 0%, 0%, 0.75)", color: "white", border: "none", borderRadius: "4px", padding: "0.5em 1em", possition: "relative", marginLeft:"-80px", }}><a href="https://www.framer.com/" target="_blank"><img src={require('../images/framer.svg')} height="36px" title="Experienced in FramerX" /></a></Tooltip>
+          <Tooltip className="BlackTooltip" label="Experienced with Sketch" style={{ background: "hsla(0, 0%, 0%, 0.75)", color: "white", border: "none", borderRadius: "4px", padding: "0.5em 1em", possition: "relative", marginLeft:"-65px", }}><a href="https://www.sketch.com/" target="_blank"><img src={require('../images/sketch.svg')} height="36px" title="Experienced with Sketch"/></a></Tooltip>
+          <Tooltip className="BlackTooltip" label="Experienced with Figma" style={{ background: "hsla(0, 0%, 0%, 0.75)", color: "white", border: "none", borderRadius: "4px", padding: "0.5em 1em", possition: "relative", marginLeft:"-80px", }}><a href="https://www.figma.com/" target="_blank"><img src={require('../images/figma.svg')} height="36px" title="Experienced with Figma"/></a></Tooltip>
+          <Tooltip className="BlackTooltip" label="Experienced with inVision" style={{ background: "hsla(0, 0%, 0%, 0.75)", color: "white", border: "none", borderRadius: "4px", padding: "0.5em 1em", possition: "relative", marginLeft:"-80px", }}><a href="https://www.invisionapp.com/" target="_blank"><img src={require('../images/invision.svg')} height="29px" title="Experienced with InVision"/></a></Tooltip>
+          <Tooltip className="BlackTooltip" label="Experienced with Principle" style={{ background: "hsla(0, 0%, 0%, 0.75)", color: "white", border: "none", borderRadius: "4px", padding: "0.5em 1em", possition: "relative", marginLeft:"-80px", }}><a href="https://principleformac.com/" target="_blank"><img src={require('../images/principle.svg')} height="36px" title="Experienced with Principle"/></a></Tooltip>
+          <Tooltip className="BlackTooltip" label="Experienced with Adobe tools" style={{ background: "hsla(0, 0%, 0%, 0.75)", color: "white", border: "none", borderRadius: "4px", padding: "0.5em 1em", possition: "relative", marginLeft:"-80px", }}><a href="https://www.adobe.com/" target="_blank"><img src={require('../images/Creative_Cloud.svg')} height="30px" title="More then 15 years of experiance with Adobe"/></a></Tooltip>
           </div>
       </SectionStyled>
       <h2>My approach</h2>
