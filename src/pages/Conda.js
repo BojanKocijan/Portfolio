@@ -28,12 +28,13 @@ const Conda = () => (
 
     <h4>Redesigning the front-end</h4>
     <p>The biggest challenge was to design the investment user flow that needs to be scalable and modular. It had to be the same, but also different, depending on the country and its laws.</p>
-    <div id="ImagesFull"><img src={require('../images/CONDAFrontEnd.png')}/></div>
+    
+    <div id="Images"><img src={require('../images/FontEndCONDA.png')}/></div>
 
     <h2>Wordpress for front-end</h2>
     <h4>Redesign project details pages</h4>
     <p>The project details page is slightly customizable, but in general, from platform to platform, it needs to have the same components.</p>
-    <div id="Images"><img src={require('../images/FontEndCONDA.png')}/></div>
+    <div id="ImagesFull"><img src={require('../images/CONDAFrontEnd.png')}/></div>
 
     <h2>CMS system for platform owners</h2>
     <h4>Designing the Platform CMS</h4>
