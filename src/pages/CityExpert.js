@@ -1,7 +1,7 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import SectionStyled from '../components/sections/Section-bckg-img'
 import Header from '../components/header/Header'
+
 
 const CityExper = () => (
   <div id="Home">
@@ -47,7 +47,7 @@ const CityExper = () => (
     <h4>The solution</h4>
     <p>We noticed that users looks at the bottom part less often for example exact location of real-estate even if they said in survey that location is very important to them, we added fast navigation links on the left.</p>
     <div id="Images"><img src={require('../images/CE_nekretnina.png')}/></div>
-
+    
 
   </div>
   <SectionStyled

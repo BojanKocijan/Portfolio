@@ -110,6 +110,7 @@
   justify-items: center;
   margin: 60px auto 100px auto;
   max-width: 1600px;
+  place-self: center;
 }
 
 @media (max-width: 2000px){
