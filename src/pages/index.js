@@ -57,7 +57,7 @@ const IndexPage = () => (
         <Project
           image={require('../images/xebialabs.png')}
           title="XebiaLabs, DevOps"
-          subtitle="For the past 2 years, I was working with XebiaLabs on XL Release and XL Deploy DevOps at scale products. Take a peek at couple of improvments that took place inside of XebiLabs and my approach in solving challanges."
+          subtitle="Everybody thinks that XebiaLabs = Xebia. It is not a same company. For the past 2 years, I was working with XebiaLabs on XL Release and XL Deploy DevOps at scale products. Take a peek at couple of improvments that took place inside of XebiLabs and my approach in solving challanges."
           button="Find out more"
           link="/XebiaLabs"
           target="_self"/>
