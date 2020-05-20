@@ -13,7 +13,7 @@ const XebiaLabs = () => (
           <h1>XebiaLabs, DevOps at scale</h1>
           <p>For the last two years, I have been working with some of the brightest minds that I have ever met. The amount of knowledge that I received and shared on everyday bases is enormous. I became better UX researcher and designer. I've started working with more developers than ever before, and it has reignited my passion for coding.</p> 
         </div>
-        <img className="HeroImages" src={require('../images/XLHero.png')}/>
+        <img className="HeroImages" src={require('../images/XLHero.gif')}/>
       </div>
     </div>     
     <div className="CE"> 
