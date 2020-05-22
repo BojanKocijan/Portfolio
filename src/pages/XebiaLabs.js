@@ -25,7 +25,7 @@ const XebiaLabs = () => (
     <p>Users are not able clearly to see duration of the releases inside the curent calendar.</p>
     
     <h4>The solution</h4>
-    <p>New was created is created to align list and communication between all release Managers. The new Calendar allows you to easily overview your planned and ongoing releases and how others releases infecting yours. </p>
+    <p>The new callendar addressed all users pain points adn provided them easy to use and to overivew solutions of their releases. Calendar now allows you to easily overview your planned and ongoing releases and how others releases infecting yours. </p>
     <div id="Images"><img src={require('../images/calendar.png')}/></div>
 
     <h2>Task modal redesign</h2>
