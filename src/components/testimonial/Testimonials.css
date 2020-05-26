@@ -17,15 +17,10 @@
   align-self: left;
   width: 200px;
   position: relative;
-  transition: 0.8s cubic-bezier(0.2, 0.82, 0.2, 1);
   margin: 0 auto;
   height: 200px;
   border-radius: 999px;
   border: 3px solid #e8e9f0;
-}
-
-.Testimonials img:hover {
-  transform: scale(1.05);
 }
 
 .CardHolder {
@@ -130,7 +125,6 @@
       align-self: center;
       max-width: 100%;
       position: relative;
-      transition: 0.8s cubic-bezier(0.2, 0.82, 0.2, 1);
       margin: 0 auto;
       border: 3px solid #e8e9f0;
     }
