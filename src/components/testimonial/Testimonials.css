@@ -1,0 +1,184 @@
+.Testimonials {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 1050px;
+    margin-top: 80px;
+}
+
+.Testimonials:nth-child(1){
+  margin-top: 60px;
+}
+
+.Testimonials img {
+  display: block;
+  align-self: left;
+  width: 200px;
+  position: relative;
+  transition: 0.8s cubic-bezier(0.2, 0.82, 0.2, 1);
+  margin: 0 auto;
+  height: 200px;
+  border-radius: 999px;
+  border: 3px solid #e8e9f0;
+}
+
+.Testimonials img:hover {
+  transform: scale(1.05);
+}
+
+.CardHolder {
+    height: auto; 
+}
+
+
+
+.Testimonials h4 {
+    display: flex;
+    margin-left: 30px;
+    justify-content: left;
+    color: #333943;
+    font-size: 24px;
+    z-index: 99;
+    margin-top: 0px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    font-family: 'Merriweather', serif;
+
+}
+
+.Testimonials h5 {
+  display: flex;
+  margin-left: 30px;
+  justify-content: left;
+  color: #67757E;
+  font-size: 16px;
+  z-index: 99;
+  margin-top: -16px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  font-family: 'Montserrat', serif;
+
+}
+
+.Testimonials p {
+    color: #67757E;
+    display: flex;
+    margin-left: 30px;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+    z-index: 99;
+    line-height: 1.6;
+}
+
+/*
+.Card button{
+  margin-left: -40px;
+  margin-right: auto;
+  display:block;
+  border: none;
+  border-radius: 4px;
+  background: #FF5B60;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 16px;
+  outline: none;
+  transition: 0.6s;
+}
+
+
+.Card button:hover{
+  display: block;
+  justify-content: center;
+  animation-timing-function: cubic-bezier(0.2, 0.82, 0.2, 1);
+  background: #CC494E;
+  color: white;
+  cursor: pointer;
+  transform: translateY(-3px);
+}*/
+
+
+/*----------------- Card Group ---------------------*/
+
+.CardGroup {
+    display: grid;
+    grid-gap: 10px;
+    justify-items: center;
+    margin: 0 40px 0 40px;
+  }
+
+  
+  @media (max-width: 950px){
+    .Testimonials {
+      display: block;
+      height: auto;
+      min-width: 320px;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+
+    .Testimonials:nth-child(1){
+      margin-top: 40px;
+    }
+
+    .Testimonials img{
+      display: block;
+      align-self: center;
+      max-width: 100%;
+      position: relative;
+      transition: 0.8s cubic-bezier(0.2, 0.82, 0.2, 1);
+      margin: 0 auto;
+      border: 3px solid #e8e9f0;
+    }
+
+    .Testimonials h4 {
+      display: flex;
+      justify-content: center;
+      font-size: 24px;
+      color: #333943;
+      z-index: 99;
+      margin-top: 16px;
+      margin-left: 0;
+    }
+
+    .Testimonials h5 {
+      justify-content: center;
+      text-align: center;
+    }
+
+    .Testimonials p{
+      margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 720px){
+    .Testimonials {
+      display: block;
+      height: auto;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+    
+    .CardGroup{
+      grid-template-columns: repeat(1, 1fr);
+      margin: 20px 30px 0 30px;
+    }
+    .Testimonials h4{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: 24px;
+      margin-top: 32px;
+    }
+
+    .Testimonials h5 {
+      justify-content: center;
+      text-align: center;
+    }
+
+  }

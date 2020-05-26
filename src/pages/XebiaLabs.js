@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import SectionStyled from '../components/sections/Section-bckg-img'
 import Header from '../components/header/Header'
-import Project from '../components/Projects/Project'
+import Testimonials from '../components/testimonial/Testimonials'
 
 const XebiaLabs = () => (
   <div id="Home">
@@ -42,12 +42,25 @@ const XebiaLabs = () => (
     <p>Together with the team, we together come up with assumptions and some quick sketches for task modal redesign.</p>
       
     <h4>New design task modal</h4>
-    <p>New task modal, driven by design-thinking got great feedback from many of our customers. We gave them more space to operate with tasks, which were, at the same time, easier to understand, and see most important things in order to finish their job faster and easier.
-By having in mind that the company is an enterprise, I am not eligible to share screens.
-</p>
+    <p>New task modal, driven by design-thinking got great feedback from many of our customers. We gave them more space to operate with tasks, which were, at the same time, easier to understand, and see most important things in order to finish their job faster and easier. By having in mind that the company is an enterprise, I am not eligible to share screens.</p>
     <div id="Images"><img src={require('../images/taskModalSolution.png')}/></div>   
 
+    
   </div>
+  <h2>Testimonials</h2>
+    <div className="CardGroup">
+      <Testimonials
+        image={require('../images/NadiaUdalova.png')}
+        title="Nadia Udalova"
+        position="Product Design Manager, Verify and Release at GitLab Inc."
+        subtitle="Bojan is an exceptional designer to have on the team. He is a hard worker, always giving it all to solve a challenge. Bojan has great visual and prototyping skills, as well as a broad experience with a number of design tools. Bojan is great person to work with, very kind and welcoming to others. I would be happy if our career paths would cross again."/>
+
+<Testimonials
+        image={require('../images/Hes.png')}
+        title="Hes Siemelink"
+        position="Senior Product Architect at digital.ai."
+        subtitle="Bojan is a joy to work with and he creates beautiful and clean designs that work. I've had the pleasure to work with Bojan on various occasions and he is a very good listener and highly skilled in bringing ideas to live in the screen. His designs are logical and esthetically pleasing. He also takes feedback very well and won't stop until he has found a satisfactory solution. I hope to work with Bojan in the future."/>
+    </div>    
   <SectionStyled
     image= {require ('../images/Footer.jpg')}
     text="Feel free to use website and projects as an inspiration. Knowledge-sharing and helping others is something that fills my heart. I made this portfolio with Gatsby react.">

@@ -1,6 +1,7 @@
 import React from 'react'
 import SectionStyled from '../components/sections/Section-bckg-img'
 import Header from '../components/header/Header'
+import Testimonials from '../components/testimonial/Testimonials'
 
 
 const CityExper = () => (
@@ -50,6 +51,17 @@ const CityExper = () => (
     
 
   </div>
+
+  <h2>Testimonials</h2>
+    <div className="CardGroup">
+      <Testimonials
+        image={require('../images/Darko.png')}
+        title="Darko Luković"
+        position="Senior Product Manager at Smallpdf"
+        subtitle="Bojan is an outstanding UX designer. He exceptionally well communicates his ideas while meeting clients' needs. He is an extremely responsible person and passionate about what he does. He makes data-driven decisions and creates an impressive user interface. I would be very happy if I would have the opportunity to work with him again."/>
+
+  </div>
+
   <SectionStyled
     text="Feel free to use website and projects as an inspiration. Knowledge-sharing and helping others is something that fills my heart. I made this portfolio with Gatsby react.">
       <div className="Contacts">

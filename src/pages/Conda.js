@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import SectionStyled from '../components/sections/Section-bckg-img'
 import Header from '../components/header/Header'
-import Project from '../components/Projects/Project'
+import Testimonials from '../components/testimonial/Testimonials'
 
 const Conda = () => (
   <div id="Home">
@@ -42,6 +42,17 @@ const Conda = () => (
     <p>Platform CMS was developed in Angular 4. Options like KYC (Know Your Customer) and AML (Anti Money Laundry) were one of the musts on the B2B part of the platform. We used a light theme for WordPress and Dark theme for B2B from our library.</p>
     <div id="ImagesFull"><img src={require('../images/CondaDashboard.png')}/></div>
   </div>
+
+  <h2>Testimonials</h2>
+    <div className="CardGroup">
+      <Testimonials
+        image={require('../images/Igor.png')}
+        title="Igor Veličković"
+        position="CEO / Founder at Chainapp Technologies"
+        subtitle="It is my pleasure to deliver this letter of recommendation for Bojan. I’ve had the opportunity to work with Bojan on a daily basis and he’s done an exemplary job as our UX designer. His organizational skills, along with his friendly personality and professionalism, make him the great asset for any company. I was sorry when Bojan left the company but we kept working together on many projects over the years. Highly recommended designer with a lot of experience."/>
+
+    </div>
+
   <SectionStyled
     image= {require ('../images/Footer.jpg')}
     text="Feel free to use website and projects as an inspiration. Knowledge-sharing and helping others is something that fills my heart. I made this portfolio with Gatsby react.">
