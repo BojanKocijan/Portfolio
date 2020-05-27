@@ -11,7 +11,7 @@ const XebiaLabs = () => (
       <div className="ProjectHeroBody">
         <div className="TextAndImage">
           <h1>XebiaLabs, DevOps at scale</h1>
-          <p>For the last two years, I was helping XebiaLabs build and modernize their products and make consistent look across the tools.</p> 
+          <p>For the last two years, I am helping XebiaLabs build and modernize their products and make consistent look across the tools.</p> 
         </div>
         <img className="HeroImages" src={require('../images/XLHero.gif')}/>
       </div>
