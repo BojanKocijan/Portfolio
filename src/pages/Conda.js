@@ -42,7 +42,7 @@ const Conda = () => (
     <p>Platform CMS was developed in Angular 4. Options like KYC (Know Your Customer) and AML (Anti Money Laundry) were one of the musts on the B2B part of the platform. We used a light theme for WordPress and Dark theme for B2B from our library.</p>
     <div id="Images"><img src={require('../images/CondaDashboard.png')}/></div>
     <h4>Learnings</h4>
-    <p>When you're communicating your process and solutions to a client who isn't always the key decision maker, it's important to keep your points clear and concise enough for easy re-communication. Seek for more feedback and try to sumorize feedback and understand what users want and not what they say that they want.</p>
+    <p>When you're communicating your process and solutions to a client who isn't always the key decision-maker, it's important to keep your points clear and concise enough for easy re-communication. Seek for more feedback and try to summarize feedback and understand what users want and not what they say that they want.</p>
     <a href="/XebiaLabs" target="_self"><button>Next project: XebiaLabs</button></a>
   </div>
   
