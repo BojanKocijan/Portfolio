@@ -18,8 +18,8 @@ const Conda = () => (
       </div>
     </div> 
     <div className="CE">
-    <h2>Work process</h2>
-    <h3>CONDA is an Austrian FinTech startup. Their product was a white-label platform for Crowd-Investing. User testing, as such, was done more by validating the designs with B2B users, together with all stakeholders and platform owners.</h3>
+    <h2>MY Role</h2>
+    <h3>Set up Design system, design layout to work with WordPress, design plugins, together with PM and stakeholders design new and redesign existing features.</h3>
     <h2>Setting up the system</h2>
     <h4>The challenge</h4>
     <p>Conda had an issue with consistency across the tools and developers had a problem with consistant look. It all started with long meetings and knowledge-sharing sessions. I was working on setting up the base design system in Figma, based on Material design library, since the developers were using Angular 4 for development. For the front-end, the platform itself was WordPress, with specially written plugins by our development team.</p>

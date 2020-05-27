@@ -11,15 +11,15 @@ const CityExper = () => (
       <div className="ProjectHeroBody">
         <div className="TextAndImage">
           <h1>City Expert</h1>
-          <p>For about seven months, I was working with CityExpert, the online real-estate agency from Belgrade. It was a great experience to use a data-driven approach in user testing and feature designing.</p>
+          <p>For about seven months, I was working with CityExpert, the online real-estate agency from Belgrade and one of the top 10 Serbian startups. It was a great experience to use a data-driven approach in user testing and feature designing.</p>
           <p>We would feature flag features, and we would test it with the pool of users. After collecting the feedback, we would iterate it, then redesign, develop again, and push to production.</p>
         </div>
         <img className="HeroImages" src={require('../images/CityExpertHero.png')}/>
       </div>
     </div>     
     <div className="CE">   
-    <h2>Work process</h2>
-    <h3>Working for a start-up in Serbia is a great opportunity to help them and be the part of the team that will shape the business. As most of the companies that are in the early stage of building their product, there is not a lot of space for User Testing as we know it. Fast-growing start-up such as CityExpert has decided to use a data-driven approach in building their web app.<br /> <br /> Build fast -> Send survey -> Analyze survey -> Rebuild -> Deploy</h3>
+    <h2>My Role</h2>
+    <h3>Set up Design system, set up new layout, analyze and send surveys, implement finding and together with PM translate them to new or redesigned existing features.</h3>
     
     <h2>User verification process</h2>
     <h4>The challenge</h4> 
