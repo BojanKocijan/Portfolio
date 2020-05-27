@@ -29,7 +29,7 @@ const XebiaLabs = () => (
     <p>To gather insights on the current experience from customers, Sales Engeneers that has a lot of contact with customers, with a focus on both long term and short term releases.</p>
     <h4>The solution</h4>
     <p>The new calendar addressed all users' pain points and provided them easy to use and to overview solutions of their releases. Calendar now allows you to easily overview your planned and ongoing releases and how others release infecting yours. </p>
-    <div id="Images"><img src={require('../images/CalendarAnimation.gif')}/></div>
+    <div id="Images"><video autoPlay loop width="1190" height="600" src={require('../images/CalendarAnimation.mp4')}/></div>
 
 
     
