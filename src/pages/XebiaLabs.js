@@ -11,23 +11,26 @@ const XebiaLabs = () => (
       <div className="ProjectHeroBody">
         <div className="TextAndImage">
           <h1>XebiaLabs, DevOps at scale</h1>
-          <p>For the last two years, I have been working with some of the brightest minds that I have ever met. The amount of knowledge that I received and shared on everyday bases is enormous. I became better UX researcher and designer. I've started working with more developers than ever before, and it has reignited my passion for coding.</p> 
+          <p>For the last two years, I was helping XebiaLabs build and modernize their products and make consistent look across the tools.</p> 
         </div>
         <img className="HeroImages" src={require('../images/XLHero.gif')}/>
       </div>
     </div>     
     <div className="CE"> 
-    <h2>Work process</h2>
-    <h3>Approach is analyze the problem first, and analyze users pain points in order to help users, with XebiaLabs that approach just had more value.</h3>
+    <h4>My Role</h4>
+    <h3>I lead design for most of the feaures for XL products, like new calendar look and feel and new layout of the applications.</h3>
+
     
     <h2>Calendar redesign</h2>
     <h4>The challenge</h4>
     <p>Users are not able clearly to see duration of the releases inside the curent calendar.</p>
-    
-    <h4>The solution</h4>
-    <p>The new callendar addressed all users pain points adn provided them easy to use and to overivew solutions of their releases. Calendar now allows you to easily overview your planned and ongoing releases and how others releases infecting yours. </p>
     <div id="Images"><img src={require('../images/calendar.png')}/></div>
-
+    <h4>Approach</h4>
+    <p>To gather insights on the current experience from customers, Sales Engeneers that has a lot of contact with customers, with a focus on both long term and short term releases.</p>
+    <h4>The solution</h4>
+    <p>The new calendar addressed all users' pain points and provided them easy to use and to overview solutions of their releases. Calendar now allows you to easily overview your planned and ongoing releases and how others release infecting yours. </p>
+    <div id="Images"><img src={require('../images/CalendarAnimation.gif')}/></div>
+    
     <h2>Task modal redesign</h2>
 
     <h4>The challenge</h4>
