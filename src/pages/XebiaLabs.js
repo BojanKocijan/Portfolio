@@ -33,10 +33,11 @@ const XebiaLabs = () => (
 
 
     
-    <h2>Task modal redesign</h2>
+    <h2>Task modal redesign and design system</h2>
 
     <h4>The challenge</h4>
     <p>With the help of ticketing system, based on users requests and the preliminary investigation of the current design of a task modal, we were aware that current design of task modal creates lot of confusion with users, we documented all the pain points that the users has, analysed them, and take them into account wheh we were designing new task modal.</p>
+    <div id="ImagesFull"><img src={require('../images/XebiaLabsLibrary.png')}/></div>
     
 
     <h4>Analyze the problem</h4>
@@ -44,7 +45,7 @@ const XebiaLabs = () => (
     <div id="Images"><img src={require('../images/understandingProblem.png')}/></div>
 
     <h4>The solution</h4>
-    <p>Together with the team, we together come up with assumptions and some quick sketches for task modal redesign.</p>
+    <p>Together with the team, we together come up with assumptions and some quick sketches for task modal redesign. We used our newly seted up design system which was mantained and updated by me in designing all the features accross the organisation.</p>
       
     <h4>New design task modal</h4>
     <p>New task modal, driven by design-thinking got great feedback from many of our customers. We gave them more space to operate with tasks, which were, at the same time, easier to understand, and see most important things in order to finish their job faster and easier. By having in mind that the company is an enterprise, I am not eligible to share screens.</p>
