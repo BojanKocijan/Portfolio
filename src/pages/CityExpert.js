@@ -48,7 +48,7 @@ const CityExper = () => (
     <h4>The solution</h4>
     <p>We noticed that users looks at the bottom part less often for example exact location of real-estate even if they said in survey that location is very important to them, we added fast navigation links on the left.</p>
     <div id="Images"><img src={require('../images/CE_nekretnina.png')}/></div>
-    
+    <a href="/Conda" target="_self"><button>Next project: Conda</button></a>
 
   </div>
 
@@ -59,8 +59,9 @@ const CityExper = () => (
         title="Darko Luković"
         position="Senior Product Manager at Smallpdf"
         subtitle="Bojan is an outstanding UX designer. He exceptionally well communicates his ideas while meeting clients' needs. He is an extremely responsible person and passionate about what he does. He makes data-driven decisions and creates an impressive user interface. I would be very happy if I would have the opportunity to work with him again."/>
-
+        
   </div>
+  
 
   <SectionStyled
     text="Feel free to use website and projects as an inspiration. Knowledge-sharing and helping others is something that fills my heart. I made this portfolio with Gatsby react.">

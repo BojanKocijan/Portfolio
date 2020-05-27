@@ -30,6 +30,8 @@ const XebiaLabs = () => (
     <h4>The solution</h4>
     <p>The new calendar addressed all users' pain points and provided them easy to use and to overview solutions of their releases. Calendar now allows you to easily overview your planned and ongoing releases and how others release infecting yours. </p>
     <div id="Images"><img src={require('../images/CalendarAnimation.gif')}/></div>
+
+
     
     <h2>Task modal redesign</h2>
 
@@ -48,8 +50,13 @@ const XebiaLabs = () => (
     <p>New task modal, driven by design-thinking got great feedback from many of our customers. We gave them more space to operate with tasks, which were, at the same time, easier to understand, and see most important things in order to finish their job faster and easier. By having in mind that the company is an enterprise, I am not eligible to share screens.</p>
     <div id="Images"><img src={require('../images/taskModalSolution.png')}/></div>   
 
+    <h4>Learnings</h4>
+    <p>The introduction of design systems was a relatively new aspect of our process and I had underestimated the success of it's adoption. A design system needs constant reference, particularly when operating within teams that see regular change in personnel or growing teams. A design system's success relies on a dedicated advocate.</p>
+    <a href="/CityExpert" target="_self"><button>Next project: City Expert</button></a>
     
   </div>
+
+
   <h2>Testimonials</h2>
     <div className="CardGroup">
       <Testimonials

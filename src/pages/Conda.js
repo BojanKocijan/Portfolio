@@ -41,7 +41,9 @@ const Conda = () => (
     <h4>Designing the Platform CMS</h4>
     <p>Platform CMS was developed in Angular 4. Options like KYC (Know Your Customer) and AML (Anti Money Laundry) were one of the musts on the B2B part of the platform. We used a light theme for WordPress and Dark theme for B2B from our library.</p>
     <div id="ImagesFull"><img src={require('../images/CondaDashboard.png')}/></div>
+    <a href="/XebiaLabs" target="_self"><button>Next project: XebiaLabs</button></a>
   </div>
+  
 
   <h2>Testimonials</h2>
     <div className="CardGroup">
