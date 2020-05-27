@@ -51,7 +51,7 @@ const XebiaLabs = () => (
     <div id="Images"><img src={require('../images/taskModalSolution.png')}/></div>   
 
     <h4>Learnings</h4>
-    <p>The introduction of design systems was a great addition to our process and I had underestimated the success of it's adoption. A design system needs constant reference, particularly when operating within teams that see regular change in personnel or growing teams. A design system's success relies on a dedicated advocate.</p>
+    <p>The introduction of <a href="https://projects.invisionapp.com/dsm/xebia-labs/xl-base" target="_blank">XL BASE design system</a> was a great addition to our process and I had underestimated the success of it's adoption. A design system needs constant reference, particularly when operating within teams that see regular change in personnel or growing teams. A design system's success relies on a dedicated advocate.</p>
     <a href="/CityExpert" target="_self"><button>Next project: City Expert</button></a>
     
   </div>
