@@ -48,6 +48,9 @@ const CityExper = () => (
     <h4>The solution</h4>
     <p>We noticed that users looks at the bottom part less often for example exact location of real-estate even if they said in survey that location is very important to them, we added fast navigation links on the left.</p>
     <div id="Images"><img src={require('../images/CE_nekretnina.png')}/></div>
+    <h4>Learnings</h4>
+    <p>Despite the close collaboration between design and build, there could have been more honest conversations had early on when defining the MVP. Our ambition blinded us early, which resulted in inadequate time for build feedback and a premature release.</p>
+
     <a href="/Conda" target="_self"><button>Next project: Conda</button></a>
 
   </div>
