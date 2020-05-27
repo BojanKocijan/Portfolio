@@ -18,7 +18,7 @@ const Conda = () => (
       </div>
     </div> 
     <div className="CE">
-    <h2>MY Role</h2>
+    <h2>My Role</h2>
     <h3>Set up Design system, design layout to work with WordPress, design plugins, together with PM and stakeholders design new and redesign existing features.</h3>
     <h2>Setting up the system</h2>
     <h4>The challenge</h4>
