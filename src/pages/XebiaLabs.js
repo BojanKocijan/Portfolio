@@ -28,7 +28,7 @@ const XebiaLabs = () => (
     <h4>Approach</h4>
     <p>To gather insights on the current experience from customers, Sales Engeneers that has a lot of contact with customers, with a focus on both long term and short term releases.</p>
     <h4>The solution</h4>
-    <p>The new calendar addressed all users' pain points and provided them easy to use and to overview solutions of their releases. Calendar now allows you to easily overview your planned and ongoing releases and how others release infecting yours. </p>
+    <p>The new calendar addressed all users' pain points and provided them easy to use and to overview solutions of their releases. Calendar now allows you to easily overview your planned and ongoing releases and how others release infecting yours. Al XebiaLabs prototypes are made in FramerX and most of element are made as components inside FramerX.</p>
     <div id="Images"><video autoPlay loop width="100%" height="100%" src={require('../images/CalendarAnimation.mp4')}/></div>
 
 
@@ -48,7 +48,7 @@ const XebiaLabs = () => (
     <p>Together with the team, we together come up with assumptions and some quick sketches for task modal redesign. We used our newly seted up design system which was mantained and updated by me in designing all the features accross the organisation.</p>
       
     <h4>New design task modal</h4>
-    <p>New task modal, driven by design-thinking got great feedback from many of our customers. We gave them more space to operate with tasks, which were, at the same time, easier to understand, and see most important things in order to finish their job faster and easier. By having in mind that the company is an enterprise, I am not eligible to share screens.</p>
+    <p>New task modal, driven by design-thinking got great feedback from many of our customers. We gave them more space to operate with tasks, which were, at the same time, easier to understand, and see most important things in order to finish their job faster and easier.</p>
     <div id="Images"><img src={require('../images/taskModalSolution.png')}/></div>   
 
     <h4>Learnings</h4>
