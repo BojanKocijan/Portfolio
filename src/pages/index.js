@@ -58,7 +58,7 @@ const IndexPage = () => (
           image={require('../images/xebialabs.png')}
           title="XebiaLabs, DevOps"
           subtitle="For the past 2 years, I have been working in XebiaLabs on the XL Release and XL Deploy DevOps products. Take a peek at a couple of the improvements that took place at XebiaLabs and my approach to solving those challenges."
-          button="Find out more"
+          button="View Case study"
           link="/XebiaLabs"
           target="_self"/>
         
@@ -74,7 +74,7 @@ const IndexPage = () => (
           image={require('../images/CityExpert.png')}
           title="CityExpert, Real Estates"
           subtitle="I worked with City Expert, a Serbian startup as UI/UX designer and consultant. City Expert is an online real-estate agency from Belgrade. It was great experience to use a data-driven approach in user testing and help define their design language!"
-          button="Find out more"
+          button="View Case study"
           link="/CityExpert"
           target="_self"/>
 
@@ -82,7 +82,7 @@ const IndexPage = () => (
           image={require('../images/CONDA.png')}
           title="CONDA, FinTech"
           subtitle="In CONDA, I helped standardize components and create two great products, Platform, and B2B CMS. CONDA is the connecting link between entrepreneurs and investors, and is based on block-chain technology. I learned a lot about FinTech in CONDA."
-          button="Find out more"
+          button="View Case study"
           link="/Conda"
           target="_self"/>
 
@@ -98,7 +98,7 @@ const IndexPage = () => (
           image={require('../images/microInteractions.gif')}
           title="The micro-Interactions"
           subtitle="Micro interactions have only one purpose: To enable communication between the user and the application. It will delight the user by providing them with the with human-like interaction response from your product. Take a look at my Dribble profile for more. Mico-interactions page is coming soon."
-          button="View Dribbble"
+          button="View on Dribbble"
           link="https://dribbble.com/bojankocijan82"
           target="_blank"/>
       </div>
