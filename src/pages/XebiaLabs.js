@@ -28,7 +28,7 @@ const XebiaLabs = () => (
     <h4>Approach</h4>
     <p>To gather insights on the current experience from customers, Sales Engeneers that has a lot of contact with customers, with a focus on both long term and short term releases.</p>
     <h4>The solution</h4>
-    <p>The new calendar addressed all users' pain points and provided them easy to use and to overview solutions of their releases. Calendar now allows you to easily overview your planned and ongoing releases and how others release infecting yours. Al XebiaLabs prototypes are made in FramerX and most of element are made as components inside FramerX.</p>
+    <p>The new calendar addressed all users' pain points and provided them easy to use and to overview solutions of their releases. Calendar now allows you to easily overview your planned and ongoing releases and how others release infecting yours. All XebiaLabs prototypes are made in FramerX and most of element are made as components inside FramerX.</p>
     <div id="Images"><video autoPlay loop width="100%" height="100%" src={require('../images/CalendarAnimation.mp4')}/></div>
 
 
