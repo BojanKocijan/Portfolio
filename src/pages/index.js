@@ -56,7 +56,7 @@ const IndexPage = () => (
         <Project
           image={require('../images/CityExpert.png')}
           title="CityExpert, Real Estates"
-          subtitle="I worked with City Expert, a Serbian startup as UI/UX designer and consultant. City Expert is an online real-estate agency from Belgrade. It was great experience to use a data-driven approach in user testing and help define their design language!"
+          subtitle="I worked with City Expert, one of top 10 Serbian startups as UI/UX designer and consultant. City Expert is an online real-estate agency from Belgrade. It was great experience to use a data-driven approach in user testing and help define their design language!"
           button="View Case study"
           link="/CityExpert"
           target="_self"/>
