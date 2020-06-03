@@ -45,15 +45,6 @@ const IndexPage = () => (
     <div id="Projects"></div>
     <h2>Projects and contributions</h2>
     <div className="ProjectGroup">
-
-      <Project
-          image={require('../images/DSinFigma.png')}
-          title="Design System now in Figma"
-          subtitle="Our team becomes international, spanning 3 continents, and includes 3 more products. We're working on brand new stuff that will serve as a North Star for our other products to follow. I've moved the design system to from DSM to Figma with the organization of the projects and features in the tools."
-          button="Coming soon"
-          link="/"
-          target="_self"/>
-
         <Project
           image={require('../images/xebialabs.png')}
           title="XebiaLabs, DevOps"
@@ -61,14 +52,6 @@ const IndexPage = () => (
           button="View Case study"
           link="/XebiaLabs"
           target="_self"/>
-        
-        <Project
-          image={require('../images/DSM.png')}
-          title="Design System @XebiaLabs, XL BASE"
-          subtitle="At XebiaLabs, I used DSM to enable designers and developers to working from the same source of truth. InVision DSM helped me to manage all components and communicate design language."
-          button="View Library"
-          link="https://projects.invisionapp.com/dsm/xebia-labs/xl-base"
-          target="_blank"/>
       
         <Project
           image={require('../images/CityExpert.png')}
@@ -87,20 +70,38 @@ const IndexPage = () => (
           target="_self"/>
 
         <Project
-          image={require('../images/progressBar.gif')}
-          title="Contributing to the FramerX store"
-          subtitle="I am always keen to learn new things, new tools, and to improve myself. I made this small component to contribute to Framer X store. I am really excited to be a part of this big community. Search for Bojan Kocijan as a contributor."
-          button="Go to Framer store"
-          link="https://packages.framer.com/?q=Bojan%20Kocijan"
-          target="_blank"/>   
+          image={require('../images/DSM.png')}
+          title="Design System @XebiaLabs, XL BASE"
+          subtitle="At XebiaLabs, I used DSM to enable designers and developers to working from the same source of truth. InVision DSM helped me to manage all components and communicate design language."
+          button="View Library"
+          link="https://projects.invisionapp.com/dsm/xebia-labs/xl-base"
+          target="_blank"/>         
 
-        <Project
-          image={require('../images/microInteractions.gif')}
-          title="The micro-Interactions"
-          subtitle="Micro interactions have only one purpose: To enable communication between the user and the application. It will delight the user by providing them with the with human-like interaction response from your product. Take a look at my Dribble profile for more. Mico-interactions page is coming soon."
-          button="View on Dribbble"
-          link="https://dribbble.com/bojankocijan82"
-          target="_blank"/>
+          <Project
+            image={require('../images/DSinFigma.png')}
+            title="Design System now in Figma"
+            subtitle="Our team becomes international, spanning 3 continents, and includes 3 more products. We're working on brand new stuff that will serve as a North Star for our other products to follow. I've moved the design system to from DSM to Figma with the organization of the projects and features in the tools."
+            button="Coming soon"
+            link="/"
+            target="_self"/>
+
+
+
+          <Project
+            image={require('../images/progressBar.gif')}
+            title="Contributing to the FramerX store"
+            subtitle="I am always keen to learn new things, new tools, and to improve myself. I made this small component to contribute to Framer X store. I am really excited to be a part of this big community. Search for Bojan Kocijan as a contributor."
+            button="Go to Framer store"
+            link="https://packages.framer.com/?q=Bojan%20Kocijan"
+            target="_blank"/>   
+
+          <Project
+            image={require('../images/microInteractions.gif')}
+            title="The micro-Interactions"
+            subtitle="Micro interactions have only one purpose: To enable communication between the user and the application. It will delight the user by providing them with the with human-like interaction response from your product. Take a look at my Dribble profile for more. Mico-interactions page is coming soon."
+            button="View on Dribbble"
+            link="https://dribbble.com/bojankocijan82"
+            target="_blank"/>
       </div>
 
       <SectionStyled
