@@ -21,9 +21,9 @@ const IndexPage = () => (
           <a href="https://drive.google.com/file/d/1OS1oqg8mV8-XL9ccnZFKTXri-2jCOVtY/view?usp=sharing" target="_blank"><button>Download CV</button></a>
           <div className="Logos">
             <Tooltip className="BlackTooltip" label="LinkedIn profile" style={{ background: "hsla(0, 0%, 0%, 0.75)", color: "white", border: "none", borderRadius: "4px", padding: "0.5em 1em", possition: "relative", marginLeft:"-50px", }}><a href="https://www.linkedin.com/in/bojankocijan/"  target="_blank"><img src={require('../images/ln.svg')} width="36px" /></a></Tooltip>
-            <Tooltip className="BlackTooltip" label="GitHub profile" style={{ background: "hsla(0, 0%, 0%, 0.75)", color: "white", border: "none", borderRadius: "4px", padding: "0.5em 1em", possition: "relative", marginLeft: "-40px",}}><a href="https://github.com/BojanKocijan"  target="_blank"><img src={require('../images/gitHub.svg')} width="36px" /></a></Tooltip> 
             <Tooltip className="BlackTooltip" label="Behance profile" style={{ background: "hsla(0, 0%, 0%, 0.75)", color: "white", border: "none", borderRadius: "4px", padding: "0.5em 1em", possition: "relative", marginLeft: "-40px",}}><a href="https://www.behance.net/KOCIJAN"  target="_blank"><img src={require('../images/behance.svg')} width="36px" /></a></Tooltip>
             <Tooltip className="BlackTooltip" label="Dribbble profile" style={{ background: "hsla(0, 0%, 0%, 0.75)", color: "white", border: "none", borderRadius: "4px", padding: "0.5em 1em", possition: "relative", marginLeft: "-46px",}}><a href="https://dribbble.com/bojankocijan82"  target="_blank"><img src={require('../images/dribbble-ball-mark.svg')} width="36px" /></a></Tooltip>
+            <Tooltip className="BlackTooltip" label="GitHub profile" style={{ background: "hsla(0, 0%, 0%, 0.75)", color: "white", border: "none", borderRadius: "4px", padding: "0.5em 1em", possition: "relative", marginLeft: "-40px",}}><a href="https://github.com/BojanKocijan"  target="_blank"><img src={require('../images/gitHub.svg')} width="36px" /></a></Tooltip> 
             <Tooltip className="BlackTooltip" label="Twitter profile" style={{ background: "hsla(0, 0%, 0%, 0.75)", color: "white", border: "none", borderRadius: "4px", padding: "0.5em 1em", possition: "relative", marginLeft: "-40px",}}><a href="https://twitter.com/bojankocijan"  target="_blank"><img src={require('../images/twitter.svg')} width="36px" /></a></Tooltip>
             <Tooltip className="BlackTooltip" label="Instagram profile" style={{ background: "hsla(0, 0%, 0%, 0.75)", color: "white", border: "none", borderRadius: "4px", padding: "0.5em 1em", possition: "relative", marginLeft: "-40px",}}><a href="https://www.instagram.com/bojan_kocijan/?hl=nl" target="_blank"><img src={require('../images/instagram.svg')} width="36px" /></a></Tooltip>
           </div>
@@ -142,9 +142,9 @@ const IndexPage = () => (
     text="Feel free to use website and projects as an inspiration. Knowledge-sharing and helping others is something that fills my heart. I made this portfolio with Gatsby react.">
       <div className="Contacts">
         <a href="https://www.linkedin.com/in/bojankocijan/" title="Linked in profile"  target="_blank"><img src={require('../images/ln.svg')} width="36px" /></a>
-        <a href="https://github.com/BojanKocijan" title="GitHub" target="_blank"><img src={require('../images/gitHub.svg')} width="36px" /></a> 
         <a href="https://www.behance.net/KOCIJAN" title="Behance" target="_blank"><img src={require('../images/behance.svg')} width="36px" /></a>
         <a href="https://dribbble.com/bojankocijan82" title="Dribbble" target="_blank"><img src={require('../images/dribbble-ball-mark.svg')} width="36px" /></a>
+        <a href="https://github.com/BojanKocijan" title="GitHub" target="_blank"><img src={require('../images/gitHub.svg')} width="36px" /></a> 
         <a href="https://twitter.com/bojankocijan" title="Twitter" target="_blank"><img src={require('../images/twitter.svg')} width="36px" /></a>
         <a href="https://www.instagram.com/bojan_kocijan/?hl=nl" title="Connect with me on Instagram" target="_blank"><img src={require('../images/instagram.svg')} width="36px" /></a>
       </div>
