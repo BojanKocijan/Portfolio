@@ -16,7 +16,7 @@ const IndexPage = () => (
      <div className="HeroGroup">
         <div id="profile"></div>
           <h1>Hi, I'm Bojan Kocijan</h1>
-          <p><small>A UI/UX and interaction designer who is passionate about code.</small><br></br>I help brands to launch new products with a focus on user experience</p>
+          <p><small>I am a Senior UI/UX and interaction designer who is passionate about code.</small><br></br>I help brands to launch new products with a focus on user experience</p>
           
           <a href="https://drive.google.com/file/d/1OS1oqg8mV8-XL9ccnZFKTXri-2jCOVtY/view?usp=sharing" target="_blank"><button>Download CV</button></a>
           <div className="Logos">
