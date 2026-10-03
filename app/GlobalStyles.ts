@@ -3,7 +3,7 @@ import { colors, fonts } from './theme'
 
 export const GlobalStyles = createGlobalStyle`
   *, *::before, *::after { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; }
   body {
     margin: 0;
     background: ${colors.bg};

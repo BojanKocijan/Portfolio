@@ -25,6 +25,12 @@ export const Glow = styled(motion.div)`
   background: radial-gradient(circle, rgba(198, 255, 77, 0.22), rgba(109, 108, 255, 0.14) 45%, transparent 70%);
   filter: blur(40px);
   pointer-events: none;
+
+  @media (max-width: 700px) {
+    width: 380px;
+    height: 380px;
+    filter: blur(28px);
+  }
 `
 
 export const Content = styled.div`
@@ -97,6 +103,7 @@ export const Cta = styled(motion.a)`
   align-self: flex-start;
   margin-top: 40px;
   padding: 16px 28px;
+  min-height: 52px;
   border-radius: 999px;
   background: ${colors.accent};
   color: ${colors.bg};

@@ -31,6 +31,10 @@ export const Actions = styled.div`
 `
 
 export const Button = styled(motion.a)<{ $primary?: boolean }>`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
   padding: 16px 30px;
   border-radius: 999px;
   font-weight: 600;
