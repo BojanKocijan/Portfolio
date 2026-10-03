@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 import { colors, fonts } from '../../theme'
 
 export const Section = styled.section`
@@ -71,5 +72,21 @@ export const Pillar = styled.li`
 
   p {
     color: ${colors.muted};
+  }
+`
+
+export const Photo = styled(motion.figure)`
+  margin: 0 0 16px;
+  overflow: hidden;
+  border-radius: 28px;
+  border: 1px solid ${colors.line};
+  aspect-ratio: 1 / 1;
+  max-width: 420px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 `

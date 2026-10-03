@@ -1,6 +1,8 @@
 import { about } from '../../content'
+import { ease } from '../../theme'
+import portrait from '../../assets/bojan.jpg'
 import { Reveal } from '../Reveal'
-import { Body, Columns, Label, Lead, Pillar, Pillars, Section } from './About.styles'
+import { Body, Columns, Label, Lead, Photo, Pillar, Pillars, Section } from './About.styles'
 
 export function About() {
   return (
@@ -17,7 +19,16 @@ export function About() {
             </Reveal>
           ))}
         </Body>
-        <Pillars>
+        <div>
+          <Photo
+            initial={{ opacity: 0, scale: 0.94 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: '-80px' }}
+            transition={{ duration: 0.9, ease }}
+          >
+            <img src={portrait} alt="Ink portrait of Bojan Kocijan" loading="lazy" />
+          </Photo>
+          <Pillars>
           {about.pillars.map((p, i) => (
             <Reveal key={p.title} delay={i * 0.12}>
               <Pillar>
@@ -26,7 +37,8 @@ export function About() {
               </Pillar>
             </Reveal>
           ))}
-        </Pillars>
+          </Pillars>
+        </div>
       </Columns>
     </Section>
   )
