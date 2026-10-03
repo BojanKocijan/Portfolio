@@ -4,6 +4,8 @@ Animated portfolio of **Bojan Kocijan**, UX Manager. Dark, cinematic and scroll-
 
 Built with Vite, React, TypeScript, styled-components and Framer Motion.
 
+Live: https://bojankocijan.github.io/Portfolio/ (deployed from `master` by GitHub Actions).
+
 ## Run it
 
 ```bash
