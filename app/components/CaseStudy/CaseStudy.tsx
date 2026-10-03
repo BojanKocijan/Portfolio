@@ -1,7 +1,7 @@
 import { ease } from '../../theme'
 import { Reveal } from '../Reveal'
 import {
-  Badge, Block, Chip, Fill, Grid, Index, Levels, Line, Name, Role, Section, Statuses, Step, Steps, Sticky, Tagline, Track, Visit, Visual,
+  Badge, Block, Chip, Fill, Grid, Index, Levels, Line, Links, Name, Role, Secondary, Section, Statuses, Step, Steps, Sticky, Tagline, Track, Visit, Visual,
 } from './CaseStudy.styles'
 import type { CaseStudyProps } from './CaseStudy.types'
 
@@ -80,16 +80,23 @@ export function CaseStudy({ study }: CaseStudyProps) {
             <Name>{study.name}</Name>
             <Role>{study.role}</Role>
             <Tagline>{study.tagline}</Tagline>
-            <Visit
-              $accent={accent}
-              href={study.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.97 }}
-            >
-              Visit {study.url.replace('https://', '')} ↗
-            </Visit>
+            <Links>
+              <Visit
+                $accent={accent}
+                href={study.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.97 }}
+              >
+                Visit {study.url.replace('https://', '')} ↗
+              </Visit>
+              {study.secondary && (
+                <Secondary href={study.secondary.url} target="_blank" rel="noopener noreferrer">
+                  {study.secondary.label} ↗
+                </Secondary>
+              )}
+            </Links>
           </Reveal>
         </Sticky>
         <div>

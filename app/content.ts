@@ -3,6 +3,7 @@ export interface CaseStudyData {
   index: string
   name: string
   url: string
+  secondary?: { label: string; url: string }
   role: string
   tagline: string
   accent: string
@@ -74,13 +75,14 @@ export const caseStudies: CaseStudyData[] = [
     index: '02',
     name: 'FrankBeam',
     url: 'https://frankbeam.com',
+    secondary: { label: 'Early prototype', url: 'https://room-transformations-321fcdf4.base44.app/' },
     role: 'Founder · Product & UX',
     tagline: 'Invoice your clients. Get paid on time.',
     accent: '#6d6cff',
     problem:
       'FrankBeam began as a way to track budgets and organise the money in a remodelling project. Following the real pain, it became invoicing for Dutch renovation contractors who work from their phone.',
     steps: [
-      { title: 'Started as a budget tracker', text: 'An early prototype organised remodelling projects and their costs.' },
+      { title: 'Started as a budget tracker', text: 'The first prototype was an idea for tracking budgets and organising the money in a remodelling project.' },
       { title: 'Correct Dutch BTW', text: 'Invoices use the right rates (21%, 9% or 0%) without the contractor thinking about it.' },
       { title: 'Phone first', text: 'Create a PDF and email it to the client without opening a laptop.' },
       { title: 'See who owes you', text: 'Outstanding, overdue and paid invoices at a glance, so follow-ups happen early.' },

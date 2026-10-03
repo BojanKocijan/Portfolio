@@ -78,6 +78,29 @@ export const Visit = styled(motion.a)<{ $accent: string }>`
   text-decoration: none;
 `
 
+export const Links = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+  margin-top: 32px;
+
+  > a:first-child {
+    margin-top: 0;
+  }
+`
+
+export const Secondary = styled.a`
+  color: ${colors.muted};
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.2s;
+
+  &:hover {
+    color: ${colors.text};
+  }
+`
+
 export const Block = styled.div`
   h3 {
     font-size: 0.85rem;
