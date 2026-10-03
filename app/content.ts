@@ -1,9 +1,10 @@
 export interface CaseStudyData {
-  id: 'coachcub' | 'frankbeam' | 'roomtransformations'
+  id: 'coachcub' | 'frankbeam' | 'roomtransformations' | 'remodo'
   index: string
   name: string
   url: string
   linkLabel?: string
+  note?: string
   role: string
   tagline: string
   accent: string
@@ -103,6 +104,25 @@ export const caseStudies: CaseStudyData[] = [
       { title: 'Budget in view', text: 'The idea of tracking the money alongside the work, which later shaped FrankBeam.' },
       { title: 'Before-and-after gallery', text: 'Each room tells its transformation visually, from the first photo to the finished result.' },
       { title: 'Three simple areas', text: 'Dashboard, Gallery and Projects keep the structure easy to scan.' },
+    ],
+  },
+  {
+    id: 'remodo',
+    index: '04',
+    name: 'ReMoDo',
+    url: 'https://remodo.base44.app/',
+    linkLabel: 'Open the prototype',
+    note: 'ReMoDo is a working name, not a registered or legal name.',
+    role: 'Concept · Product & UX',
+    tagline: 'Manage projects and client invoicing with clarity and calm.',
+    accent: '#38bdf8',
+    problem:
+      'Renovation work is spread across clients, contractors, budgets, invoices and materials. This prototype brings projects, client invoicing and contractor management into one calm workspace.',
+    steps: [
+      { title: 'Projects in one place', text: 'Create and follow projects with tasks and a dashboard that shows where everything stands.' },
+      { title: 'Clients and invoicing', text: 'Invoices and budgets live next to the client and the project they belong to.' },
+      { title: 'Contractors and workers', text: 'Companies and workers on a job are managed alongside the work itself.' },
+      { title: 'Tools for the job', text: 'Material calculation, a subsidy centre, reports and chat support the day-to-day work.' },
     ],
   },
 ]
