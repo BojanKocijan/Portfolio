@@ -227,3 +227,55 @@ export const Statuses = styled.div`
     color: ${colors.accent};
   }
 `
+
+export const Compare = styled.div`
+  position: relative;
+  height: 170px;
+  border-radius: 16px;
+  overflow: hidden;
+`
+
+export const Before = styled.div`
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 14px;
+  background: repeating-linear-gradient(135deg, #2a2d38 0 14px, #23262f 14px 28px);
+`
+
+export const After = styled(motion.div)<{ $accent: string }>`
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 14px;
+  background: linear-gradient(135deg, ${({ $accent }) => $accent}, #1b6f66);
+`
+
+export const Tag = styled.span`
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(7, 8, 12, 0.7);
+  font-size: 0.8rem;
+  font-weight: 600;
+`
+
+export const Tabs = styled.div`
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+
+  span {
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid ${colors.line};
+    font-size: 0.8rem;
+  }
+
+  span:first-child {
+    background: ${colors.text};
+    color: ${colors.bg};
+  }
+`
