@@ -1,50 +1,27 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "dependencies": {
-    "@reach/tooltip": "^0.10.0",
-    "babel-plugin-styled-components": "^1.10.7",
-    "gatsby": "^2.20.12",
-    "gatsby-image": "^2.3.1",
-    "gatsby-plugin-anchor-links": "^1.1.1",
-    "gatsby-plugin-layout": "^1.2.2",
-    "gatsby-plugin-manifest": "^2.3.3",
-    "gatsby-plugin-offline": "^3.1.2",
-    "gatsby-plugin-react-helmet": "^3.2.1",
-    "gatsby-plugin-sharp": "^2.5.3",
-    "gatsby-plugin-styled-components": "^3.2.2",
-    "gatsby-source-filesystem": "^2.2.2",
-    "gatsby-transformer-sharp": "^2.4.3",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1",
-    "styled-components": "^3.3.3"
-  },
-  "devDependencies": {
-    "prettier": "2.0.4"
-  },
-  "keywords": [
-    "gatsby"
-  ],
+  "version": "1.0.0",
+  "description": "Bojan Kocijan — UX Manager portfolio",
+  "type": "module",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  "dependencies": {
+    "framer-motion": "^14.0.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "styled-components": "^6.5.3"
   },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.2"
   }
 }
