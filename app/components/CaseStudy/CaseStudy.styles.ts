@@ -162,6 +162,8 @@ export const Levels = styled.div`
 `
 
 export const Track = styled.div`
+  flex: 1;
+  min-width: 80px;
   height: 14px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.08);
@@ -280,4 +282,12 @@ export const Tabs = styled.div`
     background: ${colors.text};
     color: ${colors.bg};
   }
+`
+
+export const Note = styled.p`
+  margin-top: 8px;
+  max-width: 34ch;
+  color: ${colors.muted};
+  font-size: 0.9rem;
+  font-style: italic;
 `

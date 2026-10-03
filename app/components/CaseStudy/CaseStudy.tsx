@@ -1,7 +1,7 @@
 import { ease } from '../../theme'
 import { Reveal } from '../Reveal'
 import {
-  After, Badge, Before, Block, Chip, Compare, Fill, Grid, Index, Levels, Line, Name, Role, Section, Statuses, Step, Steps, Sticky, Tabs, Tag, Tagline, Track, Visit, Visual,
+  After, Badge, Before, Block, Chip, Compare, Fill, Grid, Index, Levels, Line, Name, Note, Role, Section, Statuses, Step, Steps, Sticky, Tabs, Tag, Tagline, Track, Visit, Visual,
 } from './CaseStudy.styles'
 import type { CaseStudyProps } from './CaseStudy.types'
 
@@ -96,7 +96,51 @@ function RoomVisual({ accent }: { accent: string }) {
   )
 }
 
-const visuals = { coachcub: CoachCubVisual, frankbeam: FrankBeamVisual, roomtransformations: RoomVisual }
+function RemodoVisual({ accent }: { accent: string }) {
+  const projects = [
+    { label: 'Kitchen', progress: 0.8 },
+    { label: 'Bathroom', progress: 0.55 },
+    { label: 'Roof', progress: 0.3 },
+  ]
+  return (
+    <Visual $accent={accent} aria-hidden="true">
+      <small>Illustrative · project dashboard</small>
+      {projects.map((p, i) => (
+        <Line
+          key={p.label}
+          initial={{ opacity: 0, x: 24 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={viewport}
+          transition={{ delay: i * 0.18, duration: 0.6, ease }}
+        >
+          <span>{p.label}</span>
+          <Track>
+            <Fill
+              $accent={accent}
+              initial={{ scaleX: 0 }}
+              whileInView={{ scaleX: p.progress }}
+              viewport={viewport}
+              transition={{ duration: 1.4, delay: 0.3 + i * 0.18, ease }}
+            />
+          </Track>
+        </Line>
+      ))}
+      <Tabs>
+        <span>Projects</span>
+        <span>Invoices</span>
+        <span>Workers</span>
+        <span>Reports</span>
+      </Tabs>
+    </Visual>
+  )
+}
+
+const visuals = {
+  coachcub: CoachCubVisual,
+  frankbeam: FrankBeamVisual,
+  roomtransformations: RoomVisual,
+  remodo: RemodoVisual,
+}
 
 export function CaseStudy({ study }: CaseStudyProps) {
   const { accent } = study
@@ -109,6 +153,7 @@ export function CaseStudy({ study }: CaseStudyProps) {
             <Index $accent={accent}>{study.index} — Case study</Index>
             <Name>{study.name}</Name>
             <Role>{study.role}</Role>
+            {study.note && <Note>{study.note}</Note>}
             <Tagline>{study.tagline}</Tagline>
             <Visit
               $accent={accent}
