@@ -10,7 +10,7 @@ export const Section = styled.section`
 export const Panel = styled.div`
   max-width: 1280px;
   margin: 0 auto;
-  padding: clamp(28px, 5vw, 72px);
+  padding: clamp(22px, 5vw, 72px);
   border: 1px solid ${colors.line};
   border-radius: 32px;
   background: radial-gradient(70% 90% at 100% 0%, rgba(198, 255, 77, 0.12), transparent 60%), ${colors.surface};
@@ -49,6 +49,7 @@ export const Link = styled(motion.a)`
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  min-height: 52px;
   margin-top: 28px;
   padding: 14px 26px;
   border-radius: 999px;
@@ -87,7 +88,8 @@ export const Law = styled(motion.li)`
 
 export const Stats = styled.div`
   display: flex;
-  gap: 32px;
+  flex-wrap: wrap;
+  gap: 20px 32px;
   margin-top: 28px;
 `
 

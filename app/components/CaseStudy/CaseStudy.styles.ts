@@ -68,7 +68,9 @@ export const Tagline = styled.p`
 `
 
 export const Visit = styled(motion.a)<{ $accent: string }>`
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
   margin-top: 32px;
   padding: 14px 26px;
   border-radius: 999px;
@@ -106,8 +108,8 @@ export const Step = styled.li<{ $accent: string }>`
   counter-increment: step;
   display: grid;
   grid-template-columns: 40px 1fr;
-  gap: 4px 16px;
-  padding: 20px;
+  gap: 4px 14px;
+  padding: clamp(16px, 4vw, 20px);
   border: 1px solid ${colors.line};
   border-radius: 18px;
   background: ${colors.surface};
@@ -137,7 +139,7 @@ export const Step = styled.li<{ $accent: string }>`
 `
 
 export const Visual = styled.div<{ $accent: string }>`
-  padding: 28px;
+  padding: clamp(18px, 5vw, 28px);
   border: 1px solid ${({ $accent }) => $accent}55;
   border-radius: 24px;
   background: linear-gradient(160deg, ${colors.surface}, ${colors.bg});
