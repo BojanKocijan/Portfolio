@@ -1,7 +1,7 @@
 import { designForge } from '../../content'
 import { ease } from '../../theme'
 import { Reveal } from '../Reveal'
-import { Group, GroupTitle, Label, Law, Laws, Link, Panel, Section, SkillChips, Stat, Stats, Text, Title } from './DesignForge.styles'
+import { Group, GroupTitle, HabitChips, Label, Law, Laws, Link, Panel, Section, SkillChips, Stat, Stats, Text, Title } from './DesignForge.styles'
 
 function GitHubLogo() {
   return (
@@ -62,6 +62,14 @@ export function DesignForge() {
                 <span key={skill}>{skill}</span>
               ))}
             </SkillChips>
+          </Group>
+          <Group>
+            <GroupTitle>Works like a careful developer</GroupTitle>
+            <HabitChips>
+              {designForge.habits.map((habit) => (
+                <span key={habit}>{habit}</span>
+              ))}
+            </HabitChips>
           </Group>
         </div>
       </Panel>

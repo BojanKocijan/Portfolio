@@ -197,4 +197,12 @@ export const designForge = {
     'Project scaffold',
     'Frontend guide',
   ],
+  habits: [
+    'Thinks ahead: edge cases before code',
+    'No sloppy code: minimal, no bloat',
+    'Asks permission before acting',
+    'Verifies, never guesses',
+    'Scans for secrets before commits',
+    'You merge, never the AI',
+  ],
 }

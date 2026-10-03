@@ -133,3 +133,16 @@ export const SkillChips = styled.div`
     font-size: 0.9rem;
   }
 `
+
+export const HabitChips = styled(SkillChips)`
+  span {
+    border-color: ${colors.accent}55;
+    color: ${colors.accent};
+    background: ${colors.accent}12;
+  }
+
+  span::before {
+    content: '✓';
+    margin-right: 8px;
+  }
+`
