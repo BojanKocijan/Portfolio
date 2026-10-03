@@ -1,7 +1,12 @@
+import { useEffect, useRef, useState } from 'react'
+import type { ChangeEvent } from 'react'
+import { animate, useInView, useReducedMotion } from 'framer-motion'
 import { ease } from '../../theme'
+import roomBefore from '../../assets/room-before.jpg'
+import roomAfter from '../../assets/room-after.jpg'
 import { Reveal } from '../Reveal'
 import {
-  After, Badge, Before, Block, Chip, Compare, Fill, Grid, Index, Levels, Line, Name, Note, Role, Section, Statuses, Step, Steps, Sticky, Tabs, Tag, Tagline, Track, Visit, Visual,
+  After, Badge, Block, Chip, Compare, Fill, Grid, Handle, Index, Levels, Line, Name, Note, Photo, Range, Role, Section, Statuses, Step, Steps, Sticky, Tabs, Tag, Tagline, Track, Visit, Visual,
 } from './CaseStudy.styles'
 import type { CaseStudyProps } from './CaseStudy.types'
 
@@ -70,24 +75,45 @@ function FrankBeamVisual({ accent }: { accent: string }) {
 }
 
 function RoomVisual({ accent }: { accent: string }) {
+  const ref = useRef<HTMLDivElement>(null)
+  const inView = useInView(ref, { once: true, margin: '-60px' })
+  const reduceMotion = useReducedMotion()
+  const [pos, setPos] = useState(50)
+  const intro = useRef<{ stop: () => void } | null>(null)
+
+  useEffect(() => {
+    if (!inView || reduceMotion) return
+    intro.current = animate(8, 50, { duration: 1.6, ease, onUpdate: setPos })
+    return () => intro.current?.stop()
+  }, [inView, reduceMotion])
+
+  const onChange = (e: ChangeEvent<HTMLInputElement>) => {
+    intro.current?.stop()
+    setPos(Number(e.target.value))
+  }
+
   return (
-    <Visual $accent={accent} aria-hidden="true">
-      <small>Illustrative · before / after</small>
-      <Compare>
-        <Before>
-          <Tag>Before</Tag>
-        </Before>
-        <After
-          $accent={accent}
-          initial={{ clipPath: 'inset(0 100% 0 0)' }}
-          whileInView={{ clipPath: 'inset(0 0% 0 0)' }}
-          viewport={viewport}
-          transition={{ duration: 1.6, delay: 0.3, ease }}
-        >
-          <Tag>After</Tag>
+    <Visual $accent={accent}>
+      <small>House, Hilversum · 2025 · drag to compare</small>
+      <Compare ref={ref}>
+        <Photo
+          src={roomBefore}
+          alt="Living room before the renovation, with a dark leather corner sofa and a brick wall with a wood stove"
+          loading="lazy"
+        />
+        <After animate={{ clipPath: `inset(0 0% 0 ${pos}%)` }} transition={{ duration: 0 }}>
+          <Photo
+            src={roomAfter}
+            alt="The same living room after the renovation, with a herringbone floor, a blue corner sofa and a large window"
+            loading="lazy"
+          />
         </After>
+        <Tag>Before</Tag>
+        <Tag $right>After</Tag>
+        <Range type="range" min={0} max={100} value={pos} onChange={onChange} aria-label="Compare before and after" />
+        <Handle animate={{ left: `${pos}%` }} transition={{ duration: 0 }} aria-hidden="true" />
       </Compare>
-      <Tabs>
+      <Tabs aria-hidden="true">
         <span>Dashboard</span>
         <span>Gallery</span>
         <span>Projects</span>

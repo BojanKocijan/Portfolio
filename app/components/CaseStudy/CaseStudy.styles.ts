@@ -25,12 +25,12 @@ export const Grid = styled.div`
   max-width: 1280px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 56px;
 
   @media (min-width: 960px) {
-    grid-template-columns: 5fr 6fr;
-    gap: 96px;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    gap: clamp(40px, 6vw, 96px);
     align-items: start;
   }
 `
@@ -51,9 +51,14 @@ export const Index = styled.p<{ $accent: string }>`
 
 export const Name = styled.h2`
   font-family: ${fonts.display};
-  font-size: clamp(3rem, 8vw, 6.5rem);
+  font-size: clamp(2.6rem, 8vw, 6.5rem);
   line-height: 1;
   letter-spacing: -0.04em;
+  overflow-wrap: break-word;
+
+  @media (min-width: 960px) {
+    font-size: clamp(2.4rem, 4.4vw, 6.5rem);
+  }
 `
 
 export const Role = styled.p`
@@ -234,36 +239,80 @@ export const Statuses = styled.div`
 
 export const Compare = styled.div`
   position: relative;
-  height: 170px;
+  aspect-ratio: 16 / 10;
   border-radius: 16px;
   overflow: hidden;
+  touch-action: pan-y;
 `
 
-export const Before = styled.div`
+export const Photo = styled.img`
   position: absolute;
   inset: 0;
-  display: flex;
-  align-items: flex-end;
-  padding: 14px;
-  background: repeating-linear-gradient(135deg, #2a2d38 0 14px, #23262f 14px 28px);
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  pointer-events: none;
 `
 
-export const After = styled(motion.div)<{ $accent: string }>`
+export const After = styled(motion.div)`
   position: absolute;
   inset: 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  padding: 14px;
-  background: linear-gradient(135deg, ${({ $accent }) => $accent}, #1b6f66);
 `
 
-export const Tag = styled.span`
+export const Handle = styled(motion.div)`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  margin-left: -1.5px;
+  background: #fff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+
+  &::after {
+    content: '↔';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0 -20px;
+    border-radius: 50%;
+    background: #fff;
+    color: #07080c;
+    font-weight: 700;
+  }
+`
+
+export const Range = styled.input`
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: ew-resize;
+
+  &:focus-visible + ${Handle} {
+    outline: 2px solid ${colors.accent};
+    outline-offset: 4px;
+  }
+`
+
+export const Tag = styled.span<{ $right?: boolean }>`
+  position: absolute;
+  bottom: 12px;
+  ${({ $right }) => ($right ? 'right: 12px;' : 'left: 12px;')}
   padding: 4px 12px;
   border-radius: 999px;
   background: rgba(7, 8, 12, 0.7);
   font-size: 0.8rem;
   font-weight: 600;
+  pointer-events: none;
 `
 
 export const Tabs = styled.div`
