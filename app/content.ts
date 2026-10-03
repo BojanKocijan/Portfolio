@@ -1,9 +1,9 @@
 export interface CaseStudyData {
-  id: 'coachcub' | 'frankbeam'
+  id: 'coachcub' | 'frankbeam' | 'roomtransformations'
   index: string
   name: string
   url: string
-  secondary?: { label: string; url: string }
+  linkLabel?: string
   role: string
   tagline: string
   accent: string
@@ -75,17 +75,34 @@ export const caseStudies: CaseStudyData[] = [
     index: '02',
     name: 'FrankBeam',
     url: 'https://frankbeam.com',
-    secondary: { label: 'Early prototype', url: 'https://room-transformations-321fcdf4.base44.app/' },
     role: 'Founder · Product & UX',
     tagline: 'Invoice your clients. Get paid on time.',
     accent: '#6d6cff',
     problem:
       'FrankBeam began as a way to track budgets and organise the money in a remodelling project. Following the real pain, it became invoicing for Dutch renovation contractors who work from their phone.',
     steps: [
-      { title: 'Started as a budget tracker', text: 'The first prototype was an idea for tracking budgets and organising the money in a remodelling project.' },
+      { title: 'Started as a budget tracker', text: 'It grew out of the Room Transformations idea: tracking budgets and organising the money in a remodelling project.' },
       { title: 'Correct Dutch BTW', text: 'Invoices use the right rates (21%, 9% or 0%) without the contractor thinking about it.' },
       { title: 'Phone first', text: 'Create a PDF and email it to the client without opening a laptop.' },
       { title: 'See who owes you', text: 'Outstanding, overdue and paid invoices at a glance, so follow-ups happen early.' },
+    ],
+  },
+  {
+    id: 'roomtransformations',
+    index: '03',
+    name: 'Room Transformations',
+    url: 'https://room-transformations-321fcdf4.base44.app/',
+    linkLabel: 'Open the prototype',
+    role: 'Concept · Product & UX',
+    tagline: 'Showcase stunning before-and-after transformations of home rooms.',
+    accent: '#2dd4bf',
+    problem:
+      'A remodelling project spreads across budgets, rooms and photos, with no single place to organise it. This prototype explored tracking the budget and the project in one app, and showing the result as a before-and-after story.',
+    steps: [
+      { title: 'One home for the project', text: 'Remodelling projects are organised in a single place instead of scattered notes.' },
+      { title: 'Budget in view', text: 'The idea of tracking the money alongside the work, which later shaped FrankBeam.' },
+      { title: 'Before-and-after gallery', text: 'Each room tells its transformation visually, from the first photo to the finished result.' },
+      { title: 'Three simple areas', text: 'Dashboard, Gallery and Projects keep the structure easy to scan.' },
     ],
   },
 ]

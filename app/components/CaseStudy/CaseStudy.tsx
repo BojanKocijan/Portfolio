@@ -1,7 +1,7 @@
 import { ease } from '../../theme'
 import { Reveal } from '../Reveal'
 import {
-  Badge, Block, Chip, Fill, Grid, Index, Levels, Line, Links, Name, Role, Secondary, Section, Statuses, Step, Steps, Sticky, Tagline, Track, Visit, Visual,
+  After, Badge, Before, Block, Chip, Compare, Fill, Grid, Index, Levels, Line, Name, Role, Section, Statuses, Step, Steps, Sticky, Tabs, Tag, Tagline, Track, Visit, Visual,
 } from './CaseStudy.styles'
 import type { CaseStudyProps } from './CaseStudy.types'
 
@@ -69,8 +69,38 @@ function FrankBeamVisual({ accent }: { accent: string }) {
   )
 }
 
+function RoomVisual({ accent }: { accent: string }) {
+  return (
+    <Visual $accent={accent} aria-hidden="true">
+      <small>Illustrative · before / after</small>
+      <Compare>
+        <Before>
+          <Tag>Before</Tag>
+        </Before>
+        <After
+          $accent={accent}
+          initial={{ clipPath: 'inset(0 100% 0 0)' }}
+          whileInView={{ clipPath: 'inset(0 0% 0 0)' }}
+          viewport={viewport}
+          transition={{ duration: 1.6, delay: 0.3, ease }}
+        >
+          <Tag>After</Tag>
+        </After>
+      </Compare>
+      <Tabs>
+        <span>Dashboard</span>
+        <span>Gallery</span>
+        <span>Projects</span>
+      </Tabs>
+    </Visual>
+  )
+}
+
+const visuals = { coachcub: CoachCubVisual, frankbeam: FrankBeamVisual, roomtransformations: RoomVisual }
+
 export function CaseStudy({ study }: CaseStudyProps) {
   const { accent } = study
+  const VisualComponent = visuals[study.id]
   return (
     <Section id={study.id === 'coachcub' ? 'work' : undefined} $accent={accent}>
       <Grid>
@@ -80,23 +110,16 @@ export function CaseStudy({ study }: CaseStudyProps) {
             <Name>{study.name}</Name>
             <Role>{study.role}</Role>
             <Tagline>{study.tagline}</Tagline>
-            <Links>
-              <Visit
-                $accent={accent}
-                href={study.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.97 }}
-              >
-                Visit {study.url.replace('https://', '')} ↗
-              </Visit>
-              {study.secondary && (
-                <Secondary href={study.secondary.url} target="_blank" rel="noopener noreferrer">
-                  {study.secondary.label} ↗
-                </Secondary>
-              )}
-            </Links>
+            <Visit
+              $accent={accent}
+              href={study.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.97 }}
+            >
+              {study.linkLabel ?? `Visit ${study.url.replace('https://', '')}`} ↗
+            </Visit>
           </Reveal>
         </Sticky>
         <div>
@@ -107,7 +130,9 @@ export function CaseStudy({ study }: CaseStudyProps) {
             </Block>
           </Reveal>
           <br />
-          <Reveal>{study.id === 'coachcub' ? <CoachCubVisual accent={accent} /> : <FrankBeamVisual accent={accent} />}</Reveal>
+          <Reveal>
+            <VisualComponent accent={accent} />
+          </Reveal>
           <br />
           <Block>
             <h3>What I designed</h3>
