@@ -165,7 +165,7 @@ export const recognition = {
     'First prize, animated film “The Bugs” (2004)',
     'Design nominations, Suncane skale festival (2006, 2008)',
   ],
-  education: ['University of Belgrade, graphic design and printing processes (2003–2008), graduated with honours'],
+  education: ['VISER, Bachelor’s degree in Computer Science'],
   languages: ['English (professional)', 'Serbian (native)'],
 }
 
