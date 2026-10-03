@@ -21,7 +21,7 @@ Mocks only: static typed content in `app/content.ts`. No backend, no database.
 ## 7. Decisions
 - No metrics on case studies (owner decision). Do not invent numbers.
 - Owner's photo asset in `src/images/aboutMe.*` is a family photo: never use it on the public page.
-- Legacy Gatsby 2 files were removed with owner approval. Old project images remain in git history only.
+- The old Gatsby 2 starter was removed with owner approval. The site no longer uses Gatsby.
 - Deployed to GitHub Pages via .github/workflows/pages.yml: https://bojankocijan.github.io/Portfolio/
 - Gate tier lowered via `skip gates` at owner's request (issue #38).
 
