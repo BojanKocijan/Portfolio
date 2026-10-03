@@ -46,7 +46,9 @@ export const Text = styled.p`
 `
 
 export const Link = styled(motion.a)`
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   margin-top: 28px;
   padding: 14px 26px;
   border-radius: 999px;
@@ -80,5 +82,54 @@ export const Law = styled(motion.li)`
     content: counter(law, decimal-leading-zero);
     color: ${colors.accent};
     font-size: 0.85rem;
+  }
+`
+
+export const Stats = styled.div`
+  display: flex;
+  gap: 32px;
+  margin-top: 28px;
+`
+
+export const Stat = styled.div`
+  strong {
+    display: block;
+    font-family: ${fonts.display};
+    font-size: 2.4rem;
+    line-height: 1;
+    color: ${colors.accent};
+  }
+
+  span {
+    color: ${colors.muted};
+    font-size: 0.9rem;
+  }
+`
+
+export const Group = styled.div`
+  & + & {
+    margin-top: 28px;
+  }
+`
+
+export const GroupTitle = styled.h3`
+  margin-bottom: 14px;
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: ${colors.muted};
+`
+
+export const SkillChips = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  span {
+    padding: 8px 16px;
+    border: 1px solid ${colors.line};
+    border-radius: 999px;
+    background: ${colors.bg};
+    font-size: 0.9rem;
   }
 `
