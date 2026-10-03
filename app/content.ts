@@ -171,15 +171,38 @@ export const recognition = {
 
 export const designForge = {
   url: 'https://github.com/BojanKocijan/design-forge',
-  label: 'Open source · Design Forge',
-  title: 'A constitution for AI pair-programming.',
-  text: 'Governance-first AI adoption, made concrete. Design Forge is my open-source framework of 37 binding laws, skills and agents that make Claude Code work like a disciplined senior product engineer.',
-  laws: [
+  label: 'Open source · Rules and skills for Claude Code',
+  title: 'Rules and skills that make AI work like a senior teammate.',
+  text: 'Governance-first AI adoption, made concrete. Design Forge is my open-source set of binding rules, reusable skills and agents that govern how Claude Code plans, builds and ships work.',
+  stats: [
+    { value: '37', label: 'Rules' },
+    { value: '17', label: 'Skills' },
+    { value: '8', label: 'Agents' },
+  ],
+  rules: [
     'Announce before acting',
     'Branch and issue before code',
     'Never push to main',
     'Never merge for you',
     'Small, atomic PRs',
     'Accessibility baked in',
+  ],
+  skills: [
+    'Design critique',
+    'Developer handoff',
+    'UX writing',
+    'Figma craft',
+    'UX research',
+    'Feature workflow',
+    'Project scaffold',
+    'Frontend guide',
+  ],
+  habits: [
+    'Thinks ahead: edge cases before code',
+    'No sloppy code: minimal, no bloat',
+    'Asks permission before acting',
+    'Verifies, never guesses',
+    'Scans for secrets before commits',
+    'You merge, never the AI',
   ],
 }
