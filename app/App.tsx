@@ -5,6 +5,7 @@ import { About } from './components/About'
 import { CaseStudy } from './components/CaseStudy'
 import { Contact } from './components/Contact'
 import { DesignForge } from './components/DesignForge'
+import { Nav } from './components/Nav'
 import { Hero } from './components/Hero'
 import { Recognition } from './components/Recognition'
 import { ScrollProgress } from './components/ScrollProgress'
@@ -15,6 +16,7 @@ export function App() {
     <MotionConfig reducedMotion="user">
       <GlobalStyles />
       <ScrollProgress />
+      <Nav />
       <main>
         <Hero />
         {caseStudies.map((study) => (

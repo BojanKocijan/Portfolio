@@ -2,7 +2,7 @@ import { useState } from 'react'
 import type { PointerEvent } from 'react'
 import { profile } from '../../content'
 import { ease } from '../../theme'
-import { Content, Cta, Eyebrow, Glow, Intro, Mask, Nav, Section, Ticker, Title, Track, Word } from './Hero.styles'
+import { Content, Cta, Eyebrow, Glow, Intro, Mask, Section, Ticker, Title, Track, Word } from './Hero.styles'
 import type { Point } from './Hero.types'
 
 export function Hero() {
@@ -16,17 +16,8 @@ export function Hero() {
   const ticker = [...profile.ticker, ...profile.ticker]
 
   return (
-    <Section onPointerMove={follow}>
+    <Section id="top" onPointerMove={follow}>
       <Glow animate={{ x: pos.x, y: pos.y }} transition={{ type: 'spring', stiffness: 40, damping: 20 }} aria-hidden="true" />
-      <Nav aria-label="Primary">
-        <span>{profile.name}</span>
-        <div>
-          <a href="#work">Work</a>
-          <a href="#journey">Journey</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </Nav>
       <Content>
         <Eyebrow initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease }}>
           {profile.title} · Digital.ai · Founder of CoachCub and FrankBeam

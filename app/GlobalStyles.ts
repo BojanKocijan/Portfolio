@@ -13,6 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
+  section[id] { scroll-margin-top: 64px; }
   h1, h2, h3, p { margin: 0; }
   a { color: inherit; }
   ::selection { background: ${colors.accent}; color: ${colors.bg}; }

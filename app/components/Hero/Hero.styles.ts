@@ -8,7 +8,7 @@ const scroll = keyframes`
 
 export const Section = styled.section`
   position: relative;
-  min-height: 100svh;
+  min-height: calc(100svh - 64px);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -25,37 +25,6 @@ export const Glow = styled(motion.div)`
   background: radial-gradient(circle, rgba(198, 255, 77, 0.22), rgba(109, 108, 255, 0.14) 45%, transparent 70%);
   filter: blur(40px);
   pointer-events: none;
-`
-
-export const Nav = styled.nav`
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 28px 0;
-  font-family: ${fonts.display};
-  font-weight: 600;
-
-  > span {
-    white-space: nowrap;
-  }
-
-  div {
-    display: flex;
-    gap: clamp(10px, 3vw, 36px);
-    font-size: clamp(0.8rem, 2.4vw, 0.95rem);
-    font-weight: 500;
-    color: ${colors.muted};
-  }
-
-  a {
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-
-  a:hover {
-    color: ${colors.text};
-  }
 `
 
 export const Content = styled.div`
