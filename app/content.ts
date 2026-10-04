@@ -193,7 +193,7 @@ export const designForge = {
   url: 'https://github.com/BojanKocijan/design-forge',
   coffee: {
     url: 'https://ko-fi.com/bojaforjelena',
-    text: 'My wife loves coffee so much I build side projects to keep her cup full. If Design Forge helps you, buy her a coffee.',
+    text: 'If you’re married, you already know how this works: a happy wife means a happy life, and in my house a happy wife means a full cup of coffee. We’ve been happily married for years, mostly thanks to a reliable coffee supply. ☕',
     link: 'Buy her a coffee',
   },
   label: 'Open source · Rules and skills for Claude Code',
