@@ -59,6 +59,18 @@ export const Link = styled(motion.a)`
   text-decoration: none;
 `
 
+export const Coffee = styled.p`
+  margin-top: 20px;
+  color: ${colors.muted};
+  font-size: 0.95rem;
+  max-width: 56ch;
+
+  a {
+    color: ${colors.accent};
+    text-underline-offset: 3px;
+  }
+`
+
 export const Laws = styled.ol`
   list-style: none;
   margin: 0;

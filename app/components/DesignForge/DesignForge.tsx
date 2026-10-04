@@ -1,7 +1,7 @@
 import { designForge } from '../../content'
 import { ease } from '../../theme'
 import { Reveal } from '../Reveal'
-import { Group, GroupTitle, HabitChips, Label, Law, Laws, Link, Panel, Section, SkillChips, Stat, Stats, Text, Title } from './DesignForge.styles'
+import { Coffee, Group, GroupTitle, HabitChips, Label, Law, Laws, Link, Panel, Section, SkillChips, Stat, Stats, Text, Title } from './DesignForge.styles'
 
 function GitHubLogo() {
   return (
@@ -37,6 +37,12 @@ export function DesignForge() {
             <GitHubLogo />
             View on GitHub
           </Link>
+          <Coffee>
+            {designForge.coffee.text}{' '}
+            <a href={designForge.coffee.url} target="_blank" rel="noopener noreferrer">
+              {designForge.coffee.link}
+            </a>
+          </Coffee>
         </Reveal>
         <div>
           <Group>
