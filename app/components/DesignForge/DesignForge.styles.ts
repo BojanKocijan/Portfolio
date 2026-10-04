@@ -50,7 +50,6 @@ export const Link = styled(motion.a)`
   align-items: center;
   gap: 10px;
   min-height: 52px;
-  margin-top: 28px;
   padding: 14px 26px;
   border-radius: 999px;
   background: ${colors.accent};
@@ -59,16 +58,31 @@ export const Link = styled(motion.a)`
   text-decoration: none;
 `
 
+export const Actions = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+`
+
+export const CoffeeLink = styled(motion.a)`
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 14px 26px;
+  border: 1px solid ${colors.accent};
+  border-radius: 999px;
+  color: ${colors.accent};
+  font-weight: 600;
+  text-decoration: none;
+`
+
 export const Coffee = styled.p`
-  margin-top: 20px;
+  margin-top: 16px;
   color: ${colors.muted};
   font-size: 0.95rem;
   max-width: 56ch;
-
-  a {
-    color: ${colors.accent};
-    text-underline-offset: 3px;
-  }
 `
 
 export const Laws = styled.ol`
