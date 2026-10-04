@@ -193,7 +193,7 @@ export const designForge = {
   url: 'https://github.com/BojanKocijan/design-forge',
   label: 'Open source · Rules and skills for Claude Code',
   title: 'Rules and skills that make AI work like a senior teammate.',
-  text: 'Governance-first AI adoption, made concrete. Design Forge is my open-source set of binding rules, reusable skills and agents that govern how Claude Code plans, builds and ships work.',
+  text: 'Governance-first AI adoption, made concrete. Design Forge is my open-source playbook: what I know as a UX manager, full-stack designer and developer, turned into binding rules, skills and agents that govern how Claude Code researches, designs, builds and ships.',
   stats: [
     { value: '37', label: 'Rules' },
     { value: '17', label: 'Skills' },
