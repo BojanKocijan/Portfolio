@@ -78,11 +78,40 @@ export const CoffeeLink = styled(motion.a)`
   text-decoration: none;
 `
 
+export const Support = styled.div`
+  padding-top: 40px;
+  border-top: 1px solid ${colors.line};
+
+  @media (min-width: 900px) {
+    grid-column: 1 / -1;
+  }
+`
+
+export const SupportInner = styled.div`
+  display: grid;
+  gap: 24px;
+  justify-items: start;
+
+  @media (min-width: 900px) {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 48px;
+  }
+`
+
+export const SupportTitle = styled.h3`
+  font-family: ${fonts.display};
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  max-width: 30ch;
+`
+
 export const Coffee = styled.p`
-  margin-top: 16px;
+  margin-top: 12px;
   color: ${colors.muted};
-  font-size: 0.95rem;
-  max-width: 56ch;
+  font-size: 1rem;
+  max-width: 64ch;
 `
 
 export const Laws = styled.ol`

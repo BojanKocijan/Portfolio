@@ -1,7 +1,7 @@
 import { designForge } from '../../content'
 import { ease } from '../../theme'
 import { Reveal } from '../Reveal'
-import { Actions, Coffee, CoffeeLink, Group, GroupTitle, HabitChips, Label, Law, Laws, Link, Panel, Section, SkillChips, Stat, Stats, Text, Title } from './DesignForge.styles'
+import { Actions, Coffee, CoffeeLink, Group, GroupTitle, HabitChips, Label, Law, Laws, Link, Panel, Section, SkillChips, Stat, Stats, Support, SupportInner, SupportTitle, Text, Title } from './DesignForge.styles'
 
 function GitHubLogo() {
   return (
@@ -38,18 +38,7 @@ export function DesignForge() {
               <GitHubLogo />
               View on GitHub
             </Link>
-            <CoffeeLink
-              href={designForge.coffee.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.97 }}
-            >
-              <span aria-hidden="true">☕</span>
-              {designForge.coffee.link}
-            </CoffeeLink>
           </Actions>
-          <Coffee>{designForge.coffee.text}</Coffee>
         </Reveal>
         <div>
           <Group>
@@ -85,6 +74,26 @@ export function DesignForge() {
             </HabitChips>
           </Group>
         </div>
+        <Support>
+          <Reveal>
+            <SupportInner>
+              <div>
+                <SupportTitle>{designForge.coffee.title}</SupportTitle>
+                <Coffee>{designForge.coffee.text}</Coffee>
+              </div>
+              <CoffeeLink
+                href={designForge.coffee.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.97 }}
+              >
+                <span aria-hidden="true">☕</span>
+                {designForge.coffee.link}
+              </CoffeeLink>
+            </SupportInner>
+          </Reveal>
+        </Support>
       </Panel>
     </Section>
   )
