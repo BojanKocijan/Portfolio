@@ -192,9 +192,9 @@ export const recognition = {
 export const designForge = {
   url: 'https://github.com/BojanKocijan/design-forge',
   coffee: {
-    url: 'https://paypal.me/JelenaKocijan',
-    text: 'My wife loves coffee so much I build side projects to keep her cup full. If Design Forge helps you,',
-    link: 'buy her a coffee ☕',
+    url: 'https://ko-fi.com/bojaforjelena',
+    text: 'My wife loves coffee so much I build side projects to keep her cup full. If Design Forge helps you, buy her a coffee.',
+    link: 'Buy her a coffee',
   },
   label: 'Open source · Rules and skills for Claude Code',
   title: 'Rules and skills that make AI work like a senior teammate.',
