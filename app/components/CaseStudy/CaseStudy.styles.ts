@@ -20,6 +20,41 @@ export const Section = styled.section<{ $accent: string }>`
   }
 `
 
+export const navHeight = 57
+const gutter = 'clamp(20px, 5vw, 72px)'
+
+export const Rail = styled.div`
+  position: sticky;
+  top: ${navHeight}px;
+  z-index: 30;
+  height: 0;
+  margin: 0 calc(-1 * ${gutter});
+  pointer-events: none;
+`
+
+export const Context = styled(motion.div)<{ $accent: string }>`
+  padding: 10px ${gutter};
+  background: rgba(7, 8, 12, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid ${colors.line};
+  font-family: ${fonts.display};
+  font-size: 0.95rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  strong {
+    color: ${({ $accent }) => $accent};
+  }
+
+  span {
+    color: ${colors.muted};
+    font-weight: 500;
+  }
+`
+
 export const Grid = styled.div`
   position: relative;
   max-width: 1280px;
