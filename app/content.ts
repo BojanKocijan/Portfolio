@@ -1,14 +1,15 @@
 export interface CaseStudyData {
-  id: 'coachcub' | 'frankbeam' | 'roomtransformations' | 'remodo'
+  id: 'digitalai' | 'coachcub' | 'frankbeam' | 'roomtransformations' | 'remodo'
   index: string
   name: string
-  url: string
+  url?: string
   linkLabel?: string
   note?: string
   role: string
   tagline: string
   accent: string
   problem: string
+  stepsHeading?: string
   steps: { title: string; text: string }[]
 }
 
@@ -55,8 +56,26 @@ export const about = {
 
 export const caseStudies: CaseStudyData[] = [
   {
-    id: 'coachcub',
+    id: 'digitalai',
     index: '01',
+    name: 'Digital.ai',
+    note: 'Product details are anonymised under NDA.',
+    role: 'UX Manager · Enterprise software',
+    tagline: 'AI in the design system, with the guardrails to trust it.',
+    accent: '#c6ff4d',
+    problem:
+      'AI was speeding up the team’s work, but there was little control over what was shipped with it and no governance around it.',
+    stepsHeading: 'What I led',
+    steps: [
+      { title: 'AI inside the design system', text: 'My team adopted AI in the design system to automate repetitive work.' },
+      { title: 'Governance first', text: 'Clear rules for what AI produces and how it ships, so speed never costs trust.' },
+      { title: 'Shaping usage and contribution', text: 'Governance let me influence how our components are used and how the team contributes to them.' },
+      { title: 'Measuring the impact', text: 'We measure how AI changes the work in our tools, so decisions rest on evidence, not opinion.' },
+    ],
+  },
+  {
+    id: 'coachcub',
+    index: '02',
     name: 'CoachCub',
     url: 'https://coachcub.app',
     role: 'Founder · Product & UX',
@@ -73,7 +92,7 @@ export const caseStudies: CaseStudyData[] = [
   },
   {
     id: 'frankbeam',
-    index: '02',
+    index: '03',
     name: 'FrankBeam',
     url: 'https://frankbeam.com',
     role: 'Founder · Product & UX',
@@ -90,7 +109,7 @@ export const caseStudies: CaseStudyData[] = [
   },
   {
     id: 'roomtransformations',
-    index: '03',
+    index: '04',
     name: 'Room Transformations',
     url: 'https://room-transformations-321fcdf4.base44.app/',
     linkLabel: 'Open the prototype',
@@ -108,7 +127,7 @@ export const caseStudies: CaseStudyData[] = [
   },
   {
     id: 'remodo',
-    index: '04',
+    index: '05',
     name: 'ReMoDo',
     url: 'https://remodo.base44.app/',
     linkLabel: 'Open the prototype',
