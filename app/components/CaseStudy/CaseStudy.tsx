@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
-import type { ChangeEvent } from 'react'
+import type { ChangeEvent, RefObject } from 'react'
 import { animate, useInView, useReducedMotion } from 'framer-motion'
 import { ease } from '../../theme'
 import roomBefore from '../../assets/room-before.jpg'
 import roomAfter from '../../assets/room-after.jpg'
 import { Reveal } from '../Reveal'
 import {
-  After, Badge, Block, Chip, Compare, Comparison, Fill, Grid, Handle, Index, Levels, Line, Name, Note, Photo, Range, Role, Section, Statuses, Step, Steps, Sticky, Tabs, Tag, Tagline, Track, Visit, Visual,
+  After, Arrow, Badge, Block, Chip, Compare, Comparison, ComparisonHead, Context, Fill, Grid, Handle, Index, Levels, Line, Name, navHeight, Note, Photo, Rail, Range, Role, Section, Statuses, Step, Steps, Tabs, Tag, Tagline, Track, Visit, Visual, Wide, WideSteps,
 } from './CaseStudy.styles'
 import type { CaseStudyProps } from './CaseStudy.types'
 
@@ -199,16 +199,43 @@ const visuals = {
   remodo: RemodoVisual,
 }
 
+function usePassed(ref: RefObject<HTMLElement | null>, offset: number) {
+  const [passed, setPassed] = useState(false)
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      ([entry]) => setPassed(!entry.isIntersecting && entry.boundingClientRect.top < offset),
+      { rootMargin: `-${offset}px 0px 0px 0px` },
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [ref, offset])
+  return passed
+}
+
 export function CaseStudy({ study }: CaseStudyProps) {
   const { accent } = study
   const VisualComponent = visuals[study.id]
+  const nameRef = useRef<HTMLHeadingElement>(null)
+  const showContext = usePassed(nameRef, navHeight)
   return (
     <Section id={study.index === '01' ? 'work' : undefined} $accent={accent}>
+      <Rail aria-hidden="true">
+        <Context
+          $accent={accent}
+          initial={false}
+          animate={{ opacity: showContext ? 1 : 0 }}
+          transition={{ duration: 0.25 }}
+        >
+          <strong>{study.index} — {study.name}</strong> <span>· {study.role}</span>
+        </Context>
+      </Rail>
       <Grid>
-        <Sticky>
+        <div>
           <Reveal>
             <Index $accent={accent}>{study.index} — Case study</Index>
-            <Name>{study.name}</Name>
+            <Name ref={nameRef}>{study.name}</Name>
             <Role>{study.role}</Role>
             {study.note && <Note>{study.note}</Note>}
             <Tagline>{study.tagline}</Tagline>
@@ -225,7 +252,7 @@ export function CaseStudy({ study }: CaseStudyProps) {
               </Visit>
             )}
           </Reveal>
-        </Sticky>
+        </div>
         <div>
           <Reveal>
             <Block>
@@ -251,13 +278,16 @@ export function CaseStudy({ study }: CaseStudyProps) {
               </Reveal>
             ))}
           </Steps>
+        </div>
+      </Grid>
+      {(study.security || study.comparison) && (
+        <Wide>
           {study.security && (
-            <>
-              <br />
+            <div>
               <Block>
                 <h3>{study.security.heading}</h3>
               </Block>
-              <Steps>
+              <WideSteps>
                 {study.security.items.map((s, i) => (
                   <Reveal key={s.title} delay={i * 0.08}>
                     <Step $accent={accent}>
@@ -266,15 +296,18 @@ export function CaseStudy({ study }: CaseStudyProps) {
                     </Step>
                   </Reveal>
                 ))}
-              </Steps>
-            </>
+              </WideSteps>
+            </div>
           )}
           {study.comparison && (
-            <>
-              <br />
+            <div>
               <Block>
                 <h3>{study.comparison.heading}</h3>
               </Block>
+              <ComparisonHead $accent={accent} aria-hidden="true">
+                <span>Before</span>
+                <span>After</span>
+              </ComparisonHead>
               <Comparison $accent={accent}>
                 {study.comparison.rows.map((r, i) => (
                   <Reveal key={r.before} delay={i * 0.08}>
@@ -283,6 +316,7 @@ export function CaseStudy({ study }: CaseStudyProps) {
                         <small>Before</small>
                         <span>{r.before}</span>
                       </div>
+                      <Arrow $accent={accent} aria-hidden="true">→</Arrow>
                       <div>
                         <small>After</small>
                         <span>{r.after}</span>
@@ -291,10 +325,10 @@ export function CaseStudy({ study }: CaseStudyProps) {
                   </Reveal>
                 ))}
               </Comparison>
-            </>
+            </div>
           )}
-        </div>
-      </Grid>
+        </Wide>
+      )}
     </Section>
   )
 }
