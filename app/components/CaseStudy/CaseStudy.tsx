@@ -12,6 +12,36 @@ import type { CaseStudyProps } from './CaseStudy.types'
 
 const viewport = { once: true, margin: '-60px' }
 
+function DigitalAiVisual({ accent }: { accent: string }) {
+  const stages = [
+    { label: 'AI drafts the change', status: 'Automated' },
+    { label: 'Rules check what ships', status: 'Governed' },
+    { label: 'Team contributes back', status: 'Shared' },
+  ]
+  return (
+    <Visual $accent={accent} aria-hidden="true">
+      <small>Illustrative · AI in the design system</small>
+      {stages.map((st, i) => (
+        <Line
+          key={st.label}
+          initial={{ opacity: 0, x: 24 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={viewport}
+          transition={{ delay: i * 0.18, duration: 0.6, ease }}
+        >
+          <span>{st.label}</span>
+          <Chip $accent={accent}>{st.status}</Chip>
+        </Line>
+      ))}
+      <Tabs>
+        <span>Usage</span>
+        <span>Contribution</span>
+        <span>Impact</span>
+      </Tabs>
+    </Visual>
+  )
+}
+
 function CoachCubVisual({ accent }: { accent: string }) {
   return (
     <Visual $accent={accent} aria-hidden="true">
@@ -162,6 +192,7 @@ function RemodoVisual({ accent }: { accent: string }) {
 }
 
 const visuals = {
+  digitalai: DigitalAiVisual,
   coachcub: CoachCubVisual,
   frankbeam: FrankBeamVisual,
   roomtransformations: RoomVisual,
@@ -172,7 +203,7 @@ export function CaseStudy({ study }: CaseStudyProps) {
   const { accent } = study
   const VisualComponent = visuals[study.id]
   return (
-    <Section id={study.id === 'coachcub' ? 'work' : undefined} $accent={accent}>
+    <Section id={study.index === '01' ? 'work' : undefined} $accent={accent}>
       <Grid>
         <Sticky>
           <Reveal>
@@ -181,16 +212,18 @@ export function CaseStudy({ study }: CaseStudyProps) {
             <Role>{study.role}</Role>
             {study.note && <Note>{study.note}</Note>}
             <Tagline>{study.tagline}</Tagline>
-            <Visit
-              $accent={accent}
-              href={study.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.97 }}
-            >
-              {study.linkLabel ?? `Visit ${study.url.replace('https://', '')}`} ↗
-            </Visit>
+            {study.url && (
+              <Visit
+                $accent={accent}
+                href={study.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.97 }}
+              >
+                {study.linkLabel ?? `Visit ${study.url.replace('https://', '')}`} ↗
+              </Visit>
+            )}
           </Reveal>
         </Sticky>
         <div>
@@ -206,7 +239,7 @@ export function CaseStudy({ study }: CaseStudyProps) {
           </Reveal>
           <br />
           <Block>
-            <h3>What I designed</h3>
+            <h3>{study.stepsHeading ?? 'What I designed'}</h3>
           </Block>
           <Steps>
             {study.steps.map((s, i) => (

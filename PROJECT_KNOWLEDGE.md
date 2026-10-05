@@ -1,7 +1,7 @@
 # Project knowledge: Portfolio
 
 ## 1. Purpose
-Animated personal portfolio for Bojan Kocijan, UX Manager at Digital.ai. Showcases two founder projects (CoachCub, FrankBeam), the career timeline from LinkedIn, and the Design Forge open-source repo.
+Animated personal portfolio for Bojan Kocijan, UX Manager at Digital.ai. Showcases an anonymised Digital.ai case study (AI adoption and governance in the design system), two founder projects (CoachCub, FrankBeam), two concepts, the career timeline from LinkedIn, and the Design Forge open-source repo.
 
 ## 2. Users
 Hiring managers, design leaders and peers reviewing Bojan's work.
@@ -20,6 +20,7 @@ Mocks only: static typed content in `app/content.ts`. No backend, no database.
 
 ## 7. Decisions
 - No metrics on case studies (owner decision). Do not invent numbers.
+- Digital.ai work is under NDA: name the company, but never product names, customers, screens or internal data. Its visual stays abstract and it has no external link (issue #59).
 - Owner's photo asset in `src/images/aboutMe.*` is a family photo: never use it on the public page.
 - The old Gatsby 2 starter was removed with owner approval. The site no longer uses Gatsby.
 - Deployed to GitHub Pages via .github/workflows/pages.yml: https://bojankocijan.github.io/Portfolio/
