@@ -143,32 +143,61 @@ export const Step = styled.li<{ $accent: string }>`
   }
 `
 
+const comparisonColumns = 'minmax(0, 1fr) 40px minmax(0, 1.15fr)'
+
+export const ComparisonHead = styled.div<{ $accent: string }>`
+  display: none;
+
+  @media (min-width: 600px) {
+    display: grid;
+    grid-template-columns: ${comparisonColumns};
+    gap: 20px;
+    padding: 0 22px 10px;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: ${colors.muted};
+
+    span:last-child {
+      grid-column: 3;
+      color: ${({ $accent }) => $accent};
+    }
+  }
+`
+
 export const Comparison = styled.ul<{ $accent: string }>`
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 14px;
+  gap: 12px;
 
   li {
+    position: relative;
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    gap: 12px;
+    gap: 10px;
     padding: clamp(16px, 4vw, 20px);
     border: 1px solid ${colors.line};
     border-radius: 18px;
     background: ${colors.surface};
+    transition: border-color 0.3s;
 
     @media (min-width: 600px) {
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      grid-template-columns: ${comparisonColumns};
+      align-items: center;
       gap: 20px;
+      padding: 20px 22px;
     }
+  }
+
+  li:hover {
+    border-color: ${({ $accent }) => $accent}55;
   }
 
   li > div {
     display: grid;
     gap: 4px;
-    align-content: start;
   }
 
   small {
@@ -176,19 +205,48 @@ export const Comparison = styled.ul<{ $accent: string }>`
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: ${colors.muted};
+
+    @media (min-width: 600px) {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
   }
 
-  li > div:first-child span {
+  li > div:first-of-type span {
     color: ${colors.muted};
+    font-size: 0.95rem;
   }
 
-  li > div:last-child small {
+  li > div:last-of-type small {
     color: ${({ $accent }) => $accent};
   }
 
-  li > div:last-child span {
+  li > div:last-of-type span {
     font-family: ${fonts.display};
+    font-size: 1.05rem;
     font-weight: 600;
+  }
+`
+
+export const Arrow = styled.span<{ $accent: string }>`
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: ${({ $accent }) => $accent}22;
+  color: ${({ $accent }) => $accent};
+  font-weight: 700;
+  transform: rotate(90deg);
+
+  @media (min-width: 600px) {
+    width: 40px;
+    height: 40px;
+    transform: none;
   }
 `
 

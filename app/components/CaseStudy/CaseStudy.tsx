@@ -6,7 +6,7 @@ import roomBefore from '../../assets/room-before.jpg'
 import roomAfter from '../../assets/room-after.jpg'
 import { Reveal } from '../Reveal'
 import {
-  After, Badge, Block, Chip, Compare, Comparison, Fill, Grid, Handle, Index, Levels, Line, Name, Note, Photo, Range, Role, Section, Statuses, Step, Steps, Sticky, Tabs, Tag, Tagline, Track, Visit, Visual,
+  After, Arrow, Badge, Block, Chip, Compare, Comparison, ComparisonHead, Fill, Grid, Handle, Index, Levels, Line, Name, Note, Photo, Range, Role, Section, Statuses, Step, Steps, Sticky, Tabs, Tag, Tagline, Track, Visit, Visual,
 } from './CaseStudy.styles'
 import type { CaseStudyProps } from './CaseStudy.types'
 
@@ -275,6 +275,10 @@ export function CaseStudy({ study }: CaseStudyProps) {
               <Block>
                 <h3>{study.comparison.heading}</h3>
               </Block>
+              <ComparisonHead $accent={accent} aria-hidden="true">
+                <span>Before</span>
+                <span>After</span>
+              </ComparisonHead>
               <Comparison $accent={accent}>
                 {study.comparison.rows.map((r, i) => (
                   <Reveal key={r.before} delay={i * 0.08}>
@@ -283,6 +287,7 @@ export function CaseStudy({ study }: CaseStudyProps) {
                         <small>Before</small>
                         <span>{r.before}</span>
                       </div>
+                      <Arrow $accent={accent} aria-hidden="true">→</Arrow>
                       <div>
                         <small>After</small>
                         <span>{r.after}</span>
