@@ -145,13 +145,18 @@ export const Steps = styled.ol`
   counter-reset: step;
 `
 
-export const WideSteps = styled(Steps)`
+export const WideSteps = styled(Steps)<{ $columns: number }>`
+  > div > li {
+    height: 100%;
+    align-content: start;
+  }
+
   @media (min-width: 720px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  @media (min-width: 1100px) {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(${({ $columns }) => $columns}, minmax(0, 1fr));
   }
 `
 
