@@ -11,6 +11,8 @@ export interface CaseStudyData {
   problem: string
   stepsHeading?: string
   steps: { title: string; text: string }[]
+  security?: { heading: string; items: { title: string; text: string }[] }
+  comparison?: { heading: string; rows: { before: string; after: string }[] }
 }
 
 export interface TimelineEntry {
@@ -68,10 +70,30 @@ export const caseStudies: CaseStudyData[] = [
     stepsHeading: 'What I led',
     steps: [
       { title: 'AI inside the design system', text: 'My team adopted AI in the design system to automate repetitive work.' },
-      { title: 'Governance first', text: 'Clear rules for what AI produces and how it ships, so speed never costs trust.' },
+      { title: 'Governance first', text: 'I built a Claude Code plugin that lets designers ship production-grade prototypes with AI, safely and to one quality bar.' },
       { title: 'Shaping usage and contribution', text: 'Governance let me influence how our components are used and how the team contributes to them.' },
       { title: 'Measuring the impact', text: 'We measure how AI changes the work in our tools, so decisions rest on evidence, not opinion.' },
     ],
+    security: {
+      heading: 'Security built in',
+      items: [
+        { title: 'AI never ships on its own', text: 'It can’t merge its own work or commit to main. Every change goes through a branch, a review and a human merge.' },
+        { title: 'No leaks', text: 'Every commit is scanned for secrets, and mock data can’t contain real personal data.' },
+        { title: 'A full audit trail', text: 'Everyone works with their own credentials, so every change traces back to a person.' },
+        { title: 'Safe sharing', text: 'Previews are password-protected, so customers can see a prototype without access to the code.' },
+        { title: 'Extra checks on risky changes', text: 'People approve the plan before code is written, and an independent AI reviewer checks the result. Weakening a test is blocked unless the commit explains why.' },
+      ],
+    },
+    comparison: {
+      heading: 'What improved',
+      rows: [
+        { before: 'Static Figma handoffs', after: 'Coded prototypes built from real design-system components' },
+        { before: 'Accessibility checked by hand, if at all', after: 'Automated accessibility checks on every pull request in the UX prototypes' },
+        { before: 'Each designer fixed the same bug separately', after: 'Shared patterns: a fix in one product is suggested in all of them' },
+        { before: 'Design-system gaps found late by developers', after: 'Gaps fixed upstream in the design system, linked to the work tracker' },
+        { before: 'Heavy AI sessions', after: 'Lighter AI sessions, at a fraction of the startup cost' },
+      ],
+    },
   },
   {
     id: 'coachcub',

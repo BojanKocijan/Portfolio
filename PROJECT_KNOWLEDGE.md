@@ -21,6 +21,7 @@ Mocks only: static typed content in `app/content.ts`. No backend, no database.
 ## 7. Decisions
 - No metrics on case studies (owner decision). Do not invent numbers.
 - Digital.ai work is under NDA: name the company, but never product names, customers, screens or internal data. Its visual stays abstract and it has no external link (issue #59).
+- Digital.ai case study: security and before/after blocks carry no product names and no numbers. Accessibility claim covers the UX prototypes only, and the guardrail hook is not claimed for every designer's machine (issue #61).
 - Owner's photo asset in `src/images/aboutMe.*` is a family photo: never use it on the public page.
 - The old Gatsby 2 starter was removed with owner approval. The site no longer uses Gatsby.
 - Deployed to GitHub Pages via .github/workflows/pages.yml: https://bojankocijan.github.io/Portfolio/
