@@ -6,7 +6,7 @@ import roomBefore from '../../assets/room-before.jpg'
 import roomAfter from '../../assets/room-after.jpg'
 import { Reveal } from '../Reveal'
 import {
-  After, Arrow, Badge, Block, Chip, Compare, Comparison, ComparisonHead, Context, Fill, Grid, Handle, Index, Levels, Line, Name, navHeight, Note, Photo, Rail, Range, Role, Section, Statuses, Step, Steps, Tabs, Tag, Tagline, Track, Visit, Visual, Wide, WideSteps,
+  After, Arrow, Badge, Block, Chip, Compare, Comparison, ComparisonHead, Context, Fill, Grid, Handle, Index, Levels, Line, Name, navHeight, Note, Photo, Rail, Range, Role, Section, Statuses, Step, Tabs, Tag, Tagline, Track, Visit, Visual, Wide, WideSteps,
 } from './CaseStudy.styles'
 import type { CaseStudyProps } from './CaseStudy.types'
 
@@ -264,11 +264,14 @@ export function CaseStudy({ study }: CaseStudyProps) {
           <Reveal>
             <VisualComponent accent={accent} />
           </Reveal>
-          <br />
+        </div>
+      </Grid>
+      <Wide>
+        <div>
           <Block>
             <h3>{study.stepsHeading ?? 'What I designed'}</h3>
           </Block>
-          <Steps>
+          <WideSteps $columns={4}>
             {study.steps.map((s, i) => (
               <Reveal key={s.title} delay={i * 0.08}>
                 <Step $accent={accent}>
@@ -277,58 +280,54 @@ export function CaseStudy({ study }: CaseStudyProps) {
                 </Step>
               </Reveal>
             ))}
-          </Steps>
+          </WideSteps>
         </div>
-      </Grid>
-      {(study.security || study.comparison) && (
-        <Wide>
-          {study.security && (
-            <div>
-              <Block>
-                <h3>{study.security.heading}</h3>
-              </Block>
-              <WideSteps>
-                {study.security.items.map((s, i) => (
-                  <Reveal key={s.title} delay={i * 0.08}>
-                    <Step $accent={accent}>
-                      <strong>{s.title}</strong>
-                      <span>{s.text}</span>
-                    </Step>
-                  </Reveal>
-                ))}
-              </WideSteps>
-            </div>
-          )}
-          {study.comparison && (
-            <div>
-              <Block>
-                <h3>{study.comparison.heading}</h3>
-              </Block>
-              <ComparisonHead $accent={accent} aria-hidden="true">
-                <span>Before</span>
-                <span>After</span>
-              </ComparisonHead>
-              <Comparison $accent={accent}>
-                {study.comparison.rows.map((r, i) => (
-                  <Reveal key={r.before} delay={i * 0.08}>
-                    <li>
-                      <div>
-                        <small>Before</small>
-                        <span>{r.before}</span>
-                      </div>
-                      <Arrow $accent={accent} aria-hidden="true">→</Arrow>
-                      <div>
-                        <small>After</small>
-                        <span>{r.after}</span>
-                      </div>
-                    </li>
-                  </Reveal>
-                ))}
-              </Comparison>
-            </div>
-          )}
-        </Wide>
-      )}
+        {study.security && (
+          <div>
+            <Block>
+              <h3>{study.security.heading}</h3>
+            </Block>
+            <WideSteps $columns={3}>
+              {study.security.items.map((s, i) => (
+                <Reveal key={s.title} delay={i * 0.08}>
+                  <Step $accent={accent}>
+                    <strong>{s.title}</strong>
+                    <span>{s.text}</span>
+                  </Step>
+                </Reveal>
+              ))}
+            </WideSteps>
+          </div>
+        )}
+        {study.comparison && (
+          <div>
+            <Block>
+              <h3>{study.comparison.heading}</h3>
+            </Block>
+            <ComparisonHead $accent={accent} aria-hidden="true">
+              <span>Before</span>
+              <span>After</span>
+            </ComparisonHead>
+            <Comparison $accent={accent}>
+              {study.comparison.rows.map((r, i) => (
+                <Reveal key={r.before} delay={i * 0.08}>
+                  <li>
+                    <div>
+                      <small>Before</small>
+                      <span>{r.before}</span>
+                    </div>
+                    <Arrow $accent={accent} aria-hidden="true">→</Arrow>
+                    <div>
+                      <small>After</small>
+                      <span>{r.after}</span>
+                    </div>
+                  </li>
+                </Reveal>
+              ))}
+            </Comparison>
+          </div>
+        )}
+      </Wide>
     </Section>
   )
 }
