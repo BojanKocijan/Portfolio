@@ -143,6 +143,55 @@ export const Step = styled.li<{ $accent: string }>`
   }
 `
 
+export const Comparison = styled.ul<{ $accent: string }>`
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+
+  li {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    padding: clamp(16px, 4vw, 20px);
+    border: 1px solid ${colors.line};
+    border-radius: 18px;
+    background: ${colors.surface};
+
+    @media (min-width: 600px) {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 20px;
+    }
+  }
+
+  li > div {
+    display: grid;
+    gap: 4px;
+    align-content: start;
+  }
+
+  small {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: ${colors.muted};
+  }
+
+  li > div:first-child span {
+    color: ${colors.muted};
+  }
+
+  li > div:last-child small {
+    color: ${({ $accent }) => $accent};
+  }
+
+  li > div:last-child span {
+    font-family: ${fonts.display};
+    font-weight: 600;
+  }
+`
+
 export const Visual = styled.div<{ $accent: string }>`
   padding: clamp(18px, 5vw, 28px);
   border: 1px solid ${({ $accent }) => $accent}55;

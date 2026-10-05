@@ -6,7 +6,7 @@ import roomBefore from '../../assets/room-before.jpg'
 import roomAfter from '../../assets/room-after.jpg'
 import { Reveal } from '../Reveal'
 import {
-  After, Badge, Block, Chip, Compare, Fill, Grid, Handle, Index, Levels, Line, Name, Note, Photo, Range, Role, Section, Statuses, Step, Steps, Sticky, Tabs, Tag, Tagline, Track, Visit, Visual,
+  After, Badge, Block, Chip, Compare, Comparison, Fill, Grid, Handle, Index, Levels, Line, Name, Note, Photo, Range, Role, Section, Statuses, Step, Steps, Sticky, Tabs, Tag, Tagline, Track, Visit, Visual,
 } from './CaseStudy.styles'
 import type { CaseStudyProps } from './CaseStudy.types'
 
@@ -251,6 +251,48 @@ export function CaseStudy({ study }: CaseStudyProps) {
               </Reveal>
             ))}
           </Steps>
+          {study.security && (
+            <>
+              <br />
+              <Block>
+                <h3>{study.security.heading}</h3>
+              </Block>
+              <Steps>
+                {study.security.items.map((s, i) => (
+                  <Reveal key={s.title} delay={i * 0.08}>
+                    <Step $accent={accent}>
+                      <strong>{s.title}</strong>
+                      <span>{s.text}</span>
+                    </Step>
+                  </Reveal>
+                ))}
+              </Steps>
+            </>
+          )}
+          {study.comparison && (
+            <>
+              <br />
+              <Block>
+                <h3>{study.comparison.heading}</h3>
+              </Block>
+              <Comparison $accent={accent}>
+                {study.comparison.rows.map((r, i) => (
+                  <Reveal key={r.before} delay={i * 0.08}>
+                    <li>
+                      <div>
+                        <small>Before</small>
+                        <span>{r.before}</span>
+                      </div>
+                      <div>
+                        <small>After</small>
+                        <span>{r.after}</span>
+                      </div>
+                    </li>
+                  </Reveal>
+                ))}
+              </Comparison>
+            </>
+          )}
         </div>
       </Grid>
     </Section>
