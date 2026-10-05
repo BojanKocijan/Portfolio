@@ -35,11 +35,12 @@ export const Grid = styled.div`
   }
 `
 
-export const Sticky = styled.div`
-  @media (min-width: 960px) {
-    position: sticky;
-    top: 14vh;
-  }
+export const Wide = styled.div`
+  position: relative;
+  max-width: 1280px;
+  margin: clamp(56px, 8vw, 96px) auto 0;
+  display: grid;
+  gap: clamp(48px, 6vw, 72px);
 `
 
 export const Index = styled.p<{ $accent: string }>`
@@ -107,6 +108,16 @@ export const Steps = styled.ol`
   display: grid;
   gap: 14px;
   counter-reset: step;
+`
+
+export const WideSteps = styled(Steps)`
+  @media (min-width: 720px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (min-width: 1100px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 `
 
 export const Step = styled.li<{ $accent: string }>`

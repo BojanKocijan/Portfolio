@@ -6,7 +6,7 @@ import roomBefore from '../../assets/room-before.jpg'
 import roomAfter from '../../assets/room-after.jpg'
 import { Reveal } from '../Reveal'
 import {
-  After, Arrow, Badge, Block, Chip, Compare, Comparison, ComparisonHead, Fill, Grid, Handle, Index, Levels, Line, Name, Note, Photo, Range, Role, Section, Statuses, Step, Steps, Sticky, Tabs, Tag, Tagline, Track, Visit, Visual,
+  After, Arrow, Badge, Block, Chip, Compare, Comparison, ComparisonHead, Fill, Grid, Handle, Index, Levels, Line, Name, Note, Photo, Range, Role, Section, Statuses, Step, Steps, Tabs, Tag, Tagline, Track, Visit, Visual, Wide, WideSteps,
 } from './CaseStudy.styles'
 import type { CaseStudyProps } from './CaseStudy.types'
 
@@ -205,7 +205,7 @@ export function CaseStudy({ study }: CaseStudyProps) {
   return (
     <Section id={study.index === '01' ? 'work' : undefined} $accent={accent}>
       <Grid>
-        <Sticky>
+        <div>
           <Reveal>
             <Index $accent={accent}>{study.index} — Case study</Index>
             <Name>{study.name}</Name>
@@ -225,7 +225,7 @@ export function CaseStudy({ study }: CaseStudyProps) {
               </Visit>
             )}
           </Reveal>
-        </Sticky>
+        </div>
         <div>
           <Reveal>
             <Block>
@@ -251,13 +251,16 @@ export function CaseStudy({ study }: CaseStudyProps) {
               </Reveal>
             ))}
           </Steps>
+        </div>
+      </Grid>
+      {(study.security || study.comparison) && (
+        <Wide>
           {study.security && (
-            <>
-              <br />
+            <div>
               <Block>
                 <h3>{study.security.heading}</h3>
               </Block>
-              <Steps>
+              <WideSteps>
                 {study.security.items.map((s, i) => (
                   <Reveal key={s.title} delay={i * 0.08}>
                     <Step $accent={accent}>
@@ -266,12 +269,11 @@ export function CaseStudy({ study }: CaseStudyProps) {
                     </Step>
                   </Reveal>
                 ))}
-              </Steps>
-            </>
+              </WideSteps>
+            </div>
           )}
           {study.comparison && (
-            <>
-              <br />
+            <div>
               <Block>
                 <h3>{study.comparison.heading}</h3>
               </Block>
@@ -296,10 +298,10 @@ export function CaseStudy({ study }: CaseStudyProps) {
                   </Reveal>
                 ))}
               </Comparison>
-            </>
+            </div>
           )}
-        </div>
-      </Grid>
+        </Wide>
+      )}
     </Section>
   )
 }
