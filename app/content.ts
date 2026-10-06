@@ -233,10 +233,10 @@ export const recognition = {
 export const designForge = {
   url: 'https://github.com/BojanKocijan/design-forge',
   coffee: {
-    url: 'https://ko-fi.com/bojaforjelena',
+    url: 'https://ko-fi.com/bojanforjelena',
     title: 'If you like Design Forge, help a fellow husband and buy my wife a coffee',
     text: 'Design Forge is free and always will be. If you’re married, you already know how this works: a happy wife means a happy life, and in my house a happy wife means a full cup of coffee. We’ve been happily married for years, mostly thanks to a reliable coffee supply.',
-    link: 'Buy her a coffee',
+    link: 'Support Design Forge on Ko-fi',
   },
   label: 'Open source · Rules and skills for Claude Code',
   title: 'Rules and skills that make AI work like a senior teammate.',
