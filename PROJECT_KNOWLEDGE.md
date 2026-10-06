@@ -26,6 +26,7 @@ Mocks only: static typed content in `app/content.ts`. No backend, no database.
 - The old Gatsby 2 starter was removed with owner approval. The site no longer uses Gatsby.
 - Deployed to GitHub Pages via .github/workflows/pages.yml: https://bojankocijan.github.io/Portfolio/
 - Gate tier lowered via `skip gates` at owner's request (issue #38).
+- Ko-fi support is one plain link, "Support Design Forge on Ko-fi", next to View on GitHub. The coffee strip below it is the explanation. No Ko-fi widget script: the owner chose against the floating button (issue #67).
 
 ## 8. Open questions
 - None.

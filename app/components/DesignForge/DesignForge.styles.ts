@@ -87,18 +87,6 @@ export const Support = styled.div`
   }
 `
 
-export const SupportInner = styled.div`
-  display: grid;
-  gap: 24px;
-  justify-items: start;
-
-  @media (min-width: 900px) {
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    gap: 48px;
-  }
-`
-
 export const SupportTitle = styled.h3`
   font-family: ${fonts.display};
   font-size: clamp(1.4rem, 2.4vw, 2rem);
