@@ -1,7 +1,7 @@
 # Project knowledge: Portfolio
 
 ## 1. Purpose
-Animated personal portfolio for Bojan Kocijan, UX Manager at Digital.ai. Showcases an anonymised Digital.ai case study (AI adoption and governance in the design system), two founder projects (CoachCub, FrankBeam), two concepts, the career timeline from LinkedIn, and the Design Forge open-source repo.
+Animated personal portfolio for Bojan Kocijan, UX Manager at Digital.ai. Showcases an anonymised Digital.ai case study (AI adoption and governance in the design system), two founder projects (CoachCub, FrankBeam), two concepts, the career timeline from LinkedIn, and the BK Charterline open-source repo (formerly Design Forge).
 
 ## 2. Users
 Hiring managers, design leaders and peers reviewing Bojan's work.
@@ -26,7 +26,8 @@ Mocks only: static typed content in `app/content.ts`. No backend, no database.
 - The old Gatsby 2 starter was removed with owner approval. The site no longer uses Gatsby.
 - Deployed to GitHub Pages via .github/workflows/pages.yml: https://bojankocijan.github.io/Portfolio/
 - Gate tier lowered via `skip gates` at owner's request (issue #38).
-- Ko-fi support is one plain link, "Support Design Forge on Ko-fi", next to View on GitHub. The coffee strip below it is the explanation. No Ko-fi widget script: the owner chose against the floating button (issue #67).
+- Ko-fi support is one plain link, "Support BK Charterline on Ko-fi", next to View on GitHub. The coffee strip below it is the explanation. No Ko-fi widget script: the owner chose against the floating button (issue #67).
+- Design Forge was renamed BK Charterline (2026-10-07). The panel component is still `DesignForge`; renaming the folder is a separate refactor. Its stats are copied by hand from the site's "In numbers" section (https://bojankocijan.github.io/bk-charterline/#numbers), so update them with each release (issue #69).
 
 ## 8. Open questions
 - None.

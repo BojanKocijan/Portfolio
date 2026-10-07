@@ -58,6 +58,14 @@ export const Link = styled(motion.a)`
   text-decoration: none;
 `
 
+export const NumbersLink = styled.a`
+  display: inline-block;
+  margin-top: 16px;
+  color: ${colors.accent};
+  font-weight: 600;
+  text-underline-offset: 4px;
+`
+
 export const Actions = styled.div`
   display: flex;
   flex-wrap: wrap;
